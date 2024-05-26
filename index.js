@@ -3,33 +3,9 @@ const searchQuery = "a";
 const maxResults = 40; // Maximum number of results per page (10 to 40)
 const totalBooksToFetch = 400; // Total number of books you want to fetch
 const jsonServerUrl = "http://localhost:8001/books"; // Your JSON server URL
-const allBooks = [];
+let allBooks = [];
 let currentPage = 1; //the current page of the grid. the total pages will be 9 when the 9th page is only 4 books.
-let pageLink = `http://localhost:8001/books/?i_page=${currentPage}&_limit=12`;
-let currentBooks = []; //an array of the current books in the page, get it by the pageLink.
-
-async function getBooks() {
-  let startIndex = 0;
-  try {
-    while (allBooks.length < totalBooksToFetch) {
-      const url = `https://www.googleapis.com/books/v1/volumes?q=${searchQuery}&key=${apiKey}&langRestrict=en&startIndex=${startIndex}&maxResults=${maxResults}`;
-      const response = await axios.get(url);
-      const books = response.data.items;
-      if (!books || books.length === 0) break; // Exit if no more books are found
-      books.forEach((book) => {
-        allBooks.push(parseBookInfo(book));
-      });
-      startIndex += maxResults; // Move to the next page
-    }
-    console.log(`Fetched ${allBooks.length} books`);
-    // Now post the collected books to your JSON server
-    await axios.post(jsonServerUrl, allBooks);
-    console.log("Books posted to JSON server successfully");
-  } catch (error) {
-    console.error("Error fetching or posting books:", error);
-  }
-}
-
+init();
 function parseBookInfo(identifier) {
   const volumeInfo = identifier.volumeInfo;
   const formattedBook = {
@@ -49,4 +25,54 @@ function parseBookInfo(identifier) {
       : "No ISBN",
   };
   return formattedBook;
+}
+async function init() {
+  allBooks = await axios.get(jsonServerUrl).then((response) => {
+    return response.data;
+  });
+  await openPage();
+}
+async function openPage() {
+  const url = `http://localhost:8001/books/?_page=${currentPage}&_per_page=9`;
+  let booksArr = [];
+  const bookGridElement = document.querySelector("#booksGrid");
+  booksArr = await axios.get(url).then((response) => {
+    return response.data.data;
+  });
+  document.querySelector("#booksGrid").innerHTML =
+    "  <div class='spinner'></div>";
+  document.querySelector(".spinner").style.display = "none";
+  booksArr.forEach((book) => {
+    let gridItem = document.createElement("div");
+    gridItem.id = book.id;
+    gridItem.classList.add("book");
+    let image = document.createElement("img");
+    image.src = book.image;
+    let title = document.createElement("span");
+    title.classList.add("book-title");
+    title.textContent = book.book_name;
+    let author = document.createElement("span");
+    author.classList.add("book-author");
+    author.textContent = book.authors_name;
+    gridItem.appendChild(image);
+    gridItem.appendChild(title);
+    gridItem.appendChild(author);
+    bookGridElement.appendChild(gridItem);
+  });
+}
+async function switchPage(direction) {
+  if (
+    direction == "next" &&
+    currentPage != Math.floor(allBooks.length / 9) + 1
+  ) {
+    currentPage++;
+  } else if (currentPage != 1 && direction == "back") {
+    currentPage--;
+  }
+  showSpinner();
+  await openPage();
+}
+
+function showSpinner() {
+  document.querySelector(".spinner").style.display = "block";
 }
