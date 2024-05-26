@@ -25,7 +25,7 @@
       "num_pages": 377,
       "short_description": "Percy Jackson discovers he is a demigod and embarks on a quest to find Zeus's stolen lightning bolt.",
       "image": "https://covers.openlibrary.org/b/id/8596541-L.jpg",
-      "num_copies": 5,
+      "num_copies": 3,
       "categories": [
         "Fantasy",
         "Young Adult"
@@ -63,70 +63,6 @@
         "Classic"
       ],
       "ISBN": "978-0061120084"
-    },
-    {
-      "id": "5",
-      "book_name": "1984",
-      "authors_name": [
-        "George Orwell"
-      ],
-      "num_pages": 328,
-      "short_description": "A dystopian social science fiction novel and cautionary tale.",
-      "image": "https://covers.openlibrary.org/b/id/7222246-L.jpg",
-      "num_copies": 8,
-      "categories": [
-        "Dystopian",
-        "Science Fiction"
-      ],
-      "ISBN": "978-0451524935"
-    },
-    {
-      "id": "6",
-      "book_name": "The Catcher in the Rye",
-      "authors_name": [
-        "J.D. Salinger"
-      ],
-      "num_pages": 214,
-      "short_description": "A story about teenage rebellion and angst.",
-      "image": "https://covers.openlibrary.org/b/id/8225630-L.jpg",
-      "num_copies": 5,
-      "categories": [
-        "Fiction",
-        "Classic"
-      ],
-      "ISBN": "978-0316769488"
-    },
-    {
-      "id": "7",
-      "book_name": "The Great Gatsby",
-      "authors_name": [
-        "F. Scott Fitzgerald"
-      ],
-      "num_pages": 180,
-      "short_description": "A novel about the American dream and the roaring twenties.",
-      "image": "https://covers.openlibrary.org/b/id/6912172-L.jpg",
-      "num_copies": 7,
-      "categories": [
-        "Fiction",
-        "Classic"
-      ],
-      "ISBN": "978-0743273565"
-    },
-    {
-      "id": "8",
-      "book_name": "Moby-Dick",
-      "authors_name": [
-        "Herman Melville"
-      ],
-      "num_pages": 585,
-      "short_description": "The saga of Captain Ahab and his monomaniacal pursuit of the white whale, Moby Dick.",
-      "image": "https://covers.openlibrary.org/b/id/5550066-L.jpg",
-      "num_copies": 3,
-      "categories": [
-        "Adventure",
-        "Classic"
-      ],
-      "ISBN": "978-1503280786"
     },
     {
       "id": "9",
@@ -175,22 +111,6 @@
         "Science Fiction"
       ],
       "ISBN": "978-0060850524"
-    },
-    {
-      "id": "12",
-      "book_name": "The Chronicles of Narnia: The Lion, the Witch and the Wardrobe",
-      "authors_name": [
-        "C.S. Lewis"
-      ],
-      "num_pages": 208,
-      "short_description": "Four children find a magical land inside a wardrobe.",
-      "image": "https://covers.openlibrary.org/b/id/8231463-L.jpg",
-      "num_copies": 8,
-      "categories": [
-        "Fantasy",
-        "Children's"
-      ],
-      "ISBN": "978-0064471046"
     },
     {
       "id": "13",

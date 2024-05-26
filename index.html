@@ -11,7 +11,7 @@
     <div class="detailWrapper">
       <i class="fa-solid fa-x" onclick="hideDetailWrapper()"></i>
       <div id="detailBook">
-        <h6 id="bookTitle"></h6>
+        <h4 id="bookTitle"></h4>
         <img id="bookImage" src="" alt="bookImage" />
         <p id="bookAuthor"></p>
         <p id="bookDescription"></p>
@@ -20,8 +20,10 @@
         <p id="bookNumPages"></p>
         <p id="bookNumCopies"></p>
         <div id="copyBtns">
-          <button>add copy</button><button>remove copy</button>
+          <button id="addCopy">add copy</button
+          ><button id="removeCopy">remove copy</button>
         </div>
+        <button id="deleteBook">delete book</button>
       </div>
     </div>
     <header>
@@ -29,7 +31,6 @@
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="createBooks.html">Create a new book</a></li>
-          <li><a href="deleteBooks.html">Delete an existing book</a></li>
         </ul>
       </nav>
       <form id="searchBar">

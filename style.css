@@ -37,6 +37,7 @@ main {
   gap: 5px;
 }
 .book {
+  cursor: pointer;
   width: 170px;
   display: flex;
   flex-direction: column;
@@ -116,7 +117,7 @@ img {
 }
 #detailBook * {
   text-align: center;
-  margin-block: 15px;
+  margin-block: 5px;
 }
 #copyBtns * {
   margin-inline: 5px;

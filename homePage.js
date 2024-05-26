@@ -18,7 +18,7 @@ async function showMore(book) {
   document.querySelector("#bookAuthor").textContent = bookDetail.authors_name;
   document.querySelector(
     "#bookDescription"
-  ).textContent = `decription: ${bookDetail.short_description}`;
+  ).textContent = `${bookDetail.short_description}`;
   document.querySelector("#bookISBN").textContent = `ISBN: ${bookDetail.ISBN}`;
   document.querySelector(
     "#bookNumPages"
@@ -31,6 +31,7 @@ async function showMore(book) {
   ).textContent = `categories: ${bookDetail.categories}`;
   document.querySelector("#bookImage").src = bookDetail.image;
 }
+
 function hideDetailWrapper() {
   document.querySelector(".detailWrapper").style.display = "none";
 }
@@ -96,4 +97,50 @@ function loadImage(url) {
     img.onload = () => resolve(url);
     img.onerror = () => resolve("placeholder.jpg"); // Replace with a placeholder image if the original fails
   });
+}
+document.querySelector("#removeCopy").addEventListener("click", removeCopy);
+document.querySelector("#addCopy").addEventListener("click", addCopy);
+document.querySelector("#deleteBook").addEventListener("click", deleteBook);
+async function removeCopy() {
+  let bookISBN = document.querySelector("#bookISBN").textContent;
+  bookISBN = bookISBN.substring(6);
+  let url = `http://localhost:8001/books/?ISBN=${bookISBN}`;
+  let response = await axios.get(url);
+  let bookDetail = response.data[0];
+  let copies = bookDetail.num_copies;
+  if (copies > 0) {
+    copies--;
+    bookDetail.num_copies = copies;
+    url = `http://localhost:8001/books/${bookDetail.id}`;
+    await axios.patch(url, bookDetail);
+    console.log(response.data[0]);
+    document.querySelector("#bookNumCopies").textContent = `copies: ${copies}`;
+  }
+}
+
+async function addCopy() {
+  let bookISBN = document.querySelector("#bookISBN").textContent;
+  bookISBN = bookISBN.substring(6);
+  let url = `http://localhost:8001/books/?ISBN=${bookISBN}`;
+  let response = await axios.get(url);
+  let bookDetail = response.data[0];
+  let copies = bookDetail.num_copies;
+  copies++;
+  bookDetail.num_copies = copies;
+  url = `http://localhost:8001/books/${bookDetail.id}`;
+  await axios.patch(url, bookDetail);
+  console.log(response.data[0]);
+  document.querySelector("#bookNumCopies").textContent = `copies: ${copies}`;
+}
+
+async function deleteBook() {
+  let bookISBN = document.querySelector("#bookISBN").textContent;
+  bookISBN = bookISBN.substring(6);
+  let url = `http://localhost:8001/books/?ISBN=${bookISBN}`;
+  let response = await axios.get(url);
+  let bookDetail = response.data[0];
+  url = `http://localhost:8001/books/${bookDetail.id}`;
+  await axios.delete(url);
+  hideDetailWrapper();
+  openPage();
 }
