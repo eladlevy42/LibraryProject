@@ -12,7 +12,7 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="createBooks.html">Create a new book</a></li>
-                <li><a href="updateBooks.html">Update an existing book</a></li>
+                <li><a href="deleteBooks.html">Delete an existing book</a></li>
             </ul>
         </nav>
     </header>
@@ -29,11 +29,13 @@
         <form id="createBookByISBN">
             <h2>Create book by ISBN:</h2>
             <label class="required" for="bookISBN">Book ISBN:</label>
-            <input type="text" name="bookISBN" id="bookISBN" placeholder="123-456789012">
+            <input type="text" name="bookISBN" id="bookISBN" placeholder="123-456789012" required>
             <button type="submit">Add book</button>
         </form>
     </div>
     <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
+    <script src="common.js"></script>
+    <script src="createBooks.js"></script>
     <script src="index.js"></script>
 </body>
 </html>
