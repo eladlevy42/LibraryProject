@@ -18,10 +18,9 @@ functions:
     return an object with the specific information only.
 }
 
-2. function openPage(page){
-    the function openPage will change the books grid to the page number by the given "page" variable.
-    the function is called when user clicks on a specific number in the pageBar, and in the switchPage function.
-    it will change the currentPage variable to "page".
+2. function openPage(){
+    the function openPage will change the books grid to the currentPage;
+    the function is called in the switchPage function and in the init.
     it will update the pageLink to the new currentPage.
     it will update the currentBooks with thw new pageLink.
     runs a loop of currentBooks, and update the dom grid items with books from the array.

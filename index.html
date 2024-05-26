@@ -5,31 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <header>
       <nav class="navBar">
-          <ul >
-              <li><a href="index.html">Home</a></li>
-              <li><a href="createBooks.html">Create a new book</a></li>
-              <li><a href="updateBooks.html">Update an existing book</a></li>
-          </ul>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="createBooks.html">Create a new book</a></li>
+          <li><a href="updateBooks.html">Update an existing book</a></li>
+        </ul>
       </nav>
       <form id="searchBar">
-        <input type="text" name="searchInput" placeholder="Search..." required>
+        <input
+          type="text"
+          name="searchInput"
+          placeholder="Search..."
+          required
+        />
         <button id="searchButton" type="submit">Search</button>
       </form>
-  </header>
-  <main>
-    <div id="booksGrid">
-      <div class="book">Book 1</div>
-            <div class="book">Book 2</div>
-            <div class="book">Book 3</div>
-            <div class="book">Book 4</div>
-            <div class="book">Book 5</div>
-            <div class="book">Book 6</div>
-    </div>
-  </main>
+    </header>
+    <main>
+      <div id="gridWrapper">
+        <i class="fa-solid fa-backward" onclick="switchPage('back')"></i>
+
+        <div id="booksGrid">
+          <div class="spinner"></div>
+        </div>
+        <i class="fa-solid fa-forward" onclick="switchPage('next')"></i>
+      </div>
+    </main>
     <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
     <script src="index.js"></script>
   </body>
