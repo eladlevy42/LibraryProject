@@ -1,1 +1,29 @@
 @import url(reset.css);
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+.navBar ul{
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+}
+.required{
+    font-weight: bold;
+}
+.required:after {
+    content:" *";
+    color: red;
+  }
+
+ #booksGrid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 10px;
+ } 
+ .book{
+    border: 2px solid black;
+ }
