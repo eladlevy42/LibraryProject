@@ -1599,7 +1599,36 @@
         "Thriller"
       ],
       "ISBN": "978-1501180989"
+    },
+    {
+      "id": "qQYfoV62d30C",
+      "bookName": "JK Rowling's Harry Potter Novels",
+      "authorsName": [
+        "Philip Nel"
+      ],
+      "numPages": 100,
+      "shortDescription": "Explores the themes found in the novels, provides information about reviews of the novels, and includes information about the life of J.K. Rowling.",
+      "image": "http://books.google.com/books/content?id=qQYfoV62d30C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "numCopies": 2,
+      "categories": [
+        "Literary Criticism"
+      ],
+      "ISBN": "0826452329"
+    },
+    {
+      "id": "U799AY3yfqcC",
+      "bookName": "The Hobbit",
+      "authorsName": [
+        "J. R. R. Tolkien"
+      ],
+      "numPages": 330,
+      "shortDescription": "This is the story of how a Baggins had an adventure, and found himself doing and saying things altogether unexpected... ‘A flawless masterpiece’ The Times",
+      "image": "http://books.google.com/books/content?id=U799AY3yfqcC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "numCopies": 6,
+      "categories": [
+        "Young Adult Fiction"
+      ],
+      "ISBN": "9780007322602"
     }
-  ]}
-  
-      
+  ]
+}
