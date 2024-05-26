@@ -1,0 +1,76 @@
+this is a documentation file for the project.
+its like a guide.
+
+/****************************************************************
+global variables:
+
+let currentPage = default: 1, the current page of the grid. the total pages will be 9 when the 9th page is only 4 books.
+let pageLink = `.../?page = ${currentPage}`; default is  `.../?page = 1`
+let currentBooks = an array of the current books in the page, get it by the pageLink. default is the first 12 books.
+
+/****************************************************************/
+
+functions:
+
+1. function parseBookInfo(ISBN){
+    the function will return only the needed information of the book from the api using the id parameter.
+    create a const variable named link that will be `.../?id = ${id}`.
+    return an object with the specific information only.
+}
+
+2. function openPage(page){
+    the function openPage will change the books grid to the page number by the given "page" variable.
+    the function is called when user clicks on a specific number in the pageBar, and in the switchPage function.
+    it will change the currentPage variable to "page".
+    it will update the pageLink to the new currentPage.
+    it will update the currentBooks with thw new pageLink.
+    runs a loop of currentBooks, and update the dom grid items with books from the array.
+    it will update the data with the function getDataWithName(name).
+
+     !𝙞𝙢𝙥𝙤𝙧𝙩𝙖𝙣𝙩! 𝙩𝙝𝙚 𝙜𝙧𝙞𝙙 𝙞𝙩𝙚𝙢'𝙨 𝙄𝘿 𝙬𝙞𝙡𝙡 𝙗𝙚 𝙩𝙝𝙚 𝙨𝙖𝙢𝙚 𝙞𝙙 𝙖𝙨 𝙩𝙝𝙚 𝙗𝙤𝙤𝙠 𝙞𝙣 𝙩𝙝𝙚 𝙟𝙨𝙤𝙣 𝙛𝙞𝙡𝙚!!!
+    
+    it will update the dom grid with the new link. 
+}
+
+3. function switchPage(direction){
+    the function switchPage will change the books grid to the next/previous page, depends on the direction.
+    the function is called when user clicks on a next/previous button.
+    it will update global variable "currentPage".
+    it calls the function openPage(currentPage);
+}
+
+4. function showDetails(book){
+    the function will show the specific book in the middle, with the details.
+    it will be called when user click on details button (detail button revelas on hover).
+    it will update the data in the big middle div (name it in the end).
+    the book variable is a DOM element. the function will get the needed data using getDataWithName(book.id) function.4
+}
+
+5. function updateBookCopies(bookId, operation){
+    the function will update the book's copies with the operation. the operation will be only 'add' or 'substract'.
+    the function is being called in the big div element (detailed book) with the buttons. every button will send
+        different operation.
+    it will get the book current copies and check - if its 1 it cant substract.
+    if its ok - it will update the copies, update the dom and message the user that the copy added/substract.
+}
+
+6. function createBook(){
+    the function createBook will add a book to the json file.
+    /////// pro function
+    the user will write the books name, and the function will get the data of the book from googles api and add it to the json file.
+    ////// beginner function
+    the user will write the entire books data. the function will create an object with the data.
+
+    it will check if the book already exists in the json file. if it is - alert, if not - add.
+}
+
+7. function deleteBook(id){
+    the function will get a book id and go to the json file and delete it.
+}
+
+8. function searchBook(text){
+    the function will show the total books in a grid where the name contains the givven text variable.
+}
+
+
+
