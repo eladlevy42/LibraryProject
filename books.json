@@ -1599,7 +1599,81 @@
         "Thriller"
       ],
       "ISBN": "978-1501180989"
+    },
+    {
+      "id": "qQYfoV62d30C",
+      "bookName": "JK Rowling's Harry Potter Novels",
+      "authorsName": [
+        "Philip Nel"
+      ],
+      "numPages": 100,
+      "shortDescription": "Explores the themes found in the novels, provides information about reviews of the novels, and includes information about the life of J.K. Rowling.",
+      "image": "http://books.google.com/books/content?id=qQYfoV62d30C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "numCopies": 2,
+      "categories": [
+        "Literary Criticism"
+      ],
+      "ISBN": "0826452329"
+    },
+    {
+      "id": "pD6arNyKyi8C",
+      "bookName": "The Hobbit",
+      "authorsName": [
+        "J.R.R. Tolkien"
+      ],
+      "numPages": 331,
+      "shortDescription": "J.R.R. Tolkien's classic prelude to his Lord of the Rings trilogy... Bilbo Baggins is a hobbit who enjoys a comfortable, unambitious life, rarely traveling any farther than his pantry or cellar. But his contentment is disturbed when the wizard Gandalf and a company of dwarves arrive on his doorstep one day to whisk him away on an adventure. They have launched a plot to raid the treasure hoard guarded by Smaug the Magnificent, a large and very dangerous dragon. Bilbo reluctantly joins their quest, unaware that on his journey to the Lonely Mountain he will encounter both a magic ring and a frightening creature known as Gollum. Written for J.R.R. Tolkien's own children, The Hobbit has sold many millions of copies worldwide and established itself as a modern classic.",
+      "image": "http://books.google.com/books/content?id=pD6arNyKyi8C&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+      "numCopies": 9,
+      "categories": [
+        "Young Adult Fiction"
+      ],
+      "ISBN": "9780547951973"
+    },
+    {
+      "id": "pD6arNyKyi8C",
+      "bookName": "The Hobbit",
+      "authorsName": [
+        "J.R.R. Tolkien"
+      ],
+      "numPages": 331,
+      "shortDescription": "J.R.R. Tolkien's classic prelude to his Lord of the Rings trilogy... Bilbo Baggins is a hobbit who enjoys a comfortable, unambitious life, rarely traveling any farther than his pantry or cellar. But his contentment is disturbed when the wizard Gandalf and a company of dwarves arrive on his doorstep one day to whisk him away on an adventure. They have launched a plot to raid the treasure hoard guarded by Smaug the Magnificent, a large and very dangerous dragon. Bilbo reluctantly joins their quest, unaware that on his journey to the Lonely Mountain he will encounter both a magic ring and a frightening creature known as Gollum. Written for J.R.R. Tolkien's own children, The Hobbit has sold many millions of copies worldwide and established itself as a modern classic.",
+      "image": "http://books.google.com/books/content?id=pD6arNyKyi8C&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+      "numCopies": 10,
+      "categories": [
+        "Young Adult Fiction"
+      ],
+      "ISBN": "9780547951973"
+    },
+    {
+      "id": "pD6arNyKyi8C",
+      "bookName": "The Hobbit",
+      "authorsName": [
+        "J.R.R. Tolkien"
+      ],
+      "numPages": 331,
+      "shortDescription": "J.R.R. Tolkien's classic prelude to his Lord of the Rings trilogy... Bilbo Baggins is a hobbit who enjoys a comfortable, unambitious life, rarely traveling any farther than his pantry or cellar. But his contentment is disturbed when the wizard Gandalf and a company of dwarves arrive on his doorstep one day to whisk him away on an adventure. They have launched a plot to raid the treasure hoard guarded by Smaug the Magnificent, a large and very dangerous dragon. Bilbo reluctantly joins their quest, unaware that on his journey to the Lonely Mountain he will encounter both a magic ring and a frightening creature known as Gollum. Written for J.R.R. Tolkien's own children, The Hobbit has sold many millions of copies worldwide and established itself as a modern classic.",
+      "image": "http://books.google.com/books/content?id=pD6arNyKyi8C&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+      "numCopies": 3,
+      "categories": [
+        "Young Adult Fiction"
+      ],
+      "ISBN": "9780547951973"
+    },
+    {
+      "id": "pD6arNyKyi8C",
+      "bookName": "The Hobbit",
+      "authorsName": [
+        "J.R.R. Tolkien"
+      ],
+      "numPages": 331,
+      "shortDescription": "J.R.R. Tolkien's classic prelude to his Lord of the Rings trilogy... Bilbo Baggins is a hobbit who enjoys a comfortable, unambitious life, rarely traveling any farther than his pantry or cellar. But his contentment is disturbed when the wizard Gandalf and a company of dwarves arrive on his doorstep one day to whisk him away on an adventure. They have launched a plot to raid the treasure hoard guarded by Smaug the Magnificent, a large and very dangerous dragon. Bilbo reluctantly joins their quest, unaware that on his journey to the Lonely Mountain he will encounter both a magic ring and a frightening creature known as Gollum. Written for J.R.R. Tolkien's own children, The Hobbit has sold many millions of copies worldwide and established itself as a modern classic.",
+      "image": "http://books.google.com/books/content?id=pD6arNyKyi8C&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+      "numCopies": 6,
+      "categories": [
+        "Young Adult Fiction"
+      ],
+      "ISBN": "9780547951973"
     }
-  ]}
-  
-      
+  ]
+}

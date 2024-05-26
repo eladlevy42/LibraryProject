@@ -3,19 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
     <header>
-        <nav>
+        <nav class="navBar">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="createBooks.html">Create a new book</a></li>
-                <li><a href="updateBooks.html">Update an existing book</a></li>
+                <li><a href="deleteBooks.html">Delete an existing book</a></li>
             </ul>
         </nav>
     </header>
+    <div class="formWrapper">
+        <form id="createBookByName">
+            <h2>Create book by name:</h2>
+            <label class="required" for="bookName">Book name:</label>
+            <input type="text" name="bookName" id="bookName" placeholder="The Hobbit" required>
+            <button type="submit">Add book</button>
+        </form>
+    </div>
+    <h4>Or</h4>
+    <div class="formWrapper">
+        <form id="createBookByISBN">
+            <h2>Create book by ISBN:</h2>
+            <label class="required" for="bookISBN">Book ISBN:</label>
+            <input type="text" name="bookISBN" id="bookISBN" placeholder="123-456789012" required>
+            <button type="submit">Add book</button>
+        </form>
+    </div>
     <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
+    <script src="common.js"></script>
+    <script src="createBooks.js"></script>
     <script src="index.js"></script>
 </body>
 </html>
