@@ -72,7 +72,8 @@ img {
   top: 30px;
   cursor: pointer;
 }
-#detailWrapper {
+
+.detailWrapper {
   z-index: 10000;
   background-color: rgba(128, 128, 128, 0.5);
   position: fixed;
@@ -82,6 +83,24 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.newBooksDetails{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 800px;
+  overflow: scroll;
+  aspect-ratio: 1/1.5;
+  background-color: beige;
+  border: 1px solid gray;
+  border-radius: 10px;
+  padding: 15px;
+
+}
+.closeBookWrapper{
+  position: relative;
+  left: 375px;
+
 }
 #detailBook {
   width: 400px;
@@ -115,8 +134,8 @@ img {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 30px;
-  height: 30px;
+  width: 50px;
+  height: 50px;
   margin-top: -15px;
   margin-left: -15px;
   border-radius: 50%;

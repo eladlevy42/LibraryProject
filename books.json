@@ -1601,79 +1601,77 @@
       "ISBN": "978-1501180989"
     },
     {
-      "id": "qQYfoV62d30C",
-      "bookName": "JK Rowling's Harry Potter Novels",
-      "authorsName": [
-        "Philip Nel"
+      "id": "JHEkAQAAMAAJ",
+      "book_name": "Harry Potter and the Deathly Hallows",
+      "authors_name": [
+        "J. K. Rowling"
       ],
-      "numPages": 100,
-      "shortDescription": "Explores the themes found in the novels, provides information about reviews of the novels, and includes information about the life of J.K. Rowling.",
-      "image": "http://books.google.com/books/content?id=qQYfoV62d30C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-      "numCopies": 2,
+      "num_pages": 870,
+      "short_description": "\"The final adventure in J.K. Rowling's phenomenal, best-selling Harry Potter book series\"--Provided by publisher.",
+      "image": "http://books.google.com/books/content?id=JHEkAQAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+      "num_copies": 8,
       "categories": [
-        "Literary Criticism"
-      ],
-      "ISBN": "0826452329"
+        "Bildungsromans"
+      ]
     },
     {
-      "id": "pD6arNyKyi8C",
-      "bookName": "The Hobbit",
-      "authorsName": [
-        "J.R.R. Tolkien"
+      "id": "JHEkAQAAMAAJ",
+      "book_name": "Harry Potter and the Deathly Hallows",
+      "authors_name": [
+        "J. K. Rowling"
       ],
-      "numPages": 331,
-      "shortDescription": "J.R.R. Tolkien's classic prelude to his Lord of the Rings trilogy... Bilbo Baggins is a hobbit who enjoys a comfortable, unambitious life, rarely traveling any farther than his pantry or cellar. But his contentment is disturbed when the wizard Gandalf and a company of dwarves arrive on his doorstep one day to whisk him away on an adventure. They have launched a plot to raid the treasure hoard guarded by Smaug the Magnificent, a large and very dangerous dragon. Bilbo reluctantly joins their quest, unaware that on his journey to the Lonely Mountain he will encounter both a magic ring and a frightening creature known as Gollum. Written for J.R.R. Tolkien's own children, The Hobbit has sold many millions of copies worldwide and established itself as a modern classic.",
-      "image": "http://books.google.com/books/content?id=pD6arNyKyi8C&printsec=frontcover&img=1&zoom=1&source=gbs_api",
-      "numCopies": 9,
+      "num_pages": 870,
+      "short_description": "\"The final adventure in J.K. Rowling's phenomenal, best-selling Harry Potter book series\"--Provided by publisher.",
+      "image": "http://books.google.com/books/content?id=JHEkAQAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+      "num_copies": 8,
       "categories": [
-        "Young Adult Fiction"
-      ],
-      "ISBN": "9780547951973"
+        "Bildungsromans"
+      ]
     },
     {
-      "id": "pD6arNyKyi8C",
-      "bookName": "The Hobbit",
-      "authorsName": [
-        "J.R.R. Tolkien"
+      "id": "NCutNgYYpjgC",
+      "book_name": "A Mosaic of Israel's Traditions",
+      "authors_name": [
+        "Esther Shkalim"
       ],
-      "numPages": 331,
-      "shortDescription": "J.R.R. Tolkien's classic prelude to his Lord of the Rings trilogy... Bilbo Baggins is a hobbit who enjoys a comfortable, unambitious life, rarely traveling any farther than his pantry or cellar. But his contentment is disturbed when the wizard Gandalf and a company of dwarves arrive on his doorstep one day to whisk him away on an adventure. They have launched a plot to raid the treasure hoard guarded by Smaug the Magnificent, a large and very dangerous dragon. Bilbo reluctantly joins their quest, unaware that on his journey to the Lonely Mountain he will encounter both a magic ring and a frightening creature known as Gollum. Written for J.R.R. Tolkien's own children, The Hobbit has sold many millions of copies worldwide and established itself as a modern classic.",
-      "image": "http://books.google.com/books/content?id=pD6arNyKyi8C&printsec=frontcover&img=1&zoom=1&source=gbs_api",
-      "numCopies": 10,
+      "num_pages": 322,
+      "short_description": "Subtitle on cover: Unity through diversity.",
+      "image": "http://books.google.com/books/content?id=NCutNgYYpjgC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "num_copies": 5,
       "categories": [
-        "Young Adult Fiction"
+        "Religion"
       ],
-      "ISBN": "9780547951973"
+      "ISBN": "1932687564"
     },
     {
-      "id": "pD6arNyKyi8C",
-      "bookName": "The Hobbit",
-      "authorsName": [
-        "J.R.R. Tolkien"
+      "id": "NCutNgYYpjgC",
+      "book_name": "A Mosaic of Israel's Traditions",
+      "authors_name": [
+        "Esther Shkalim"
       ],
-      "numPages": 331,
-      "shortDescription": "J.R.R. Tolkien's classic prelude to his Lord of the Rings trilogy... Bilbo Baggins is a hobbit who enjoys a comfortable, unambitious life, rarely traveling any farther than his pantry or cellar. But his contentment is disturbed when the wizard Gandalf and a company of dwarves arrive on his doorstep one day to whisk him away on an adventure. They have launched a plot to raid the treasure hoard guarded by Smaug the Magnificent, a large and very dangerous dragon. Bilbo reluctantly joins their quest, unaware that on his journey to the Lonely Mountain he will encounter both a magic ring and a frightening creature known as Gollum. Written for J.R.R. Tolkien's own children, The Hobbit has sold many millions of copies worldwide and established itself as a modern classic.",
-      "image": "http://books.google.com/books/content?id=pD6arNyKyi8C&printsec=frontcover&img=1&zoom=1&source=gbs_api",
-      "numCopies": 3,
+      "num_pages": 322,
+      "short_description": "Subtitle on cover: Unity through diversity.",
+      "image": "http://books.google.com/books/content?id=NCutNgYYpjgC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "num_copies": 4,
       "categories": [
-        "Young Adult Fiction"
+        "Religion"
       ],
-      "ISBN": "9780547951973"
+      "ISBN": "1932687564"
     },
     {
-      "id": "pD6arNyKyi8C",
-      "bookName": "The Hobbit",
-      "authorsName": [
-        "J.R.R. Tolkien"
+      "id": "NCutNgYYpjgC",
+      "book_name": "A Mosaic of Israel's Traditions",
+      "authors_name": [
+        "Esther Shkalim"
       ],
-      "numPages": 331,
-      "shortDescription": "J.R.R. Tolkien's classic prelude to his Lord of the Rings trilogy... Bilbo Baggins is a hobbit who enjoys a comfortable, unambitious life, rarely traveling any farther than his pantry or cellar. But his contentment is disturbed when the wizard Gandalf and a company of dwarves arrive on his doorstep one day to whisk him away on an adventure. They have launched a plot to raid the treasure hoard guarded by Smaug the Magnificent, a large and very dangerous dragon. Bilbo reluctantly joins their quest, unaware that on his journey to the Lonely Mountain he will encounter both a magic ring and a frightening creature known as Gollum. Written for J.R.R. Tolkien's own children, The Hobbit has sold many millions of copies worldwide and established itself as a modern classic.",
-      "image": "http://books.google.com/books/content?id=pD6arNyKyi8C&printsec=frontcover&img=1&zoom=1&source=gbs_api",
-      "numCopies": 6,
+      "num_pages": 322,
+      "short_description": "Subtitle on cover: Unity through diversity.",
+      "image": "http://books.google.com/books/content?id=NCutNgYYpjgC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "num_copies": 8,
       "categories": [
-        "Young Adult Fiction"
+        "Religion"
       ],
-      "ISBN": "9780547951973"
+      "ISBN": "1932687564"
     }
   ]
 }
