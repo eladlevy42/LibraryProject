@@ -26,6 +26,9 @@ function parseBookInfo(identifier) {
   };
   return formattedBook;
 }
+function hideDetailWrapper() {
+  document.querySelector("#detailWrapper").style.display = "none";
+}
 async function init() {
   allBooks = await axios.get(jsonServerUrl).then((response) => {
     return response.data;
@@ -39,15 +42,25 @@ async function openPage() {
   booksArr = await axios.get(url).then((response) => {
     return response.data.data;
   });
-  document.querySelector("#booksGrid").innerHTML =
-    "  <div class='spinner'></div>";
-  document.querySelector(".spinner").style.display = "none";
-  booksArr.forEach((book) => {
+  bookGridElement.innerHTML = "";
+  let spinner = document.createElement("div");
+  spinner.classList.add("spinner");
+  spinner.style.display = "block";
+  bookGridElement.appendChild(spinner);
+  document.querySelector("#back").style.display = "none";
+  document.querySelector("#next").style.display = "none";
+  const imagePromises = booksArr.map((book) => loadImage(book.image));
+  const images = await Promise.all(imagePromises);
+  booksArr.forEach((book, index) => {
+    spinner.style.display = "none";
+    document.querySelector("#back").style.display = "block";
+    document.querySelector("#next").style.display = "block";
     let gridItem = document.createElement("div");
     gridItem.id = book.id;
     gridItem.classList.add("book");
     let image = document.createElement("img");
-    image.src = book.image;
+    image.src = images[index];
+    image.alt = book.bookName;
     let title = document.createElement("span");
     title.classList.add("book-title");
     title.textContent = book.book_name;
@@ -58,8 +71,38 @@ async function openPage() {
     gridItem.appendChild(title);
     gridItem.appendChild(author);
     bookGridElement.appendChild(gridItem);
+    gridItem.addEventListener("click", () => {
+      showMore(gridItem);
+    });
   });
 }
+async function showMore(book) {
+  const bookId = book.id;
+  const url = `http://localhost:8001/books/?id=${bookId}`;
+  let bookDetail = await axios.get(url).then((response) => {
+    return response.data[0];
+  });
+
+  let detailWrapperElem = document.querySelector("#detailWrapper");
+  detailWrapperElem.style.display = "flex";
+  document.querySelector("#bookTitle").textContent = bookDetail.book_name;
+  document.querySelector("#bookAuthor").textContent = bookDetail.authors_name;
+  document.querySelector(
+    "#bookDescription"
+  ).textContent = `decription: ${bookDetail.short_description}`;
+  document.querySelector("#bookISBN").textContent = `ISBN: ${bookDetail.ISBN}`;
+  document.querySelector(
+    "#bookNumPages"
+  ).textContent = `pages: ${bookDetail.num_pages}`;
+  document.querySelector(
+    "#bookNumCopies"
+  ).textContent = `copies: ${bookDetail.num_copies}`;
+  document.querySelector(
+    "#bookGenre"
+  ).textContent = `categories: ${bookDetail.categories}`;
+  document.querySelector("#bookImage").src = bookDetail.image;
+}
+
 async function switchPage(direction) {
   if (
     direction == "next" &&
@@ -69,10 +112,14 @@ async function switchPage(direction) {
   } else if (currentPage != 1 && direction == "back") {
     currentPage--;
   }
-  showSpinner();
+
   await openPage();
 }
-
-function showSpinner() {
-  document.querySelector(".spinner").style.display = "block";
+function loadImage(url) {
+  return new Promise((resolve, reject) => {
+    const img = new Image();
+    img.src = url;
+    img.onload = () => resolve(url);
+    img.onerror = () => resolve("placeholder.jpg"); // Replace with a placeholder image if the original fails
+  });
 }

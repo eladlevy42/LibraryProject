@@ -14,6 +14,22 @@
     />
   </head>
   <body>
+    <div id="detailWrapper">
+      <i class="fa-solid fa-x" onclick="hideDetailWrapper()"></i>
+      <div id="detailBook">
+        <h6 id="bookTitle"></h6>
+        <img id="bookImage" src="" alt="bookImage" />
+        <p id="bookAuthor"></p>
+        <p id="bookDescription"></p>
+        <p id="bookGenre"></p>
+        <p id="bookISBN"></p>
+        <p id="bookNumPages"></p>
+        <p id="bookNumCopies"></p>
+        <div id="copyBtns">
+          <button>add copy</button><button>remove copy</button>
+        </div>
+      </div>
+    </div>
     <header>
       <nav class="navBar">
         <ul>
@@ -34,12 +50,18 @@
     </header>
     <main>
       <div id="gridWrapper">
-        <i class="fa-solid fa-backward" onclick="switchPage('back')"></i>
+        <i
+          class="fa-solid fa-backward arrow"
+          id="back"
+          onclick="switchPage('back')"
+        ></i>
 
-        <div id="booksGrid">
-          <div class="spinner"></div>
-        </div>
-        <i class="fa-solid fa-forward" onclick="switchPage('next')"></i>
+        <div id="booksGrid"></div>
+        <i
+          id="next"
+          class="fa-solid fa-forward arrow"
+          onclick="switchPage('next')"
+        ></i>
       </div>
     </main>
     <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
