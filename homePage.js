@@ -11,7 +11,7 @@ async function showMore(book) {
   let bookDetail = await axios.get(url).then((response) => {
     return response.data[0];
   });
-  let detailWrapperElem = document.querySelector("#detailWrapper");
+  let detailWrapperElem = document.querySelector(".detailWrapper");
   detailWrapperElem.style.display = "flex";
   document.querySelector("#bookTitle").textContent = bookDetail.book_name;
   document.querySelector("#bookAuthor").textContent = bookDetail.authors_name;
@@ -32,7 +32,7 @@ async function showMore(book) {
 }
 
 function hideDetailWrapper() {
-  document.querySelector("#detailWrapper").style.display = "none";
+  document.querySelector(".detailWrapper").style.display = "none";
 }
 async function openPage() {
   const url = `http://localhost:8001/books/?_page=${currentPage}&_per_page=9`;
