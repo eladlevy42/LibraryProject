@@ -100,9 +100,7 @@ function loadImage(url) {
     img.onerror = () => resolve("placeholder.jpg"); // Replace with a placeholder image if the original fails
   });
 }
-document.querySelector("#removeCopy").addEventListener("click", removeCopy);
-document.querySelector("#addCopy").addEventListener("click", addCopy);
-document.querySelector("#deleteBook").addEventListener("click", deleteBook);
+
 async function removeCopy() {
   let bookISBN = document.querySelector("#bookISBN").textContent;
   bookISBN = bookISBN.substring(6);
@@ -146,3 +144,8 @@ async function deleteBook() {
   hideDetailWrapper();
   openPage();
 }
+
+/////// event listeners ///////////
+document.querySelector("#removeCopy").addEventListener("click", removeCopy);
+document.querySelector("#addCopy").addEventListener("click", addCopy);
+document.querySelector("#deleteBook").addEventListener("click", deleteBook);
