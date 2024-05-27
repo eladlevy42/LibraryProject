@@ -32,13 +32,13 @@ async function createNewBookByISBN() {
 }
 
 async function createNewBookByName() {
+  let booksAdded = 0
   let bookIdentifier = document.getElementById("bookName");
   let bookIdentifierValue = bookIdentifier.value;
   const url = `${createBookGoogleUrl}q=${bookIdentifierValue}&key=${apiKey}`;
   try {
     const response = await axios.get(url);
     let items = response.data.items;
-    console.log(items);
     if (!items || items.length === 0) {
       alert("No matching books found");
       return;
@@ -50,6 +50,11 @@ async function createNewBookByName() {
         continue;
       }
       processNewBooks(book);
+      booksAdded++
+    }
+    if(booksAdded === 0){
+        alert('no books found')
+        return
     }
     newBookWrapper.style.display = "flex";
     let addButton = addButtonToPopup();
