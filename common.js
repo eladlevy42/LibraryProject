@@ -19,17 +19,14 @@ function parseBookInfo(book){
         };  
         return formattedBook
 }
-async function initBookArr() {
-    try {
-        axios.get(jsonServerUrl).then(books => {
-            for(let book of books.data){
-                allBooks.push(book)
-            }
-        }).catch(error => {
-            alert(error)
-        })
-    } catch (error) {
-        console.error('Error fetching books:', error);
+
+    async function initBookArr() {
+        try {
+            const response = await axios.get(jsonServerUrl);
+            allBooks = response.data;
+            console.log('Books initialized:', allBooks); // Debugging statement
+        } catch (error) {
+            console.error('Error fetching books:', error);
+        }
     }
-}
 
