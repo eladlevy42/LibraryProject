@@ -175,14 +175,18 @@ async function searchBook() {
   bookArr = [];
   let totalBookArr = allBooks;
   let bookName = document.querySelector("#searchInput").value.toUpperCase();
+  bookName = document.querySelector("#searchInput").value = "";
   totalBookArr.forEach((book) => {
     if (book.book_name.toUpperCase().includes(bookName)) {
       bookArr.push(book);
     }
   });
-  console.log(bookArr);
-  searchPage = 0;
-  printSearched();
+  if (bookArr.length > 0) {
+    searchPage = 0;
+    printSearched();
+  } else {
+    alert("No books found");
+  }
 }
 
 function printSearched() {
@@ -215,27 +219,28 @@ function printSearched() {
       let gridItem = document.createElement("div");
       gridItem.classList.add("book");
       document.querySelector("#booksGrid").appendChild(gridItem);
-      if (searchPage <= 0) {
-        document.querySelector("#back").style.display = "none";
-      } else {
-        document.querySelector("#back").style.display = "block";
-        document.querySelector("#back").onclick = () => {
-          searchPage--;
-          printSearched();
-        };
-      }
-      if (searchPage < Math.floor(bookArr.length / 9)) {
-        document.querySelector("#next").style.display = "block";
-        document.querySelector("#next").onclick = () => {
-          searchPage++;
-          printSearched();
-        };
-      } else {
-        document.querySelector("#next").style.display = "none";
-      }
+    }
+    if (searchPage <= 0) {
+      document.querySelector("#back").style.display = "none";
+    } else {
+      document.querySelector("#back").style.display = "block";
+      document.querySelector("#back").onclick = () => {
+        searchPage--;
+        printSearched();
+      };
+    }
+    if (searchPage < Math.floor(bookArr.length / 9)) {
+      document.querySelector("#next").style.display = "block";
+      document.querySelector("#next").onclick = () => {
+        searchPage++;
+        printSearched();
+      };
+    } else {
+      document.querySelector("#next").style.display = "none";
     }
   }
 }
+
 /////// event listeners ///////////
 document.querySelector("#removeCopy").addEventListener("click", removeCopy);
 document.querySelector("#addCopy").addEventListener("click", addCopy);
