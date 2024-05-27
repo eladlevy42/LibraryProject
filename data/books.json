@@ -1125,21 +1125,6 @@
       "ISBN": "9781447227588"
     },
     {
-      "id": "UiEAOcfu-IoC",
-      "book_name": "The Hitch Hiker/Texas",
-      "authors_name": [
-        "Hitch Hiker"
-      ],
-      "num_pages": 86,
-      "short_description": "THIS BOOK IS DEDICATED to people and children without a song, a song thats suppose to keep them alive, a song called, everything i need to survive to those who got lost on the way to their future, because of never having the support of those that kept it away from them, and i hope that i can make a difference in some peoples lives by give something back financialy, to make some of you happier with a better FUTURE. if you do read one of my books and i cant get to you, please stand up and go into your future to help yourself and take some of your friends with as a team, i believe that you will make it if you choose to make it. build your own song. Hitch Hiker",
-      "image": "http://books.google.com/books/content?id=UiEAOcfu-IoC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-      "num_copies": 9,
-      "categories": [
-        "Fiction"
-      ],
-      "ISBN": "9781462035069"
-    },
-    {
       "id": "_X_vBQAAQBAJ",
       "book_name": "Krabby Patty Caper (The SpongeBob Movie: Sponge Out of Water in 3D)",
       "authors_name": [
@@ -1515,6 +1500,14 @@
       "action": "Created Book",
       "time": "27/05/2024, 15:57",
       "timeAdded": 1716814663763
+    },
+    {
+      "id": "UiEAOcfu-IoC",
+      "book_name": "The Hitch Hiker/Texas",
+      "ISBN": "9781462035069",
+      "action": "Deleted Book",
+      "time": "27/05/2024, 16:29",
+      "timeAdded": 1716816573548
     }
   ]
 }
