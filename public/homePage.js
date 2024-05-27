@@ -163,6 +163,4 @@ async function deleteBook() {
     openPage();
   } catch (error) {
       alert(error)
-  } 
-  
-}
+  } }
