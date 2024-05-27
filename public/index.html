@@ -26,7 +26,7 @@
           <button id="addCopy">add copy</button
           ><button id="removeCopy">remove copy</button>
         </div>
-        <button id="deleteBook">delete book</button>
+        <i class="fa-solid fa-trash-can" id="deleteBook"></i>
       </div>
     </div>
     <header>
@@ -51,7 +51,7 @@
     <main>
       <div id="gridWrapper">
         <i
-          class="fa-solid fa-backward arrow"
+          class="fa-solid fa-backward arrow arrow-left"
           id="back"
           onclick="switchPage('back')"
         ></i>
@@ -59,7 +59,7 @@
         <div id="booksGrid"></div>
         <i
           id="next"
-          class="fa-solid fa-forward arrow"
+          class="fa-solid fa-forward arrow arrow-right"
           onclick="switchPage('next')"
         ></i>
       </div>

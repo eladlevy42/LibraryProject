@@ -121,22 +121,6 @@
       "ISBN": "9781443816281"
     },
     {
-      "id": "DKcWE3WXoj8C",
-      "book_name": "Harry Potter and International Relations",
-      "authors_name": [
-        "Daniel H. Nexon",
-        "Iver B. Neumann"
-      ],
-      "num_pages": 262,
-      "short_description": "Drawing on a range of historical and sociological sources, this work shows how aspects of Harry's world contain aspects of our own. It also includes chapters on the political economy of the franchise, and on the problems of studying popular culture.",
-      "image": "http://books.google.com/books/content?id=DKcWE3WXoj8C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-      "num_copies": 9,
-      "categories": [
-        "Juvenile Fiction"
-      ],
-      "ISBN": "0742539598"
-    },
-    {
       "id": "HrbjU0pvYwQC",
       "book_name": "Harry Potter Places Book One",
       "authors_name": [
@@ -1606,6 +1590,14 @@
       "action": "Created Book",
       "time": "27/05/2024, 15:57",
       "timeAdded": 1716814663763
+    },
+    {
+      "id": "DKcWE3WXoj8C",
+      "book_name": "Harry Potter and International Relations",
+      "ISBN": "0742539598",
+      "action": "Deleted Book",
+      "time": "27/05/2024, 18:31",
+      "timeAdded": 1716823878946
     }
   ]
 }

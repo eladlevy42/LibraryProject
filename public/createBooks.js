@@ -77,6 +77,7 @@ function addButtonToPopup() {
 function processNewBooks(book) {
   let bookDiv = document.createElement("div");
   bookDiv.classList.add("book");
+  bookDiv.classList.add('newBook')
   let bookImg = document.createElement("img");
   bookImg.src = book.image;
   bookImg.alt = book.book_name;

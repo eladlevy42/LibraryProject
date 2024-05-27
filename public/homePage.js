@@ -49,14 +49,14 @@ async function openPage() {
   spinner.classList.add("spinner");
   spinner.style.display = "block";
   bookGridElement.appendChild(spinner);
-  document.querySelector("#back").style.display = "none";
-  document.querySelector("#next").style.display = "none";
+  document.querySelector("#back").style.visibility = "hidden";
+  document.querySelector("#next").style.visibility = "hidden";
   const imagePromises = booksArr.map((book) => loadImage(book.image));
   const images = await Promise.all(imagePromises);
   booksArr.forEach((book, index) => {
     spinner.style.display = "none";
-    document.querySelector("#back").style.display = "block";
-    document.querySelector("#next").style.display = "block";
+    document.querySelector("#back").style.visibility = "visible";
+    document.querySelector("#next").style.visibility = "visible";
     let gridItem = document.createElement("div");
     gridItem.id = book.id;
     gridItem.classList.add("book");
@@ -78,14 +78,14 @@ async function openPage() {
     });
   });
   if (currentPage == 1) {
-    document.querySelector("#back").style.display = "none";
+    document.querySelector("#back").style.visibility = "hidden";
   } else {
-    document.querySelector("#back").style.display = "block";
+    document.querySelector("#back").style.visibility = "visible";
   }
   if (currentPage == Math.floor(allBooks.length / 9)) {
-    document.querySelector("#next").style.display = "none";
+    document.querySelector("#next").style.visibility = "hidden";
   } else {
-    document.querySelector("#next").style.display = "block";
+    document.querySelector("#next").style.visibility = "visible";
   }
 }
 async function switchPage(direction) {
@@ -180,9 +180,13 @@ async function searchBook() {
       bookArr.push(book);
     }
   });
-  console.log(bookArr);
-  searchPage = 0;
-  printSearched();
+  if (bookArr.length > 0) {
+    searchPage = 0;
+    printSearched();
+    document.querySelector("#searchInput").value = "";
+  } else {
+    alert("No books found");
+  }
 }
 
 function printSearched() {
@@ -215,27 +219,28 @@ function printSearched() {
       let gridItem = document.createElement("div");
       gridItem.classList.add("book");
       document.querySelector("#booksGrid").appendChild(gridItem);
-      if (searchPage <= 0) {
-        document.querySelector("#back").style.display = "none";
-      } else {
-        document.querySelector("#back").style.display = "block";
-        document.querySelector("#back").onclick = () => {
-          searchPage--;
-          printSearched();
-        };
-      }
-      if (searchPage < Math.floor(bookArr.length / 9)) {
-        document.querySelector("#next").style.display = "block";
-        document.querySelector("#next").onclick = () => {
-          searchPage++;
-          printSearched();
-        };
-      } else {
-        document.querySelector("#next").style.display = "none";
-      }
+    }
+    if (searchPage <= 0) {
+      document.querySelector("#back").style.visibility = "hidden";
+    } else {
+      document.querySelector("#back").style.visibility = "visible";
+      document.querySelector("#back").onclick = () => {
+        searchPage--;
+        printSearched();
+      };
+    }
+    if (searchPage < Math.floor(bookArr.length / 9)) {
+      document.querySelector("#next").style.visibility = "visible";
+      document.querySelector("#next").onclick = () => {
+        searchPage++;
+        printSearched();
+      };
+    } else {
+      document.querySelector("#next").style.visibility = "hidden";
     }
   }
 }
+
 /////// event listeners ///////////
 document.querySelector("#removeCopy").addEventListener("click", removeCopy);
 document.querySelector("#addCopy").addEventListener("click", addCopy);

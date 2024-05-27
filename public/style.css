@@ -1,9 +1,37 @@
 @import url(reset.css);
+:root{
+  --clr-background-primary: hsl(52, 94%, 94%);
+  --clr-accent-primary: hsl(200, 94%, 21%);
+  --clr-danger-primary: hsl(28, 100%, 51%);
+  --padding-xs:0.25em;
+  --padding-small:0.5em;
+  --padding-medium-small:0.75em;
+  --padding-medium:1em;
+  --padding-medium-large:1.25em;
+  --padding-large:1.5em;
+  --padding-xl:1.75em;
+  --padding-xxl:2em;
+  --margin-xs:0.25em;
+  --margin-small:0.5em;
+  --margin-medium-small:0.75em;
+  --margin-medium:1em;
+  --margin-medium-large:1.25em;
+  --margin-large:1.5em;
+  --margin-xl:1.75em;
+  --margin-xxl:2em;
+}
+body{
+  background-color: var(--clr-background-primary);
+}
 ul {
   list-style: none;
   padding: 0;
 }
-
+.navBar{
+  background-color: var(--clr-accent-primary);
+  padding: var(--padding-large);
+  margin-bottom: var(--margin-large);
+}
 .navBar ul {
   margin-inline: auto;
   display: flex;
@@ -11,12 +39,29 @@ ul {
   align-items: center;
   max-width: 1100px;
 }
+.navBar ul li a{
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: var(--padding-xs);
+  transition: transform 0.2s ease;
+}
+.navBar ul li a:hover{
+  background-color: white;
+  color: black;
+  transform: scale(1.2) rotate(5deg);
+}
 .required {
   font-weight: bold;
 }
 .required:after {
   content: " *";
   color: red;
+}
+#searchBar{
+  display: flex;
+  justify-content: center;
 }
 main {
   display: flex;
@@ -33,11 +78,11 @@ main {
 #booksGrid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  padding: 10px;
+  padding: var(--padding-medium);
   gap: 1em;
 }
 #bookDescription {
-  height: 200px;
+  max-height: 130px;
   overflow-y: auto;
 }
 .book {
@@ -46,10 +91,11 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: beige;
+  background-color: var(--clr-accent-primary);
   padding: 5px;
   position: relative;
   height: 200px;
+  border-radius: 0.5em;
   overflow-y: hidden;
   transition: transform 0.3s ease;
 }
@@ -67,6 +113,9 @@ main {
 .book-author {
   font-size: clamp(8px, 2vw, 12px);
 }
+.book-author, .book-title{
+  color: white;
+}
 .book-image {
   cursor: pointer;
 }
@@ -76,19 +125,35 @@ img {
   border: 1px solid gray;
 }
 .arrow {
-  background: beige;
-  padding: 5px;
+  background: var(--clr-accent-primary);
+  color: white;
+  padding: var(--padding-medium-small);
   border-radius: 50%;
   border: 1px solid gray;
   cursor: pointer;
+  transition: transform 0.2s ;
+}
+.arrow:hover{
+  transform: scale(1.1);
+  
+}
+.arrow-right:hover{
+  transform: translateX(8px);
+}
+.arrow-left:hover{
+  transform: translateX(-8px);
 }
 .fa-x {
+  color: var(--clr-danger-primary);
   position: relative;
-  left: 300px;
+  left: 330px;
   top: 30px;
   cursor: pointer;
+  transition: transform 0.2s;
 }
-
+.fa-x:hover{
+  transform: scale(1.2);
+}
 .detailWrapper {
   z-index: 10000;
   background-color: rgba(23, 23, 23, 0.6);
@@ -105,7 +170,7 @@ img {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   width: 800px;
-  overflow-y: scroll;
+  overflow-y: auto;
   aspect-ratio: 1/1.5;
   background-color: beige;
   border: 1px solid gray;
@@ -116,10 +181,54 @@ img {
   position: relative;
   left: 375px;
 }
+#bookTitle{
+  font-size: 1.25em;
+}
+#removeCopy, #addCopy{
+  background-color: var(--clr-danger-primary);
+  border: none;
+  border-radius: 10px;
+  padding: var(--padding-small);
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+#removeCopy:hover, #addCopy:hover{
+  transform: scale(1.1) translateY(-5px);
+}
+.fa-trash-can{
+  color: red;
+  font-size: 40px;
+}
+#deleteBook{
+  cursor: pointer;
+  transition: all 0.3s;
+}
+#deleteBook:hover{
+  animation: shake-left-to-right 0.2s infinite;
+}
+@keyframes shake-left-to-right {
+  0%{
+    transform: rotate(7.5deg) ;
+  }
+  33%{
+    transform: rotate(15deg);
+  }
+  50%{
+    transform: rotate(0deg);
+  }
+  66%{
+    transform: rotate(-7.5deg);
+  }
+  100%{
+    transform: rotate(-15deg);
+  }
+}
 #detailBook {
-  width: 650px;
+  width: 700px;
   aspect-ratio: 1/1.5;
-  background-color: beige;
+  background-color: var(--clr-accent-primary);
+  color: white;
+  gap: 0.25em;
   border: 1px solid gray;
   border-radius: 10px;
   padding: 15px;
@@ -128,6 +237,7 @@ img {
   justify-content: center;
   align-items: center;
 }
+
 .selected {
   background-color: blue;
 }
