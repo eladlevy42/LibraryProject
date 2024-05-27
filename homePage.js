@@ -1,7 +1,8 @@
 initBookArr();
 initHomeBooks();
-console.log(allBooks);
-
+let totalBookArr = [];
+let bookArr = [];
+let searchPage = 0;
 async function initHomeBooks() {
   await openPage();
 }
@@ -35,6 +36,8 @@ function hideDetailWrapper() {
   document.querySelector(".detailWrapper").style.display = "none";
 }
 async function openPage() {
+  console.log(currentPage);
+
   const url = `http://localhost:8001/books/?_page=${currentPage}&_per_page=9`;
   let booksArr = [];
   const bookGridElement = document.querySelector("#booksGrid");
@@ -74,6 +77,16 @@ async function openPage() {
       showMore(gridItem);
     });
   });
+  if (currentPage == 1) {
+    document.querySelector("#back").style.display = "none";
+  } else {
+    document.querySelector("#back").style.display = "block";
+  }
+  if (currentPage == Math.floor(allBooks.length / 9)) {
+    document.querySelector("#next").style.display = "none";
+  } else {
+    document.querySelector("#next").style.display = "block";
+  }
 }
 async function switchPage(direction) {
   if (
@@ -113,7 +126,7 @@ async function removeCopy() {
     bookDetail.num_copies = copies;
     url = `http://localhost:8001/books/${bookDetail.id}`;
     await axios.patch(url, bookDetail);
-    console.log(response.data[0]);
+
     document.querySelector("#bookNumCopies").textContent = `copies: ${copies}`;
   }
 }
@@ -129,10 +142,8 @@ async function addCopy() {
   bookDetail.num_copies = copies;
   url = `http://localhost:8001/books/${bookDetail.id}`;
   await axios.patch(url, bookDetail);
-  console.log(response.data[0]);
   document.querySelector("#bookNumCopies").textContent = `copies: ${copies}`;
 }
-
 async function deleteBook() {
   let bookISBN = document.querySelector("#bookISBN").textContent;
   bookISBN = bookISBN.substring(6);
@@ -145,7 +156,79 @@ async function deleteBook() {
   openPage();
 }
 
+async function searchBook() {
+  bookArr = [];
+  let totalBookArr = allBooks;
+  let bookName = document.querySelector("#searchInput").value.toUpperCase();
+  totalBookArr.forEach((book) => {
+    if (book.book_name.toUpperCase().includes(bookName)) {
+      bookArr.push(book);
+    }
+  });
+  console.log(bookArr);
+  searchPage = 0;
+  printSearched();
+}
+
+function printSearched() {
+  let startIndex = searchPage * 9;
+  let endIndex = (searchPage + 1) * 9;
+  document.querySelector("#booksGrid").innerHTML = "";
+  for (let i = startIndex; i < endIndex; i++) {
+    let book = bookArr[i];
+    if (bookArr[i] != undefined) {
+      let gridItem = document.createElement("div");
+      gridItem.id = book.id;
+      gridItem.classList.add("book");
+      let image = document.createElement("img");
+      image.src = book.image;
+      image.alt = book.book_name;
+      let title = document.createElement("span");
+      title.classList.add("book-title");
+      title.textContent = book.book_name;
+      let author = document.createElement("span");
+      author.classList.add("book-author");
+      author.textContent = book.authors_name;
+      gridItem.appendChild(image);
+      gridItem.appendChild(title);
+      gridItem.appendChild(author);
+      document.querySelector("#booksGrid").appendChild(gridItem);
+      gridItem.addEventListener("click", () => {
+        showMore(gridItem);
+      });
+    } else {
+      let gridItem = document.createElement("div");
+      gridItem.classList.add("book");
+      document.querySelector("#booksGrid").appendChild(gridItem);
+    }
+  }
+
+  if (searchPage <= 0) {
+    document.querySelector("#back").style.display = "none";
+  } else {
+    document.querySelector("#back").style.display = "block";
+    document.querySelector("#back").onclick = () => {
+      searchPage--;
+      printSearched();
+    };
+  }
+  if (searchPage < Math.floor(bookArr.length / 9)) {
+    document.querySelector("#next").style.display = "block";
+    document.querySelector("#next").onclick = () => {
+      searchPage++;
+      printSearched();
+    };
+  } else {
+    document.querySelector("#next").style.display = "none";
+  }
+}
+
 /////// event listeners ///////////
 document.querySelector("#removeCopy").addEventListener("click", removeCopy);
 document.querySelector("#addCopy").addEventListener("click", addCopy);
 document.querySelector("#deleteBook").addEventListener("click", deleteBook);
+document.querySelector("#searchButton").addEventListener("click", (event) => {
+  totalBookArr = [];
+  event.preventDefault();
+  searchBook();
+});

@@ -26,19 +26,20 @@ main {
 }
 #gridWrapper {
   display: flex;
-
   align-items: center;
-  height: 690px;
+  max-height: 690px;
 }
 #booksGrid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   padding: 10px;
   gap: 5px;
+  max-height: 690px;
 }
 .book {
   cursor: pointer;
   width: 170px;
+  height: 220px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -86,7 +87,7 @@ img {
   align-items: center;
 }
 
-.newBooksDetails{
+.newBooksDetails {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   width: 800px;
@@ -96,12 +97,10 @@ img {
   border: 1px solid gray;
   border-radius: 10px;
   padding: 15px;
-
 }
-.closeBookWrapper{
+.closeBookWrapper {
   position: relative;
   left: 375px;
-
 }
 #detailBook {
   width: 400px;
