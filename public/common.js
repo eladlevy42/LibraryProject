@@ -1,6 +1,6 @@
 const jsonServerUrl = 'http://localhost:8001/books'; 
-const apiKey = 'AIzaSyBr44eXMiG4uM7nz0--vgitm2I8OYQ0J9I';
 const googleUrl = `https://www.googleapis.com/books/v1/volumes?q=a&key=${apiKey}`
+const historyUrl = `http://localhost:8001/history`
 let allBooks = [];
 let getBooks;
 let currentPage = 1; //the current page of the grid. the total pages will be 9 when the 9th page is only 4 books.
@@ -19,8 +19,7 @@ function parseBookInfo(book){
         };  
         return formattedBook
 }
-
-    async function initBookArr() {
+async function initBookArr() {
         try {
             const response = await axios.get(jsonServerUrl);
             allBooks = response.data;
@@ -29,4 +28,33 @@ function parseBookInfo(book){
             console.error('Error fetching books:', error);
         }
     }
+
+
+function buildHistoryObject(book, action){
+    let bookName = book.book_name;
+    let bookISBN = book.ISBN;
+    let bookAction = action;
+    let bookId = book.id
+    let actionTime = getCurrentDateTime()
+    const historyObject = {
+        id: bookId,
+        book_name : bookName,
+        ISBN : bookISBN,
+        action: bookAction,
+        time: actionTime,
+        timeAdded: Date.now()
+    }
+    return historyObject
+}
+
+function getCurrentDateTime() {
+    const now = new Date();
+    const day = String(now.getDate()).padStart(2, '0');
+    const month = String(now.getMonth() + 1).padStart(2, '0'); // Months are 0-based
+    const year = now.getFullYear();
+    const hours = String(now.getHours()).padStart(2, '0');
+    const minutes = String(now.getMinutes()).padStart(2, '0');
+
+    return `${day}/${month}/${year}, ${hours}:${minutes}`;
+}
 

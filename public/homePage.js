@@ -126,7 +126,7 @@ async function removeCopy() {
     bookDetail.num_copies = copies;
     url = `http://localhost:8001/books/${bookDetail.id}`;
     await axios.patch(url, bookDetail);
-
+    console.log(response.data[0]);
     document.querySelector("#bookNumCopies").textContent = `copies: ${copies}`;
   }
 }
@@ -142,8 +142,10 @@ async function addCopy() {
   bookDetail.num_copies = copies;
   url = `http://localhost:8001/books/${bookDetail.id}`;
   await axios.patch(url, bookDetail);
+  console.log(response.data[0]);
   document.querySelector("#bookNumCopies").textContent = `copies: ${copies}`;
 }
+
 async function deleteBook() {
   let bookISBN = document.querySelector("#bookISBN").textContent;
   bookISBN = bookISBN.substring(6);
@@ -155,7 +157,6 @@ async function deleteBook() {
   hideDetailWrapper();
   openPage();
 }
-
 async function searchBook() {
   bookArr = [];
   let totalBookArr = allBooks;

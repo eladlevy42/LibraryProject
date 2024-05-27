@@ -12,13 +12,18 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="createBooks.html">Create a new book</a></li>
-                <li><a href="deleteBooks.html">Delete an existing book</a></li>
-            </ul>
+                <li><a href="actionHistory.html">Show action history</a></li>
+              </ul>
         </nav>
     </header>
+    <main>
+        <table id="actionTable">
+            <tr><th>Book name</th><th>Book ISBN</th><th>Action</th><th>Time of action</th></tr>
+        </table>
+    </main>
     <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
+    <script src="secret.js"></script>
     <script src="common.js"></script>
-    <script src="index.js">
-    </script>
+    <script src="history.js"></script>
 </body>
 </html>
