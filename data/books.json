@@ -99,7 +99,7 @@
       "num_pages": 324,
       "short_description": "When Harry Potter first boards the Hogwarts Express, he journeys to a world which Rowling says has alchemy as its \"internal logic.\" The Philosopher's Stone, known for its power to transform base metals into gold and to give immortality to its maker, is the subject of the conflict between Harry and Voldemort in the first book of the series. But alchemy is not about money or eternal life, it is much more about the transformations of desire, of power and of people--through love. Harry's equally remarkable and ordinary power to love leads to his desire to find but not use the Philosopher's Stone at the start of the series and his wish to end the destructive power of the Elder Wand at the end. This collection of essays on alchemical symbolism and transformations in Rowling's series demonstrates how Harry's work with magical objects, people, and creatures transfigure desire, power, and identity. As Harry's leaden existence on Privet Drive is transformed in the company of his friends and teachers, the Harry Potter novels have transformed millions of readers, inspiring us to find the gold in our ordinary lives.",
       "image": "http://books.google.com/books/content?id=8fcQEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-      "num_copies": 7,
+      "num_copies": 6,
       "categories": [
         "Literary Criticism"
       ],
@@ -1216,19 +1216,49 @@
       "ISBN": "9781950837168"
     },
     {
-      "id": "j3_vBQAAQBAJ",
-      "book_name": "The Good, the Bad, and the Krabby (The SpongeBob Movie: Sponge Out of Water in 3D)",
+      "id": "UiEAOcfu-IoC",
+      "book_name": "The Hitch Hiker/Texas",
+      "authors_name": [
+        "Hitch Hiker"
+      ],
+      "num_pages": 86,
+      "short_description": "THIS BOOK IS DEDICATED to people and children without a song, a song thats suppose to keep them alive, a song called, everything i need to survive to those who got lost on the way to their future, because of never having the support of those that kept it away from them, and i hope that i can make a difference in some peoples lives by give something back financialy, to make some of you happier with a better FUTURE. if you do read one of my books and i cant get to you, please stand up and go into your future to help yourself and take some of your friends with as a team, i believe that you will make it if you choose to make it. build your own song. Hitch Hiker",
+      "image": "http://books.google.com/books/content?id=UiEAOcfu-IoC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "num_copies": 9,
+      "categories": [
+        "Fiction"
+      ],
+      "ISBN": "9781462035069"
+    },
+    {
+      "id": "_X_vBQAAQBAJ",
+      "book_name": "Krabby Patty Caper (The SpongeBob Movie: Sponge Out of Water in 3D)",
       "authors_name": [
         "Nickelodeon Publishing"
       ],
       "num_pages": 28,
       "short_description": "Nickelodeon’s SpongeBob SquarePants comes to the big screen in an all-new, super-silly 3-D movie releasing in February 2015. Boys and girls 3 to 7 will love this full-color storybook based on the film.",
-      "image": "http://books.google.com/books/content?id=j3_vBQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-      "num_copies": 10,
+      "image": "http://books.google.com/books/content?id=_X_vBQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "num_copies": 1,
       "categories": [
         "Juvenile Fiction"
       ],
-      "ISBN": "9781612639468"
+      "ISBN": "9781612639482"
+    },
+    {
+      "id": "LzuhDwAAQBAJ",
+      "book_name": "My Happy Book: SpongeBob's 10 Happiest Moments (SpongeBob SquarePants)",
+      "authors_name": [
+        "Nickelodeon Publishing"
+      ],
+      "num_pages": 26,
+      "short_description": "SpongeBob remembers ten of his HAPPIEST moments ever in this special anniversary edition storybook! From his first Christmas to his first nightshift at the Krusty Krab; from the day he met Sandy Cheeks to his star-studded mopping performance at the first (and last) Krusty Krab talent show! This walk down memory lane is sure to have readers crying tears of laughter! This Nickelodeon read-along contains audio narration.",
+      "image": "http://books.google.com/books/content?id=LzuhDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "num_copies": 2,
+      "categories": [
+        "Juvenile Fiction"
+      ],
+      "ISBN": "9781950837168"
     },
     {
       "id": "KV4DAwAAQBAJ",
@@ -1239,26 +1269,11 @@
       "num_pages": 36,
       "short_description": "Bikini Bottom suddenly goes dark one day and everyone panics! Are aliens invading SpongeBob SquarePants home?",
       "image": "http://books.google.com/books/content?id=KV4DAwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-      "num_copies": 10,
+      "num_copies": 1,
       "categories": [
         "Juvenile Fiction"
       ],
       "ISBN": "9781612630052"
-    },
-    {
-      "id": "H6H6BJeDFmMC",
-      "book_name": "The SpongeBob SquarePants Movie",
-      "authors_name": [
-        "Unknown Author"
-      ],
-      "num_pages": 156,
-      "short_description": "When King Neptune's crown is stolen, it's up to SpongeBob and Patrick to retrieve the crown, clear Mr. Krab's name and save Bikini Bottom from Plankton's evil plan to rule the sea.",
-      "image": "http://books.google.com/books/content?id=H6H6BJeDFmMC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-      "num_copies": 3,
-      "categories": [
-        "Animated characters"
-      ],
-      "ISBN": "9780689868405"
     },
     {
       "id": "61jZDwAAQBAJ",
@@ -1269,7 +1284,7 @@
       "num_pages": 93,
       "short_description": "THE SPONGEBOB MOVIE: SPONGE ON THE RUN comes to theatres May 22, 2020. Part origin story, part rescue mission, and part buddy road trip, the all new feature-length movie follows SpongeBob, Patrick, and the entire Bikini Bottom crew as they embark on a journey that spans from childhood to an adventure to save their friend, Gary the Snail. Boys and girls will thrill to this novelization that features eight pages of images based on the film.",
       "image": "http://books.google.com/books/content?id=61jZDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-      "num_copies": 7,
+      "num_copies": 4,
       "categories": [
         "Juvenile Fiction"
       ],
@@ -1284,11 +1299,26 @@
       "num_pages": 136,
       "short_description": "Nickelodeon’s SpongeBob SquarePants comes to the big screen in an all-new, super-silly 3-D movie releasing in February 2015. This junior novel retells the whole hilarious story and features eight pages of full-color scenes from the movie! It’s perfect for boys and girls ages 8 to 12.",
       "image": "http://books.google.com/books/content?id=933vBQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-      "num_copies": 9,
+      "num_copies": 6,
       "categories": [
         "Juvenile Fiction"
       ],
       "ISBN": "9781612639420"
+    },
+    {
+      "id": "j3_vBQAAQBAJ",
+      "book_name": "The Good, the Bad, and the Krabby (The SpongeBob Movie: Sponge Out of Water in 3D)",
+      "authors_name": [
+        "Nickelodeon Publishing"
+      ],
+      "num_pages": 28,
+      "short_description": "Nickelodeon’s SpongeBob SquarePants comes to the big screen in an all-new, super-silly 3-D movie releasing in February 2015. Boys and girls 3 to 7 will love this full-color storybook based on the film.",
+      "image": "http://books.google.com/books/content?id=j3_vBQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "num_copies": 9,
+      "categories": [
+        "Juvenile Fiction"
+      ],
+      "ISBN": "9781612639468"
     },
     {
       "id": "KzuhDwAAQBAJ",
@@ -1299,7 +1329,7 @@
       "num_pages": 100,
       "short_description": "A nostalgic guide detailing the creation of SpongeBob SquarePants. Featuring interviews with SpongeBob SquarePants' creator Stephen Hillenburg, a detailed early episode guide, a SpongeBob fan certificate, and other treats fill an insider's guide to the popular cartoon series.",
       "image": "http://books.google.com/books/content?id=KzuhDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-      "num_copies": 7,
+      "num_copies": 8,
       "categories": [
         "Juvenile Fiction"
       ],
@@ -1330,7 +1360,7 @@
       "num_pages": 26,
       "short_description": "Spongebob has problems with his new round pair of pants.",
       "image": "http://books.google.com/books/content?id=Vv8YLHig6zMC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-      "num_copies": 1,
+      "num_copies": 4,
       "categories": [
         "Juvenile Fiction"
       ],
@@ -1345,26 +1375,11 @@
       "num_pages": 146,
       "short_description": "SpongeBob SquarePants, Patrick Star, and their neighbors offer advice on dealing with sharks, pirates, school, money matters, and other rigors of life in Bikini Bottom.",
       "image": "http://books.google.com/books/content?id=q_kqSmKGf-IC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-      "num_copies": 8,
+      "num_copies": 1,
       "categories": [
         "Comics & Graphic Novels"
       ],
       "ISBN": "9780743469876"
-    },
-    {
-      "id": "_X_vBQAAQBAJ",
-      "book_name": "Krabby Patty Caper (The SpongeBob Movie: Sponge Out of Water in 3D)",
-      "authors_name": [
-        "Nickelodeon Publishing"
-      ],
-      "num_pages": 28,
-      "short_description": "Nickelodeon’s SpongeBob SquarePants comes to the big screen in an all-new, super-silly 3-D movie releasing in February 2015. Boys and girls 3 to 7 will love this full-color storybook based on the film.",
-      "image": "http://books.google.com/books/content?id=_X_vBQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-      "num_copies": 4,
-      "categories": [
-        "Juvenile Fiction"
-      ],
-      "ISBN": "9781612639482"
     }
   ],
   "history": [
@@ -1429,40 +1444,168 @@
       "book_name": "SpongeBob Exposed!: The Insider's Guide to SpongeBob SquarePants (SpongeBob SquarePants)",
       "ISBN": "9781950837038",
       "action": "Created Book",
-      "time": "27/05/2024, 15:59",
-      "timeAdded": 1716814744457
+      "time": "27/05/2024, 15:50",
+      "timeAdded": 1716814201530
     },
     {
-      "id": "n74oPCAdlNcC",
-      "book_name": "SpongeBob AirPants",
-      "ISBN": "9780689861635",
-      "action": "Created Book",
-      "time": "27/05/2024, 15:59",
-      "timeAdded": 1716814744504
+      "id": "8fcQEAAAQBAJ",
+      "book_name": "The Alchemical Harry Potter",
+      "ISBN": "9781476681344",
+      "action": "Removed copy",
+      "time": "27/05/2024, 15:52",
+      "timeAdded": 1716814367106
     },
     {
-      "id": "Vv8YLHig6zMC",
-      "book_name": "SpongeBob RoundPants",
-      "ISBN": "9781416979685",
+      "id": "yElaAAAAMAAJ",
+      "book_name": "The Da Vinci Code",
       "action": "Created Book",
-      "time": "27/05/2024, 15:59",
-      "timeAdded": 1716814744547
+      "time": "27/05/2024, 15:53",
+      "timeAdded": 1716814389119
     },
     {
-      "id": "q_kqSmKGf-IC",
-      "book_name": "SpongeBob SquarePants Survival Guide",
-      "ISBN": "9780743469876",
+      "id": "yElaAAAAMAAJ",
+      "book_name": "The Da Vinci Code",
+      "action": "Added copy",
+      "time": "27/05/2024, 15:53",
+      "timeAdded": 1716814399619
+    },
+    {
+      "id": "yElaAAAAMAAJ",
+      "book_name": "The Da Vinci Code",
+      "action": "Added copy",
+      "time": "27/05/2024, 15:53",
+      "timeAdded": 1716814408799
+    },
+    {
+      "id": "265b",
+      "book_name": "123",
       "action": "Created Book",
-      "time": "27/05/2024, 15:59",
-      "timeAdded": 1716814744597
+      "time": "27/05/2024, 15:54",
+      "timeAdded": 1716814448946
+    },
+    {
+      "id": "yElaAAAAMAAJ",
+      "book_name": "The Da Vinci Code",
+      "action": "Deleted Book",
+      "time": "27/05/2024, 15:54",
+      "timeAdded": 1716814467713
+    },
+    {
+      "id": "d838",
+      "book_name": "123",
+      "action": "Deleted Book",
+      "time": "27/05/2024, 15:54",
+      "timeAdded": 1716814487204
+    },
+    {
+      "id": "e677",
+      "book_name": "123",
+      "action": "Created Book",
+      "time": "27/05/2024, 15:55",
+      "timeAdded": 1716814512436
+    },
+    {
+      "id": "c776",
+      "book_name": "123",
+      "action": "Deleted Book",
+      "time": "27/05/2024, 15:55",
+      "timeAdded": 1716814518770
+    },
+    {
+      "id": "dvxkR0spGUMC",
+      "book_name": "Hitch",
+      "ISBN": "9781448211616",
+      "action": "Deleted Book",
+      "time": "27/05/2024, 15:56",
+      "timeAdded": 1716814604279
+    },
+    {
+      "id": "UiEAOcfu-IoC",
+      "book_name": "The Hitch Hiker/Texas",
+      "ISBN": "9781462035069",
+      "action": "Created Book",
+      "time": "27/05/2024, 15:56",
+      "timeAdded": 1716814618135
     },
     {
       "id": "_X_vBQAAQBAJ",
       "book_name": "Krabby Patty Caper (The SpongeBob Movie: Sponge Out of Water in 3D)",
       "ISBN": "9781612639482",
       "action": "Created Book",
-      "time": "27/05/2024, 15:59",
-      "timeAdded": 1716814761534
+      "time": "27/05/2024, 15:57",
+      "timeAdded": 1716814663538
+    },
+    {
+      "id": "LzuhDwAAQBAJ",
+      "book_name": "My Happy Book: SpongeBob's 10 Happiest Moments (SpongeBob SquarePants)",
+      "ISBN": "9781950837168",
+      "action": "Created Book",
+      "time": "27/05/2024, 15:57",
+      "timeAdded": 1716814663563
+    },
+    {
+      "id": "KV4DAwAAQBAJ",
+      "book_name": "UFO! (SpongeBob SquarePants)",
+      "ISBN": "9781612630052",
+      "action": "Created Book",
+      "time": "27/05/2024, 15:57",
+      "timeAdded": 1716814663585
+    },
+    {
+      "id": "61jZDwAAQBAJ",
+      "book_name": "The SpongeBob Movie: Sponge on the Run: The Junior Novelization",
+      "ISBN": "9781951804619",
+      "action": "Created Book",
+      "time": "27/05/2024, 15:57",
+      "timeAdded": 1716814663612
+    },
+    {
+      "id": "933vBQAAQBAJ",
+      "book_name": "SpongeBob Movie: Sponge Out of Water Junior Novel (The SpongeBob Movie: Sponge Out of Water in 3D)",
+      "ISBN": "9781612639420",
+      "action": "Created Book",
+      "time": "27/05/2024, 15:57",
+      "timeAdded": 1716814663636
+    },
+    {
+      "id": "j3_vBQAAQBAJ",
+      "book_name": "The Good, the Bad, and the Krabby (The SpongeBob Movie: Sponge Out of Water in 3D)",
+      "ISBN": "9781612639468",
+      "action": "Created Book",
+      "time": "27/05/2024, 15:57",
+      "timeAdded": 1716814663659
+    },
+    {
+      "id": "KzuhDwAAQBAJ",
+      "book_name": "SpongeBob Exposed!: The Insider's Guide to SpongeBob SquarePants (SpongeBob SquarePants)",
+      "ISBN": "9781950837038",
+      "action": "Created Book",
+      "time": "27/05/2024, 15:57",
+      "timeAdded": 1716814663679
+    },
+    {
+      "id": "n74oPCAdlNcC",
+      "book_name": "SpongeBob AirPants",
+      "ISBN": "9780689861635",
+      "action": "Created Book",
+      "time": "27/05/2024, 15:57",
+      "timeAdded": 1716814663701
+    },
+    {
+      "id": "Vv8YLHig6zMC",
+      "book_name": "SpongeBob RoundPants",
+      "ISBN": "9781416979685",
+      "action": "Created Book",
+      "time": "27/05/2024, 15:57",
+      "timeAdded": 1716814663729
+    },
+    {
+      "id": "q_kqSmKGf-IC",
+      "book_name": "SpongeBob SquarePants Survival Guide",
+      "ISBN": "9780743469876",
+      "action": "Created Book",
+      "time": "27/05/2024, 15:57",
+      "timeAdded": 1716814663763
     }
   ]
 }
