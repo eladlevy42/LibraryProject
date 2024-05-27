@@ -103,13 +103,13 @@ img {
 #copyBtns * {
   margin-inline: 5px;
 }
+
 /* spinner */
 @keyframes spinner {
   to {
     transform: rotate(360deg);
   }
 }
-
 .spinner:before {
   content: "";
   box-sizing: border-box;
