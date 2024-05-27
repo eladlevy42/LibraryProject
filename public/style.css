@@ -34,7 +34,11 @@ main {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   padding: 10px;
-  gap: 5px;
+  gap: 1em;
+}
+#bookDescription {
+  height: 200px;
+  overflow-y: scroll;
 }
 .book {
   cursor: pointer;
@@ -45,15 +49,26 @@ main {
   background-color: beige;
   padding: 5px;
   position: relative;
+  height: 200px;
+  overflow-y: hidden;
+  transition: transform 0.3s ease;
+}
+
+.book:hover {
+  transform: scale(1.15);
 }
 .book * {
   text-align: center;
 }
 .book-title {
   font-size: clamp(10px, 2vw, 14px);
+  overflow-y: hidden;
 }
 .book-author {
   font-size: clamp(8px, 2vw, 12px);
+}
+.book-image {
+  cursor: pointer;
 }
 img {
   max-height: 150px;
@@ -69,14 +84,14 @@ img {
 }
 .fa-x {
   position: relative;
-  left: 180px;
+  left: 300px;
   top: 30px;
   cursor: pointer;
 }
 
 .detailWrapper {
   z-index: 10000;
-  background-color: rgba(128, 128, 128, 0.5);
+  background-color: rgba(23, 23, 23, 0.6);
   position: fixed;
   width: 100%;
   height: 100%;
@@ -90,7 +105,7 @@ img {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   width: 800px;
-  overflow: scroll;
+  overflow-y: scroll;
   aspect-ratio: 1/1.5;
   background-color: beige;
   border: 1px solid gray;
@@ -102,7 +117,7 @@ img {
   left: 375px;
 }
 #detailBook {
-  width: 400px;
+  width: 650px;
   aspect-ratio: 1/1.5;
   background-color: beige;
   border: 1px solid gray;
@@ -112,6 +127,9 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.selected {
+  background-color: blue;
 }
 #detailBook * {
   text-align: center;
@@ -141,4 +159,7 @@ img {
   border: 1px solid #ccc;
   border-top-color: #07d;
   animation: spinner 0.6s linear infinite;
+}
+#actionTable {
+  display: none;
 }

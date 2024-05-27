@@ -126,6 +126,8 @@ async function removeCopy() {
     bookDetail.num_copies = copies;
     url = `http://localhost:8001/books/${bookDetail.id}`;
     await axios.patch(url, bookDetail);
+    const historyObject = buildHistoryObject(bookDetail, "Removed copy");
+    await axios.post(historyUrl, historyObject);
     console.log(response.data[0]);
     document.querySelector("#bookNumCopies").textContent = `copies: ${copies}`;
   }
@@ -135,27 +137,39 @@ async function addCopy() {
   let bookISBN = document.querySelector("#bookISBN").textContent;
   bookISBN = bookISBN.substring(6);
   let url = `http://localhost:8001/books/?ISBN=${bookISBN}`;
-  let response = await axios.get(url);
-  let bookDetail = response.data[0];
-  let copies = bookDetail.num_copies;
-  copies++;
-  bookDetail.num_copies = copies;
-  url = `http://localhost:8001/books/${bookDetail.id}`;
-  await axios.patch(url, bookDetail);
-  console.log(response.data[0]);
-  document.querySelector("#bookNumCopies").textContent = `copies: ${copies}`;
+  try {
+    let response = await axios.get(url);
+    let bookDetail = response.data[0];
+    let copies = bookDetail.num_copies;
+    copies++;
+    bookDetail.num_copies = copies;
+    url = `http://localhost:8001/books/${bookDetail.id}`;
+    await axios.patch(url, bookDetail);
+    const historyObject = buildHistoryObject(bookDetail, "Added copy");
+    await axios.post(historyUrl, historyObject);
+    console.log(response.data[0]);
+    document.querySelector("#bookNumCopies").textContent = `copies: ${copies}`;
+  } catch (error) {
+    alert(error);
+  }
 }
 
 async function deleteBook() {
   let bookISBN = document.querySelector("#bookISBN").textContent;
   bookISBN = bookISBN.substring(6);
   let url = `http://localhost:8001/books/?ISBN=${bookISBN}`;
-  let response = await axios.get(url);
-  let bookDetail = response.data[0];
-  url = `http://localhost:8001/books/${bookDetail.id}`;
-  await axios.delete(url);
-  hideDetailWrapper();
-  openPage();
+  try {
+    let response = await axios.get(url);
+    let bookDetail = response.data[0];
+    url = `http://localhost:8001/books/${bookDetail.id}`;
+    await axios.delete(url);
+    const historyObject = buildHistoryObject(bookDetail, "Deleted Book");
+    await axios.post(historyUrl, historyObject);
+    hideDetailWrapper();
+    openPage();
+  } catch (error) {
+    alert(error);
+  }
 }
 async function searchBook() {
   bookArr = [];

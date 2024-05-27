@@ -1,21 +1,6 @@
 {
   "books": [
     {
-      "id": "n3vng7gyGCYC",
-      "book_name": "Harry Potter",
-      "authors_name": [
-        "Unknown Author"
-      ],
-      "num_pages": 1011,
-      "short_description": "No Description",
-      "image": "http://books.google.com/books/content?id=n3vng7gyGCYC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-      "num_copies": 10,
-      "categories": [
-        "Uncategorized"
-      ],
-      "ISBN": "No ISBN"
-    },
-    {
       "id": "8P8nDwAAQBAJ",
       "book_name": "Literary Allusion in Harry Potter",
       "authors_name": [
@@ -24,56 +9,11 @@
       "num_pages": 197,
       "short_description": "Literary Allusion in Harry Potter builds on the world-wide enthusiasm for J. K. Rowling’s series in order to introduce its readers to some of the great works of literature on which Rowling draws. Harry Potter’s narrative techniques are rooted in the western literary tradition and its allusiveness provides insight into Rowling’s fictional world. Each chapter of Literary Allusion in Harry Potter consists of an in-depth discussion of the intersection between Harry Potter and a canonical literary work, such as the plays of Shakespeare, the poetry of Homer, Ovid, the Gawain-poet, Chaucer, Milton and Tennyson, and the novels of Austen, Hardy and Dickens. This approach aims to transform the reader’s understanding of Rowling’s literary achievement as well as to encourage the discovery of works with which they may be less familiar. The aim of this book is to delight Potter fans with a new perspective on their favourite books while harnessing that enthusiasm to increase their wider appreciation of literature.",
       "image": "http://books.google.com/books/content?id=8P8nDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-      "num_copies": 10,
+      "num_copies": 9,
       "categories": [
         "Literary Criticism"
       ],
       "ISBN": "9781351978736"
-    },
-    {
-      "id": "iO5pApw2JycC",
-      "book_name": "The Ivory Tower and Harry Potter",
-      "authors_name": [
-        "Lana A. Whited"
-      ],
-      "num_pages": 436,
-      "short_description": "Now available in paper, The Ivory Tower and Harry Potter is the first book-length analysis of J. K. Rowling's work from a broad range of perspectives within literature, folklore, psychology, sociology, and popular culture. A significant portion of the book explores the Harry Potter series' literary ancestors, including magic and fantasy works by Ursula K. LeGuin, Monica Furlong, Jill Murphy, and others, as well as previous works about the British boarding school experience. Other chapters explore the moral and ethical dimensions of Harry's world, including objections to the series raised within some religious circles. In her new epilogue, Lana A. Whited brings this volume up to date by covering Rowling's latest book, Harry Potter and the Order of the Phoenix.",
-      "image": "http://books.google.com/books/content?id=iO5pApw2JycC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-      "num_copies": 5,
-      "categories": [
-        "Juvenile Fiction"
-      ],
-      "ISBN": "0826215491"
-    },
-    {
-      "id": "sKW7u4786yUC",
-      "book_name": "Teaching with Harry Potter",
-      "authors_name": [
-        "Valerie Estelle Frankel"
-      ],
-      "num_pages": 287,
-      "short_description": "The Harry Potter phenomenon created a surge in reading with a lasting effect on all areas of culture, especially education. Today, teachers across the world are harnessing the power of the series to teach history, gender studies, chemistry, religion, philosophy, sociology, architecture, Latin, medieval studies, astronomy, SAT skills, and much more. These essays discuss the diverse educational possibilities of J.K. Rowling's books. Teachers of younger students use Harry and Hermione to encourage kids with disabilities or show girls the power of being brainy scientists. Students are reading fanfiction, splicing video clips, or exploring Rowling's new website, Pottermore. Harry Potter continues to open new doors to learning.",
-      "image": "http://books.google.com/books/content?id=sKW7u4786yUC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-      "num_copies": 6,
-      "categories": [
-        "Literary Criticism"
-      ],
-      "ISBN": "9781476601229"
-    },
-    {
-      "id": "6v-ADAAAQBAJ",
-      "book_name": "Re-Reading Harry Potter",
-      "authors_name": [
-        "S. Gupta"
-      ],
-      "num_pages": 185,
-      "short_description": "This is the first extended text-based analysis of the social and political implications of the Harry Potter phenomenon. Arguments are primarily based on close readings of the first four Harry Potter books and the first two films - in other words, a 'text-to-world' method is followed. This study does not assume that the phenomenon concerns children alone, or should be lightly dismissed as a matter of pure entertainment. The amount of money, media coverage, and ideological unease involved indicates otherwise. The first part provides a survey of responses (both of general readers and critics) to the Harry Potter books. Some of the methodological decisions underlying this study itself are also explained here. The second part examines the presentation of certain themes, including gender, race and desire, in the Harry Potter books, with a view to understanding how these may impinge on social and political concerns of our world.",
-      "image": "http://books.google.com/books/content?id=6v-ADAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-      "num_copies": 6,
-      "categories": [
-        "Social Science"
-      ],
-      "ISBN": "9781403918390"
     },
     {
       "id": "Vq3IEAAAQBAJ",
@@ -114,27 +54,11 @@
       "num_pages": 337,
       "short_description": "The Harry Potter series forms a single epic story that has been published in nearly 70 languages, and has been examined in a large number of disciplines. This collection of essays contributes to the scholarly discourse that forms Potter Studies. These essays take on the consideration of Rowling's work as being worthy of study as a phenomenon and influence, as well as a work of literary value. They add genuine statistical information about the reasons for the books' popularity, consider their effects on child readers, and examine some deep-rooted reasons for their having been manipulated in American publishing, in film adaptations, in musical complements, and in their thingification in popular culture around the world. Some of these essays take on the critics of the books' religion and considerations of psychological, as well as philosophical good and evil, and well as some stylistic anomalies. The fact that scholars from China, Germany, Poland, Romania, and Israel, in addition to English-speaking nations, have felt compelled to examine these books in detail testifies in part to Harry Potter's world-wide influence.",
       "image": "http://books.google.com/books/content?id=ThAaBwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-      "num_copies": 7,
+      "num_copies": 8,
       "categories": [
         "Literary Criticism"
       ],
       "ISBN": "9781443816281"
-    },
-    {
-      "id": "DKcWE3WXoj8C",
-      "book_name": "Harry Potter and International Relations",
-      "authors_name": [
-        "Daniel H. Nexon",
-        "Iver B. Neumann"
-      ],
-      "num_pages": 262,
-      "short_description": "Drawing on a range of historical and sociological sources, this work shows how aspects of Harry's world contain aspects of our own. It also includes chapters on the political economy of the franchise, and on the problems of studying popular culture.",
-      "image": "http://books.google.com/books/content?id=DKcWE3WXoj8C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-      "num_copies": 9,
-      "categories": [
-        "Juvenile Fiction"
-      ],
-      "ISBN": "0742539598"
     },
     {
       "id": "HrbjU0pvYwQC",
@@ -145,7 +69,7 @@
       "num_pages": 326,
       "short_description": "Welcome to Harry Potter Places Book One--London and London Side-Along Apparations, the first of five guidebooks designed to help Potterites visit Potterverse places in the UK, including real-life places mentioned in JKR's novels and movie film sites. On the website you'll find Book One's Table of Contents and learn about all the Harry Potter Places travel guidebooks. www.HarryPotterPlaces.com",
       "image": "http://books.google.com/books/content?id=HrbjU0pvYwQC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-      "num_copies": 9,
+      "num_copies": 8,
       "categories": [
         "Performing Arts"
       ],
@@ -165,21 +89,6 @@
         "Education"
       ],
       "ISBN": "9780615195247"
-    },
-    {
-      "id": "OGjYVAIXxyQC",
-      "book_name": "The Complete Idiot's Guide to the World of Harry Potter",
-      "authors_name": [
-        "Tere Stouffer"
-      ],
-      "num_pages": 276,
-      "short_description": "For fans of all ages. Here is an entertaining and easily referenced presentation of insider information to the world that J. K. Rowling has created in her spellbinding series of novels. The Complete Idiot’s Guide® to the World of Harry Potter explores all aspects of the wizarding world and explains them in terms of their relationship to historical, literary, religious, scientific, or mythological roots. —In-depth information on the facts behind all seven books in the Harry Potter series. —Covers all the relevant influences for the Harry Potter series, from religion and mythology to science and literature. —Can be read from cover to cover or used as a quick-reference guide.",
-      "image": "http://books.google.com/books/content?id=OGjYVAIXxyQC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-      "num_copies": 7,
-      "categories": [
-        "Literary Criticism"
-      ],
-      "ISBN": "9781440636615"
     },
     {
       "id": "zB9X2vKRZ34C",
@@ -1199,6 +1108,36 @@
         "Art"
       ],
       "ISBN": "No ISBN"
+    },
+    {
+      "id": "bt0PEsYjj5IC",
+      "book_name": "The Hitchhiker's Guide to the Galaxy Radio Scripts Volume 2",
+      "authors_name": [
+        "Douglas Adams"
+      ],
+      "num_pages": 368,
+      "short_description": "Twenty-five years after the original radio series of The Hitchhiker’s Guide to the Galaxy exploded into the public consciousness, the further exploits of its bewildered hero Arthur Dent were finally adapted for radio by Dirk Maggs, in part using drafts written by Douglas Adams before his death. The resulting fourteen completely new episodes were produced by Above the Title Productions and broadcast on BBC Radio 4, with nearly all of the original cast reunited for recording. These scripts brilliantly bring to life the last three books in Adams' perennially popular Hitchhiker series: Life, the Universe and Everything; So Long, and Thanks for All the Fish; and Mostly Harmless. Dirk Maggs supplies notes which highlight original Adams material and explain how the cast, special effects and music were directed. The scripts are introduced by Simon Jones, who played Arthur Dent in both the original and the recent radio series, as well as in The Hitchhiker’s Guide to the Galaxy television series. Douglas Adams first conceived The Hitchhiker's Guide to the Galaxy for radio and it is an honour to his memory that all five Hitchhiker novels have now been adapted for this medium. These scripts exemplify the freshness of perspective, humour and perspicacity that epitomize the work of Douglas Adams. They will be loved by fans and those new to Hitchhiker’s alike.",
+      "image": "http://books.google.com/books/content?id=bt0PEsYjj5IC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "num_copies": 5,
+      "categories": [
+        "Performing Arts"
+      ],
+      "ISBN": "9781447227588"
+    },
+    {
+      "id": "dvxkR0spGUMC",
+      "book_name": "Hitch",
+      "authors_name": [
+        "John Russell Taylor"
+      ],
+      "num_pages": 288,
+      "short_description": "One of cinema's greatest directors, a virtuoso visual artist, and a genius of the suspense genre, Alfred Hitchcock (1899–1980) is universally known for such masterpieces as Strangers on a Train, Rear Window, Vertigo, North by Northwest, Psycho, and The Birds. John Russell Taylor, a distinguished film critic and friend of Hitchcock's, enjoyed his full cooperation. Based on numerous interviews, with photos from the private family albums, and an in-depth study of the making of his last film, this biography of the director is as intriguing, revealing, perverse, and entertaining as any Hitchcock classic.",
+      "image": "http://books.google.com/books/content?id=dvxkR0spGUMC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "num_copies": 7,
+      "categories": [
+        "Biography & Autobiography"
+      ],
+      "ISBN": "9781448211616"
     }
   ],
   "history": [
@@ -1209,6 +1148,62 @@
       "action": "Added copy",
       "time": "27/05/2024, 15:34",
       "timeAdded": 1716813264619
+    },
+    {
+      "id": "iO5pApw2JycC",
+      "book_name": "The Ivory Tower and Harry Potter",
+      "ISBN": "0826215491",
+      "action": "Deleted Book",
+      "time": "27/05/2024, 15:45",
+      "timeAdded": 1716813916682
+    },
+    {
+      "id": "ThAaBwAAQBAJ",
+      "book_name": "Harry Potter’s World Wide Influence",
+      "ISBN": "9781443816281",
+      "action": "Added copy",
+      "time": "27/05/2024, 15:46",
+      "timeAdded": 1716813981304
+    },
+    {
+      "id": "8P8nDwAAQBAJ",
+      "book_name": "Literary Allusion in Harry Potter",
+      "ISBN": "9781351978736",
+      "action": "Removed copy",
+      "time": "27/05/2024, 15:46",
+      "timeAdded": 1716813988006
+    },
+    {
+      "id": "OGjYVAIXxyQC",
+      "book_name": "The Complete Idiot's Guide to the World of Harry Potter",
+      "ISBN": "9781440636615",
+      "action": "Deleted Book",
+      "time": "27/05/2024, 15:46",
+      "timeAdded": 1716814003960
+    },
+    {
+      "id": "sKW7u4786yUC",
+      "book_name": "Teaching with Harry Potter",
+      "ISBN": "9781476601229",
+      "action": "Deleted Book",
+      "time": "27/05/2024, 15:48",
+      "timeAdded": 1716814086489
+    },
+    {
+      "id": "bt0PEsYjj5IC",
+      "book_name": "The Hitchhiker's Guide to the Galaxy Radio Scripts Volume 2",
+      "ISBN": "9781447227588",
+      "action": "Created Book",
+      "time": "27/05/2024, 15:48",
+      "timeAdded": 1716814118187
+    },
+    {
+      "id": "dvxkR0spGUMC",
+      "book_name": "Hitch",
+      "ISBN": "9781448211616",
+      "action": "Created Book",
+      "time": "27/05/2024, 15:50",
+      "timeAdded": 1716814201530
     }
   ]
 }
