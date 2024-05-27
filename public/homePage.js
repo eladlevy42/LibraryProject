@@ -215,29 +215,27 @@ function printSearched() {
       let gridItem = document.createElement("div");
       gridItem.classList.add("book");
       document.querySelector("#booksGrid").appendChild(gridItem);
+      if (searchPage <= 0) {
+        document.querySelector("#back").style.display = "none";
+      } else {
+        document.querySelector("#back").style.display = "block";
+        document.querySelector("#back").onclick = () => {
+          searchPage--;
+          printSearched();
+        };
+      }
+      if (searchPage < Math.floor(bookArr.length / 9)) {
+        document.querySelector("#next").style.display = "block";
+        document.querySelector("#next").onclick = () => {
+          searchPage++;
+          printSearched();
+        };
+      } else {
+        document.querySelector("#next").style.display = "none";
+      }
     }
   }
-
-  if (searchPage <= 0) {
-    document.querySelector("#back").style.display = "none";
-  } else {
-    document.querySelector("#back").style.display = "block";
-    document.querySelector("#back").onclick = () => {
-      searchPage--;
-      printSearched();
-    };
-  }
-  if (searchPage < Math.floor(bookArr.length / 9)) {
-    document.querySelector("#next").style.display = "block";
-    document.querySelector("#next").onclick = () => {
-      searchPage++;
-      printSearched();
-    };
-  } else {
-    document.querySelector("#next").style.display = "none";
-  }
 }
-
 /////// event listeners ///////////
 document.querySelector("#removeCopy").addEventListener("click", removeCopy);
 document.querySelector("#addCopy").addEventListener("click", addCopy);
