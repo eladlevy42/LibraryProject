@@ -180,9 +180,12 @@ async function searchBook() {
       bookArr.push(book);
     }
   });
-  console.log(bookArr);
-  searchPage = 0;
-  printSearched();
+  if (bookArr.length > 0) {
+    searchPage = 0;
+    printSearched();
+  } else {
+    alert("No books found");
+  }
 }
 
 function printSearched() {
