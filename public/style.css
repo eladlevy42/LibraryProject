@@ -3,6 +3,7 @@
   --clr-background-primary: hsl(52, 94%, 94%);
   --clr-accent-primary: hsl(200, 94%, 21%);
   --clr-danger-primary: hsl(28, 100%, 51%);
+  --clr-form-primary: hsl(200, 43%, 62%);
   --padding-xs: 0.25em;
   --padding-small: 0.5em;
   --padding-medium-small: 0.75em;
@@ -391,7 +392,7 @@ img {
   width: 600px;
   padding-inline: var(--padding-xl);
   padding-block: var(--padding-xxl);
-  background-color: hsl(200, 43%, 62%);
+  background-color: var(--clr-form-primary);
   color: rgb(36, 36, 36);
 }
 
