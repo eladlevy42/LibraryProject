@@ -37,7 +37,6 @@ async function addToFav() {
     let bookDetail = response.data[0];
     try {
       axios.post(favURL, bookDetail);
-
       btn.classList.remove("fa-regular");
       btn.classList.add("fa-solid");
     } catch (error) {
