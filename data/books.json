@@ -1200,21 +1200,6 @@
       "ISBN": "9781950837168"
     },
     {
-      "id": "UiEAOcfu-IoC",
-      "book_name": "The Hitch Hiker/Texas",
-      "authors_name": [
-        "Hitch Hiker"
-      ],
-      "num_pages": 86,
-      "short_description": "THIS BOOK IS DEDICATED to people and children without a song, a song thats suppose to keep them alive, a song called, everything i need to survive to those who got lost on the way to their future, because of never having the support of those that kept it away from them, and i hope that i can make a difference in some peoples lives by give something back financialy, to make some of you happier with a better FUTURE. if you do read one of my books and i cant get to you, please stand up and go into your future to help yourself and take some of your friends with as a team, i believe that you will make it if you choose to make it. build your own song. Hitch Hiker",
-      "image": "http://books.google.com/books/content?id=UiEAOcfu-IoC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-      "num_copies": 9,
-      "categories": [
-        "Fiction"
-      ],
-      "ISBN": "9781462035069"
-    },
-    {
       "id": "_X_vBQAAQBAJ",
       "book_name": "Krabby Patty Caper (The SpongeBob Movie: Sponge Out of Water in 3D)",
       "authors_name": [
@@ -1283,7 +1268,7 @@
       "num_pages": 136,
       "short_description": "Nickelodeon’s SpongeBob SquarePants comes to the big screen in an all-new, super-silly 3-D movie releasing in February 2015. This junior novel retells the whole hilarious story and features eight pages of full-color scenes from the movie! It’s perfect for boys and girls ages 8 to 12.",
       "image": "http://books.google.com/books/content?id=933vBQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-      "num_copies": 6,
+      "num_copies": 7,
       "categories": [
         "Juvenile Fiction"
       ],
@@ -1592,12 +1577,20 @@
       "timeAdded": 1716814663763
     },
     {
-      "id": "DKcWE3WXoj8C",
-      "book_name": "Harry Potter and International Relations",
-      "ISBN": "0742539598",
+      "id": "UiEAOcfu-IoC",
+      "book_name": "The Hitch Hiker/Texas",
+      "ISBN": "9781462035069",
       "action": "Deleted Book",
-      "time": "27/05/2024, 18:31",
-      "timeAdded": 1716823878946
+      "time": "27/05/2024, 16:29",
+      "timeAdded": 1716816573548
+    },
+    {
+      "id": "933vBQAAQBAJ",
+      "book_name": "SpongeBob Movie: Sponge Out of Water Junior Novel (The SpongeBob Movie: Sponge Out of Water in 3D)",
+      "ISBN": "9781612639420",
+      "action": "Added copy",
+      "time": "27/05/2024, 21:45",
+      "timeAdded": 1716835537236
     }
   ]
 }

@@ -1,14 +1,22 @@
+// Initialize the book array and the home page books
+let searchPageIndex = 0;
+let searchResultsPages = [];
+let url = `${jsonServerUrl}/?_page=${currentPage}&_per_page=9`;
+let sorted = false;
 initBookArr();
 initHomeBooks();
-let totalBookArr = [];
-let bookArr = [];
-let searchPage = 0;
+
+async function sortAZ() {
+  sorted = true;
+
+  await openPage();
+}
 async function initHomeBooks() {
   await openPage();
 }
 async function showMore(book) {
   const bookId = book.id;
-  const url = `http://localhost:8001/books/?id=${bookId}`;
+  const url = `${jsonServerUrl}/?id=${bookId}`;
   let bookDetail = await axios.get(url).then((response) => {
     return response.data[0];
   });
@@ -32,13 +40,18 @@ async function showMore(book) {
   document.querySelector("#bookImage").src = bookDetail.image;
 }
 
+// Function to hide the detail wrapper
 function hideDetailWrapper() {
   document.querySelector(".detailWrapper").style.display = "none";
 }
-async function openPage() {
-  console.log(currentPage);
 
-  const url = `http://localhost:8001/books/?_page=${currentPage}&_per_page=9`;
+// Function to open a specific page of books
+async function openPage() {
+  if (sorted) {
+    url = `${jsonServerUrl}/?_page=${currentPage}&_per_page=9&_sort=book_name`;
+  } else {
+    url = `${jsonServerUrl}/?_page=${currentPage}&_per_page=9`;
+  }
   let booksArr = [];
   const bookGridElement = document.querySelector("#booksGrid");
   booksArr = await axios.get(url).then((response) => {
@@ -77,22 +90,29 @@ async function openPage() {
       showMore(gridItem);
     });
   });
+  if (booksArr.length < 9) {
+    //fill the empty grid items with empty book divs
+    for (let i = 0; i < 9 - booksArr.length; i++) {
+      let gridItem = document.createElement("div");
+      gridItem.classList.add("book");
+      bookGridElement.appendChild(gridItem);
+    }
+  }
   if (currentPage == 1) {
     document.querySelector("#back").style.visibility = "hidden";
   } else {
     document.querySelector("#back").style.visibility = "visible";
   }
-  if (currentPage == Math.floor(allBooks.length / 9)) {
+  if (currentPage == totalPages) {
     document.querySelector("#next").style.visibility = "hidden";
   } else {
     document.querySelector("#next").style.visibility = "visible";
   }
 }
+
+// Function to switch pages based on the direction (next or back)
 async function switchPage(direction) {
-  if (
-    direction == "next" &&
-    currentPage != Math.floor(allBooks.length / 9) + 1
-  ) {
+  if (direction == "next" && currentPage != totalPages) {
     currentPage++;
   } else if (currentPage != 1 && direction == "back") {
     currentPage--;
@@ -101,34 +121,37 @@ async function switchPage(direction) {
   await openPage();
 }
 
+// Function to show the loading spinner
 function showSpinner() {
   document.querySelector(".spinner").style.display = "block";
 }
 
+// Function to load an image with a fallback to a placeholder
 function loadImage(url) {
-  return new Promise((resolve, reject) => {
+  return new Promise((resolve) => {
     const img = new Image();
     img.src = url;
     img.onload = () => resolve(url);
-    img.onerror = () => resolve("placeholder.jpg"); // Replace with a placeholder image if the original fails
+    img.onerror = () => resolve(`public/placeholder.jpg`); // Replace with a placeholder image if the original fails
   });
 }
 
+// Function to remove a copy of a book
 async function removeCopy() {
   let bookISBN = document.querySelector("#bookISBN").textContent;
   bookISBN = bookISBN.substring(6);
-  let url = `http://localhost:8001/books/?ISBN=${bookISBN}`;
+  let url = `${jsonServerUrl}/?ISBN=${bookISBN}`;
   let response = await axios.get(url);
   let bookDetail = response.data[0];
   let copies = bookDetail.num_copies;
   if (copies > 0) {
     copies--;
     bookDetail.num_copies = copies;
-    url = `http://localhost:8001/books/${bookDetail.id}`;
+    url = `${jsonServerUrl}/${bookDetail.id}`;
     await axios.patch(url, bookDetail);
     const historyObject = buildHistoryObject(bookDetail, "Removed copy");
     await axios.post(historyUrl, historyObject);
-    console.log(response.data[0]);
+
     document.querySelector("#bookNumCopies").textContent = `copies: ${copies}`;
   }
 }
@@ -136,18 +159,18 @@ async function removeCopy() {
 async function addCopy() {
   let bookISBN = document.querySelector("#bookISBN").textContent;
   bookISBN = bookISBN.substring(6);
-  let url = `http://localhost:8001/books/?ISBN=${bookISBN}`;
+  let url = `${jsonServerUrl}/?ISBN=${bookISBN}`;
   try {
     let response = await axios.get(url);
     let bookDetail = response.data[0];
     let copies = bookDetail.num_copies;
     copies++;
     bookDetail.num_copies = copies;
-    url = `http://localhost:8001/books/${bookDetail.id}`;
+    url = `${jsonServerUrl}/${bookDetail.id}`;
     await axios.patch(url, bookDetail);
     const historyObject = buildHistoryObject(bookDetail, "Added copy");
     await axios.post(historyUrl, historyObject);
-    console.log(response.data[0]);
+
     document.querySelector("#bookNumCopies").textContent = `copies: ${copies}`;
   } catch (error) {
     alert(error);
@@ -157,11 +180,11 @@ async function addCopy() {
 async function deleteBook() {
   let bookISBN = document.querySelector("#bookISBN").textContent;
   bookISBN = bookISBN.substring(6);
-  let url = `http://localhost:8001/books/?ISBN=${bookISBN}`;
+  let url = `${jsonServerUrl}/?ISBN=${bookISBN}`;
   try {
     let response = await axios.get(url);
     let bookDetail = response.data[0];
-    url = `http://localhost:8001/books/${bookDetail.id}`;
+    url = `${jsonServerUrl}/${bookDetail.id}`;
     await axios.delete(url);
     const historyObject = buildHistoryObject(bookDetail, "Deleted Book");
     await axios.post(historyUrl, historyObject);
@@ -171,34 +194,50 @@ async function deleteBook() {
     alert(error);
   }
 }
+
+// Function to search for books by name
 async function searchBook() {
-  bookArr = [];
-  let totalBookArr = allBooks;
-  let bookName = document.querySelector("#searchInput").value.toUpperCase();
-  totalBookArr.forEach((book) => {
-    if (book.book_name.toUpperCase().includes(bookName)) {
-      bookArr.push(book);
+  console.log(currentPage);
+  currentBooks = [];
+  const bookName = document.querySelector("#searchInput").value.toUpperCase();
+  while (currentBooks.length < 9) {
+    let newUrl = `${jsonServerUrl}/?_page=${currentPage}&_per_page=9`;
+    let response = await axios.get(newUrl);
+    let newBookArr = response.data.data;
+    for (let book of newBookArr) {
+      if (
+        book.book_name.toUpperCase().includes(bookName) &&
+        currentBooks.length < 9 &&
+        !currentBooks.some((b) => b.id === book.id)
+      ) {
+        currentBooks.push(book);
+      }
     }
-  });
-  if (bookArr.length > 0) {
-    searchPage = 0;
+    currentPage++;
+    if (currentPage > totalPages + 1) {
+      document.querySelector("#next").style.visibility = "hidden";
+      break;
+    }
+  }
+  if (currentBooks[0] != undefined) {
+    searchResultsPages.push(currentBooks);
     printSearched();
-    document.querySelector("#searchInput").value = "";
   } else {
+    document.querySelector("#next").style.visibility = "visible";
     alert("No books found");
   }
 }
 
-function printSearched() {
-  let startIndex = searchPage * 9;
-  let endIndex = (searchPage + 1) * 9;
-  document.querySelector("#booksGrid").innerHTML = "";
-  for (let i = startIndex; i < endIndex; i++) {
-    let book = bookArr[i];
-    if (bookArr[i] != undefined) {
-      let gridItem = document.createElement("div");
-      gridItem.id = book.id;
-      gridItem.classList.add("book");
+// Function to print the searched books
+async function printSearched() {
+  let currentPageArr = searchResultsPages[searchPageIndex];
+  if (currentPageArr != undefined) {
+    document.querySelector("#booksGrid").innerHTML = "";
+    currentPageArr.forEach((book) => {
+      let bookElem = document.createElement("div");
+      bookElem.classList.add("book");
+      bookElem.id = book.id;
+
       let image = document.createElement("img");
       image.src = book.image;
       image.alt = book.book_name;
@@ -208,45 +247,68 @@ function printSearched() {
       let author = document.createElement("span");
       author.classList.add("book-author");
       author.textContent = book.authors_name;
-      gridItem.appendChild(image);
-      gridItem.appendChild(title);
-      gridItem.appendChild(author);
-      document.querySelector("#booksGrid").appendChild(gridItem);
-      gridItem.addEventListener("click", () => {
-        showMore(gridItem);
+      bookElem.appendChild(image);
+      bookElem.appendChild(title);
+      bookElem.appendChild(author);
+      bookElem.addEventListener("click", () => {
+        showMore(bookElem);
       });
-    } else {
-      let gridItem = document.createElement("div");
-      gridItem.classList.add("book");
-      document.querySelector("#booksGrid").appendChild(gridItem);
+      document.querySelector("#booksGrid").appendChild(bookElem);
+    });
+    if (currentPageArr.length < 9) {
+      //fill the empty grid items with empty book divs
+      for (let i = 0; i < 9 - currentPageArr.length; i++) {
+        let bookElem = document.createElement("div");
+        bookElem.classList.add("book");
+        document.querySelector("#booksGrid").appendChild(bookElem);
+      }
     }
-    if (searchPage <= 0) {
+
+    if (searchPageIndex <= 0) {
       document.querySelector("#back").style.visibility = "hidden";
+      searchPageIndex = 0;
     } else {
       document.querySelector("#back").style.visibility = "visible";
       document.querySelector("#back").onclick = () => {
-        searchPage--;
-        printSearched();
+        if (searchPageIndex > 0) {
+          searchPageIndex--;
+          currentPage--;
+          printSearched();
+        }
       };
     }
-    if (searchPage < Math.floor(bookArr.length / 9)) {
+    if (currentPage > totalPages + 1) {
+      document.querySelector("#next").style.visibility = "hidden";
+    } else {
       document.querySelector("#next").style.visibility = "visible";
       document.querySelector("#next").onclick = () => {
-        searchPage++;
-        printSearched();
+        searchPageIndex++;
+        if (searchPageIndex > searchResultsPages.length - 1) {
+          searchBook();
+        } else {
+          currentPage++;
+          printSearched();
+        }
       };
-    } else {
-      document.querySelector("#next").style.visibility = "hidden";
     }
+  } else {
+    openPage();
   }
 }
-
-/////// event listeners ///////////
+/////// Event listeners ///////////
 document.querySelector("#removeCopy").addEventListener("click", removeCopy);
 document.querySelector("#addCopy").addEventListener("click", addCopy);
 document.querySelector("#deleteBook").addEventListener("click", deleteBook);
+document.querySelector("#sort").addEventListener("click", sortAZ);
 document.querySelector("#searchButton").addEventListener("click", (event) => {
-  totalBookArr = [];
   event.preventDefault();
-  searchBook();
+  if (document.querySelector("#searchInput").value != "") {
+    //resets the variables because its a new search
+    searchResultsPages = [];
+    searchPageIndex = 0;
+    currentPage = 1;
+    searchBook();
+  } else {
+    alert("Please enter a book name");
+  }
 });
