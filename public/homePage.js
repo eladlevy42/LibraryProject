@@ -10,9 +10,12 @@ async function sortAZ() {
   sorted = !sorted;
   if (sorted) {
     document.querySelector("#sort").innerText = "reset sort";
+    url = `${jsonServerUrl}/?_page=${currentPage}&_per_page=9&_sort=book_name`;
   } else {
     document.querySelector("#sort").innerText = "sort A-Z";
+    url = `${jsonServerUrl}/?_page=${currentPage}&_per_page=9`;
   }
+
   await openPage();
 }
 async function initHomeBooks() {
@@ -50,11 +53,6 @@ function hideDetailWrapper() {
 
 // Function to open a specific page of books
 async function openPage() {
-  if (sorted) {
-    url = `${jsonServerUrl}/?_page=${currentPage}&_per_page=9&_sort=book_name`;
-  } else {
-    url = `${jsonServerUrl}/?_page=${currentPage}&_per_page=9`;
-  }
   let booksArr = [];
   const bookGridElement = document.querySelector("#booksGrid");
   booksArr = await axios.get(url).then((response) => {
@@ -71,7 +69,8 @@ async function openPage() {
   const images = await Promise.all(imagePromises);
   booksArr.forEach((book, index) => {
     spinner.style.display = "none";
-
+    document.querySelector("#back").style.visibility = "visible";
+    document.querySelector("#next").style.visibility = "visible";
     let gridItem = document.createElement("div");
     gridItem.id = book.id;
     gridItem.classList.add("book");
