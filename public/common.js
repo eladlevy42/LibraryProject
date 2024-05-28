@@ -1,6 +1,7 @@
 const jsonServerUrl = "http://localhost:8001/books";
 const googleUrl = `https://www.googleapis.com/books/v1/volumes?q=a&key=${apiKey}`;
 const historyUrl = `http://localhost:8001/history`;
+const favURL = `http://localhost:8001/favorites`;
 let allBooks = [];
 let getBooks;
 let totalPages;

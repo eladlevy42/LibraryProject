@@ -5,7 +5,68 @@ let url = `${jsonServerUrl}/?_page=${currentPage}&_per_page=9`;
 let sorted = false;
 initBookArr();
 initHomeBooks();
+async function checkInFav() {
+  let btn = document.querySelector("#fav");
+  let bookName = document.querySelector("#bookTitle").textContent;
+  let url = `${jsonServerUrl}/?book_name=${bookName}`;
 
+  let response = await axios.get(url);
+  let bookDetail = response.data[0];
+  url = `${favURL}/?id=${bookDetail.id}`;
+  try {
+    response = await axios.get(url);
+    if (response.data.length > 0) {
+      btn.classList.remove("fa-regular");
+      btn.classList.add("fa-solid");
+      return true;
+    } else {
+      btn.classList.remove("fa-solid");
+      btn.classList.add("fa-regular");
+      return false;
+    }
+  } catch (error) {
+    alert("1error");
+  }
+}
+async function addToFav() {
+  let btn = document.querySelector("#fav");
+  let bookName = document.querySelector("#bookTitle").textContent;
+  let url = `${jsonServerUrl}/?book_name=${bookName}`;
+  try {
+    let response = await axios.get(url);
+    let bookDetail = response.data[0];
+    try {
+      axios.post(favURL, bookDetail);
+
+      btn.classList.remove("fa-regular");
+      btn.classList.add("fa-solid");
+    } catch (error) {
+      console.log(error);
+    }
+  } catch (error) {
+    alert("2error");
+  }
+}
+async function removeFromFav() {
+  let btn = document.querySelector("#fav");
+  let bookName = document.querySelector("#bookTitle").textContent;
+  let url = `${jsonServerUrl}/?book_name=${bookName}`;
+  try {
+    let response = await axios.get(url);
+    let bookDetail = response.data[0];
+    url = `${favURL}/${bookDetail.id}`;
+    try {
+      await axios.delete(url);
+
+      btn.classList.add("fa-regular");
+      btn.classList.remove("fa-solid");
+    } catch (error) {
+      console.log("3error");
+    }
+  } catch (error) {
+    alert("4error");
+  }
+}
 async function sortAZ() {
   sorted = !sorted;
   if (sorted) {
@@ -17,6 +78,13 @@ async function sortAZ() {
   }
 
   await openPage();
+}
+function updateUrl() {
+  if (sorted) {
+    url = `${jsonServerUrl}/?_page=${currentPage}&_per_page=9&_sort=book_name`;
+  } else {
+    url = `${jsonServerUrl}/?_page=${currentPage}&_per_page=9`;
+  }
 }
 async function initHomeBooks() {
   await openPage();
@@ -45,6 +113,14 @@ async function showMore(book) {
     "#bookGenre"
   ).textContent = `categories: ${bookDetail.categories}`;
   document.querySelector("#bookImage").src = bookDetail.image;
+  let btn = document.querySelector("#fav");
+  if (await checkInFav()) {
+    btn.classList.remove("fa-regular");
+    btn.classList.add("fa-solid");
+  } else {
+    btn.classList.add("fa-regular");
+    btn.classList.remove("fa-solid");
+  }
 }
 // Function to hide the detail wrapper
 function hideDetailWrapper() {
@@ -53,6 +129,7 @@ function hideDetailWrapper() {
 
 // Function to open a specific page of books
 async function openPage() {
+  updateUrl();
   let booksArr = [];
   const bookGridElement = document.querySelector("#booksGrid");
   booksArr = await axios.get(url).then((response) => {
@@ -300,6 +377,13 @@ document.querySelector("#removeCopy").addEventListener("click", removeCopy);
 document.querySelector("#addCopy").addEventListener("click", addCopy);
 document.querySelector("#deleteBook").addEventListener("click", deleteBook);
 document.querySelector("#sort").addEventListener("click", sortAZ);
+document.querySelector("#fav").addEventListener("click", async () => {
+  if (await checkInFav()) {
+    removeFromFav();
+  } else {
+    addToFav();
+  }
+});
 document.querySelector("#searchButton").addEventListener("click", (event) => {
   event.preventDefault();
   if (document.querySelector("#searchInput").value != "") {
