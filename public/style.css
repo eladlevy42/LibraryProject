@@ -3,7 +3,7 @@
   --clr-background-primary: hsl(52, 94%, 94%);
   --clr-accent-primary: hsl(200, 94%, 21%);
   --clr-danger-primary: hsl(28, 100%, 51%);
-  --clr-form-primary: hsl(200, 81%, 63%);
+  --clr-form-primary: hsl(200, 94%, 21%);
   --padding-xs: 0.25em;
   --padding-small: 0.5em;
   --padding-medium-small: 0.75em;
@@ -69,7 +69,12 @@ ul {
   color: black;
   transform: scale(1.2) rotate(5deg);
 }
-
+.mainPageHeader{
+  color: var(--clr-accent-primary);
+  margin-bottom: var(--margin-medium);
+  font-size: 40px;
+  font-weight:800;
+}
 .required {
   font-weight: bold;
 }
@@ -141,6 +146,7 @@ main {
 #bookDescription {
   max-height: 200px;
   overflow-y: auto;
+  outline: 1px solid white;
 }
 
 .book {
@@ -222,9 +228,9 @@ img {
 
 .fa-x {
   color: var(--clr-danger-primary);
-  position: relative;
-  left: 330px;
-  top: 30px;
+  position: absolute;
+  right: 10px; 
+   top: 0px;
   cursor: pointer;
   transition: transform 0.2s;
 }
@@ -261,6 +267,9 @@ img {
   justify-content: center;
   align-items: center;
 }
+.newBooksWrapper{
+  display: none;
+}
 .newBooksDetails {
   display: grid;
   align-items: center;
@@ -278,6 +287,7 @@ img {
 .closeBookWrapper {
   position: relative;
   left: 530px;
+  top: 30px;
   font-size: 20px;
 }
 
@@ -332,17 +342,16 @@ img {
 
 #detailBook {
   width: 700px;
+  position: relative;
   aspect-ratio: 1/1.5;
   background-color: var(--clr-accent-primary);
   color: white;
-  gap: 0.25em;
   border: 1px solid gray;
   border-radius: 10px;
   padding: 15px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 20px;
   align-items: center;
 }
 
@@ -447,7 +456,7 @@ img {
   padding-inline: var(--padding-xl);
   padding-block: var(--padding-xxl);
   background-color: var(--clr-form-primary);
-  color: rgb(36, 36, 36);
+  color: white;
 }
 
 #createBookByDetails > input, #createBookByName > input, #createBookByISBN > input {
@@ -525,7 +534,7 @@ img {
   border-radius: 4px; 
   padding: 16px; 
   position: fixed;
-  z-index: 3000;
+  z-index: 9999;
   left: 50%; 
   top: 30px; 
 }
@@ -581,4 +590,164 @@ img {
 #fav{
   font-size: 20px;
   color: yellow;
+}
+@media screen and (max-width : 1100px) {
+  .newBooksDetails{
+    grid-template-columns: repeat(3, 1fr);
+    width: 700px;
+  }
+  .closeBookWrapper{
+    left: 330px;
+  }
+  .newBook{
+    height: auto;
+  }
+}
+@media screen and (max-width: 1006px) {
+  #searchInput{
+    width: 280px;
+  }
+}
+@media screen and (max-height : 870px) {
+  #detailBook{
+    aspect-ratio: 1/1;
+  }
+}
+@media screen and (max-width : 820px) {
+  .navBar ul li a{
+    font-size: 16px;
+  }
+}
+@media screen and (max-width : 750px) {
+  #detailBook{
+    width: 500px;
+  }
+  /* .fa-x{
+    left: 230px;
+    top: -10px;
+  } */
+  #bookTitle{
+    font-size: 1em;
+  }
+  #bookDescription{
+    font-size: 14px;
+  }
+  .navBar{
+    padding: var(--margin-small);
+  }
+  .margin-top-huge{
+    margin-top: 175px;
+  }
+  .navBar ul{
+    display: flex;
+    flex-direction: column;
+  }
+  .closeBookWrapper{
+    left: 330px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .newBooksDetails {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    overflow-y: scroll;
+    height: 750px;
+    gap: 50px;
+  }
+  .book.newBook{
+    min-height: 200px;
+  }
+  .closeBookWrapper{
+    left: 230px;
+  }
+}
+@media screen and (max-width : 670px) {
+  #booksGrid{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  #gridWrapper{
+    position: relative;
+  }
+}
+@media screen and (max-width : 600px){
+  .actionTable th, .actionTable td{
+    font-size: 14px;
+  }
+}
+@media screen and (max-width : 550px) {
+  #createBookByName .submitButton, #createBookByISBN .submitButton{
+    margin-left: 120px;
+    width: 150px;
+    margin-top: var(--margin-large);
+  }
+  #createBookByName, #createBookByISBN{
+    padding-inline: var(--padding-medium-large);
+    
+  }
+  
+}
+@media screen and (max-width : 500px){
+  #booksGrid{
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .newBooksDetails{
+    width: 300px;
+  }
+  .closeBookWrapper{
+    left: 130px;
+  }
+  #detailBook{
+    width: 320px;
+  }
+  /* .fa-x{
+    left: 140px;
+    top: -10px;
+  } */
+}
+@media screen and (max-width : 470px){
+  #createBookByDetails h2{
+    font-size: 24px;
+  }
+  #createBookByDetails > label{
+    font-size: 16px;
+  }
+  .actionTable th, .actionTable td{
+    font-size: 12px;
+    padding: var(--padding-small);
+  }
+  
+}
+@media screen and (max-width : 360px) {
+  .actionTable th, .actionTable td{
+    padding: var(--padding-xs);
+
+  }
+  .mainPageHeader{
+    font-size: 25px;
+  }
+  #createBookByDetails h2{
+    font-size: 22px;
+  }
+  #createBookByDetails > label{
+    font-size: 14px;
+  }
+  #createBookByDetails .semiLabel{
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .formSelectHeader{
+    font-size: 26px;
+  }
+  
+  #createBookByName .submitButton, #createBookByISBN .submitButton{
+    margin-left: 0px;
+    margin-top: 0;
+  }
+  .arrow{
+    position: sticky;
+    top: -150px;
+    left: -510px;
+  }
 }

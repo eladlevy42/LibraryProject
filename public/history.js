@@ -15,11 +15,8 @@ async function printInfoToTable() {
             table += buildTableRow(historyElement);
         }
         table += `</table>`;
-        tableWrapper.innerHTML = table;
+        tableWrapper.innerHTML += table;
         const actionTable = document.querySelector('.actionTable');
-        if (actionTable) {
-            actionTable.style.display = 'grid';
-        }
     } catch (error) {
         showSnackbar(generalFailSnackbar)
     }

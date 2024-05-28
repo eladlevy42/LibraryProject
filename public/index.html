@@ -14,9 +14,15 @@
     />
   </head>
   <body>
+    <div class="snackbar failSnackbar generalMessage">Couldn't connect to server! try again later.</div>
+    <div class="snackbar successSnackbar deleteSuccess">Book deleted successfuly!</div>
+    <div class="snackbar failSnackbar noBooksFound">No books found!</div>
+    <div class="snackbar failSnackbar enterName">Enter a book name!</div>
+    <div class="snackbar successSnackbar addFavorite">Added book to favorites!</div>
+    <div class="snackbar failSnackbar removeFavorite">Removed book from favorites!</div>
     <div class="detailWrapper">
-      <i class="fa-solid fa-x" onclick="hideDetailWrapper()"></i>
       <div id="detailBook">
+        <i class="fa-solid fa-x" onclick="hideDetailWrapper()"></i>
         <h4 id="bookTitle"></h4>
         <img id="bookImage" src="" alt="bookImage" />
         <p id="bookAuthor"></p>
@@ -80,6 +86,7 @@
       </nav>
     </header>
     <main class="margin-top-huge">
+      <h1 class="mainPageHeader">Your Books</h1>
       <div class="spinner"></div>
       <button id="sort">sort a-z</button>
       <div id="gridWrapper">

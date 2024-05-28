@@ -14,7 +14,9 @@ let noBooksFailSnackbar = document.querySelector('.noBooksFound')
 let bookExistsFailSnackbar = document.querySelector('.bookAlreadyExists')
 let addByNameSnackbar = document.querySelector('.addByName')
 let enterNameFailSnackbar = document.querySelector('.enterName')
-let snackbarTimeout;
+let removedFavoriteFailSnackbar = document.querySelector('.removeFavorite')
+let addedFavoriteSuccessSnackbar = document.querySelector('.addFavorite')
+
 
 function parseBookInfo(book) {
   let volumeInfo = book.volumeInfo;
@@ -81,14 +83,17 @@ function showSpinner() {
 
 
 function showSnackbar(snackbarMessage) {
-  console.log(snackbarMessage);
   snackbarMessage.classList.remove('show');
-  void snackbarMessage.offsetWidth; 
+  void snackbarMessage.offsetWidth; // Trigger reflow to restart the animation
   snackbarMessage.classList.add('show');
-  if (snackbarTimeout) {
-      clearTimeout(snackbarTimeout);
+  
+  // Clear any existing timeout associated with this snackbar
+  if (snackbarMessage.timeoutId) {
+    clearTimeout(snackbarMessage.timeoutId);
   }
-  snackbarTimeout = setTimeout(function() {
-      snackbarMessage.classList.remove("show");
+  
+  // Set a new timeout to hide the snackbar
+  snackbarMessage.timeoutId = setTimeout(function() {
+    snackbarMessage.classList.remove("show");
   }, 2400);
 }

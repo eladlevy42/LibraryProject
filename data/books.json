@@ -16,21 +16,6 @@
       "ISBN": "9781351978736"
     },
     {
-      "id": "iO5pApw2JycC",
-      "book_name": "The Ivory Tower and Harry Potter",
-      "authors_name": [
-        "Lana A. Whited"
-      ],
-      "num_pages": 436,
-      "short_description": "Now available in paper, The Ivory Tower and Harry Potter is the first book-length analysis of J. K. Rowling's work from a broad range of perspectives within literature, folklore, psychology, sociology, and popular culture. A significant portion of the book explores the Harry Potter series' literary ancestors, including magic and fantasy works by Ursula K. LeGuin, Monica Furlong, Jill Murphy, and others, as well as previous works about the British boarding school experience. Other chapters explore the moral and ethical dimensions of Harry's world, including objections to the series raised within some religious circles. In her new epilogue, Lana A. Whited brings this volume up to date by covering Rowling's latest book, Harry Potter and the Order of the Phoenix.",
-      "image": "http://books.google.com/books/content?id=iO5pApw2JycC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-      "num_copies": 5,
-      "categories": [
-        "Juvenile Fiction"
-      ],
-      "ISBN": "0826215491"
-    },
-    {
       "id": "ThAaBwAAQBAJ",
       "book_name": "Harry Potter’s World Wide Influence",
       "authors_name": [
@@ -44,21 +29,6 @@
         "Literary Criticism"
       ],
       "ISBN": "9781443816281"
-    },
-    {
-      "id": "HrbjU0pvYwQC",
-      "book_name": "Harry Potter Places Book One",
-      "authors_name": [
-        "C. D. Miller"
-      ],
-      "num_pages": 326,
-      "short_description": "Welcome to Harry Potter Places Book One--London and London Side-Along Apparations, the first of five guidebooks designed to help Potterites visit Potterverse places in the UK, including real-life places mentioned in JKR's novels and movie film sites. On the website you'll find Book One's Table of Contents and learn about all the Harry Potter Places travel guidebooks. www.HarryPotterPlaces.com",
-      "image": "http://books.google.com/books/content?id=HrbjU0pvYwQC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-      "num_copies": 9,
-      "categories": [
-        "Performing Arts"
-      ],
-      "ISBN": "9781937520588"
     },
     {
       "id": "OGjYVAIXxyQC",
@@ -347,22 +317,6 @@
         "Business & Economics"
       ],
       "ISBN": "9781136753800"
-    },
-    {
-      "id": "CyE6DwAAQBAJ",
-      "book_name": "The Routledge Handbook of Chinese Translation",
-      "authors_name": [
-        "Chris Shei",
-        "Zhao-Ming Gao"
-      ],
-      "num_pages": 791,
-      "short_description": "The Routledge Handbook of Chinese Translation presents expert and new research in analysing and solving translation problems centred on the Chinese language in translation. The Handbook includes both a review of and a distinctive approach to key themes in Chinese translation, such as translatability and equivalence, extraction of collocation, and translation from parallel and comparable corpora. In doing so, it undertakes to synthesise existing knowledge in Chinese translation, develops new frameworks for analysing Chinese translation problems, and explains translation theory appropriate to the Chinese context. The Routledge Handbook of Chinese Translation is an essential reference work for advanced undergraduate and postgraduate students and scholars actively researching in this area.",
-      "image": "http://books.google.com/books/content?id=CyE6DwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-      "num_copies": 10,
-      "categories": [
-        "Foreign Language Study"
-      ],
-      "ISBN": "9781317383024"
     },
     {
       "id": "Aaug_RnI-xQC",
@@ -1184,6 +1138,247 @@
         "Animated characters"
       ],
       "ISBN": "9780689868405"
+    },
+    {
+      "id": "FKziXsnqLTEC",
+      "book_name": "The Lord of the Rings: The Fellowship of the Ring, The Two Towers, The Return of the King",
+      "authors_name": [
+        "J. R. R. Tolkien"
+      ],
+      "num_pages": 1227,
+      "short_description": "All three parts of the epic masterpiece The Lord of the Rings – The Fellowship of the Ring, The Two Towers & The Return of the King – available as one download, featuring the definitive edition of the text, hyperlinked footnotes and page references, and 3 maps including a detailed map of Middle-earth.",
+      "image": "http://books.google.com/books/content?id=FKziXsnqLTEC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "num_copies": 9,
+      "categories": [
+        "Fiction"
+      ],
+      "ISBN": "9780007322596"
+    },
+    {
+      "id": "xFr92V2k3PIC",
+      "book_name": "The Fellowship of the Ring (The Lord of the Rings, Book 1)",
+      "authors_name": [
+        "J. R. R. Tolkien"
+      ],
+      "num_pages": 442,
+      "short_description": "The first part of J. R. R. Tolkien’s epic adventure THE LORD OF THE RINGS ‘A most remarkable feat’ Guardian",
+      "image": "http://books.google.com/books/content?id=xFr92V2k3PIC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "num_copies": 4,
+      "categories": [
+        "Fiction"
+      ],
+      "ISBN": "9780007322497"
+    },
+    {
+      "id": "GfrqzgEACAAJ",
+      "book_name": "The Lord of the Rings",
+      "authors_name": [
+        "J. R. R. Tolkien"
+      ],
+      "num_pages": 0,
+      "short_description": "Begin your journey into Middle-earth. A New Legend Begins on Prime Video, in The Lord of the Rings: The Rings of Power. This one-volume, paperback edition includes The Fellowship of the Ring, The Two Towers, and The Return of the King, together with the Appendices in full. Sauron, the Dark Lord, has gathered to him all the Rings of Power - the means by which he intends to rule Middle-earth. All he lacks in his plans for dominion is the One Ring - the ring that rules them all - which has fallen into the hands of the hobbit, Bilbo Baggins. In a sleepy village in the Shire, young Frodo Baggins finds himself faced with an immense task, as the Ring is entrusted to his care. He must leave his home and make a perilous journey across the realms of Middle-earth to the Crack of Doom, deep inside the territories of the Dark Lord. There he must destroy the Ring forever and foil the Dark Lord in his evil purpose.",
+      "image": "http://books.google.com/books/content?id=GfrqzgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+      "num_copies": 1,
+      "categories": [
+        "Fiction"
+      ],
+      "ISBN": "0008537763"
+    },
+    {
+      "id": "Dw-NAgAAQBAJ",
+      "book_name": "The Lord of the Rings and Philosophy",
+      "authors_name": [
+        "Gregory Bassham",
+        "Eric Bronson"
+      ],
+      "num_pages": 336,
+      "short_description": "The Lord of the Rings is intended to be applicable to the real world of relationships, religion, pleasure, pain, and politics. Tolkien himself said that his grand tale of wizards, orcs, hobbits, and elves was aimed at truth and good morals in the actual world. Analysis of the popular appeal of The Lord of the Rings (on websites and elsewhere) shows that Tolkien fans are hungry for discussion of the urgent moral and cosmological issues arising out of this fantastic epic story. Can political power be wielded for good, or must it always corrupt? Does technology destroy the truly human? Is it morally wrong to give up hope? Can we find meaning in chance events? In The Lord of the Rings and Philosophy, seventeen young philosophy professors, all of them ardent Tolkien fans and most of them contributors to the four earlier volumes in the Popular Culture and Philosophy series, address some of these important issues and show how clues to their solutions may be found in the imaginary world of Middle-earth. The book is divided into five sections, concerned with Power and the Ring, the Quest for Happiness, Good and Evil in Middle-earth, Time and Mortality, and the Relevance",
+      "image": "http://books.google.com/books/content?id=Dw-NAgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "num_copies": 1,
+      "categories": [
+        "Philosophy"
+      ],
+      "ISBN": "9780812698060"
+    },
+    {
+      "id": "5XOL49zCAHEC",
+      "book_name": "Watching the Lord of the Rings",
+      "authors_name": [
+        "Ernest Mathijs"
+      ],
+      "num_pages": 316,
+      "short_description": "How did audiences across the world respond to the films of The Lord of the Rings? This book presents findings from the largest film audience project ever undertaken, drawing from 25,000 questionnaire responses and a wide array of other materials. Contributors use these materials to explore a series of widely speculated questions: why is film fantasy important to different kinds of viewers? Through marketing, previews and reviews, debates and cultural chatter, how are audiences prepared for a film like this? How did fans of the book respond to its adaptation on screen? How do people choose their favorite characters? How was the films' reception shaped by different national and cultural contexts? The answers to these questions shed fresh light on the extraordinary popularity of The Lord of the Rings and provide important new insights into the global reception of cinema in the twenty-first century.",
+      "image": "http://books.google.com/books/content?id=5XOL49zCAHEC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "num_copies": 6,
+      "categories": [
+        "Literary Criticism"
+      ],
+      "ISBN": "0820463965"
+    },
+    {
+      "id": "GyrbDwAAQBAJ",
+      "book_name": "The Lord of the Rings#1: Sembilan Pembawa Cincin (The Lord of the Rings Fellowship)",
+      "authors_name": [
+        "J.R.R. Tolkien"
+      ],
+      "num_pages": 512,
+      "short_description": "Di sebuah desa yang tenang di Shire, seorang hobbit muda bernama Frodo Baggins mendapat warisan cincin bertuah yang menyimpan kekuatan dahsyat. Agar cincin utama itu tidak jatuh ke tangan Sauron yang jahat, Frodo mesti mengadakan perjalanan panjang dan penuh bahaya ke gunung api di Mordor, untuk memusnahkan cincin tersebut. Bersama kedelapan sahabatnya, ia berangkat. Dipimpin oleh Gandalf sang penyihir, kesembilan pembawa cincin itu memulai perjalanan. Tapi Sauron dan para anak buahnya tidak tinggal diam.",
+      "image": "http://books.google.com/books/content?id=GyrbDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "num_copies": 7,
+      "categories": [
+        "Young Adult Fiction"
+      ],
+      "ISBN": "9786020615110"
+    },
+    {
+      "id": "4mtauAEACAAJ",
+      "book_name": "Harry Potter and the Prisoner of Azkaban",
+      "authors_name": [
+        "J. K. Rowling"
+      ],
+      "num_pages": 734,
+      "short_description": "Harry Potter must confront the devious and dangerous wizard responsible for his parents' deaths.",
+      "image": "http://books.google.com/books/content?id=4mtauAEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+      "num_copies": 4,
+      "categories": [
+        "Escaped prisoners"
+      ],
+      "ISBN": "1536443743"
+    },
+    {
+      "id": "GZAoAQAAIAAJ",
+      "book_name": "Harry Potter and the Deathly Hallows",
+      "authors_name": [
+        "J. K. Rowling"
+      ],
+      "num_pages": 792,
+      "short_description": "\"The final adventure in J.K. Rowling's phenomenal, best-selling Harry Potter book series\"--Provided by publisher.",
+      "image": "http://books.google.com/books/content?id=GZAoAQAAIAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+      "num_copies": 10,
+      "categories": [
+        "Bildungsromans"
+      ]
+    },
+    {
+      "id": "v1IrzgEACAAJ",
+      "book_name": "Harry Potter and the Chamber of Secrets: MinaLima Edition",
+      "authors_name": [
+        "J. K. Rowling"
+      ],
+      "num_pages": 0,
+      "short_description": "Prepare to be dazzled by this new edition of J.K. Rowling's Harry Potter and the Chamber of Secrets, designed and illustrated by MinaLima. With over 150 full-colour illustrations and eight exclusive, interactive paper-engineered elements, readers can travel via the Floo Network, encounter the Whomping Willow, reveal the spiral staircase to Dumbledore's office and even pull Mandrakes from their pots! This spectacular edition is the perfect gift for Harry Potter fans of all ages, a wonderful addition to any collector's bookshelf and an enchanting way to introduce this beloved series to a new generation of readers.",
+      "image": "http://books.google.com/books/content?id=v1IrzgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+      "num_copies": 10,
+      "categories": [
+        "Juvenile Fiction"
+      ],
+      "ISBN": "152663788X"
+    },
+    {
+      "id": "DKcWE3WXoj8C",
+      "book_name": "Harry Potter and International Relations",
+      "authors_name": [
+        "Daniel H. Nexon",
+        "Iver B. Neumann"
+      ],
+      "num_pages": 262,
+      "short_description": "Drawing on a range of historical and sociological sources, this work shows how aspects of Harry's world contain aspects of our own. It also includes chapters on the political economy of the franchise, and on the problems of studying popular culture.",
+      "image": "http://books.google.com/books/content?id=DKcWE3WXoj8C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "num_copies": 3,
+      "categories": [
+        "Juvenile Fiction"
+      ],
+      "ISBN": "0742539598"
+    },
+    {
+      "id": "GEWXQbASXZUC",
+      "book_name": "Understanding the Lord of the Rings",
+      "authors_name": [
+        "Rose A. Zimbardo",
+        "Neil D. Isaacs"
+      ],
+      "num_pages": 308,
+      "short_description": "Publisher's description: When first published, The Lord of the Rings stood far from the mainstream: no one had seen anything like it for decades. Tolkien's almost stridently antimodern tale needed valiant defenders, vocal admirers who understood its sources and relished its monumental scale. While such champions of modernism as Edmund Wilson mocked Tolkien's archaic structure and language, W.H. Auden -- a great modernist poet in his own right -- rose to his defense with a spirited essay on the true nature of the Hero Quest. Edmund Fuller's essay collected here discusses the nature of the fairy tale, returning to the roots of the term to remove the treacle of Disney and restore the value of realistic enchantment. Tolkien's friend C.S. Lewis takes up the question of why, if you have a serious comment to make about real life, you would drape it in a never-never land of your own. He shrewdly argues that it is because real life does have mythic and heroic qualities -- in abundance. This collection also includes, among others, essays by Marion Zimmer Bradley, Verlyn Flieger, Paul Kocher, Jane Chance, and each of the editors, as well as a brand-new essay by Tom Shippey that shows us how to process all this vast learning, adding to it the many delights of the film versions of Tolkien's epic masterpiece, so we can relish his achievement all the more.",
+      "image": "http://books.google.com/books/content?id=GEWXQbASXZUC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "num_copies": 1,
+      "categories": [
+        "Literary Criticism"
+      ],
+      "ISBN": "0618422536"
+    },
+    {
+      "id": "aba6",
+      "book_name": "123",
+      "authors_name": [
+        "123"
+      ],
+      "num_pages": "123",
+      "short_description": "123",
+      "image": "",
+      "num_copies": "123",
+      "categories": [
+        "123"
+      ]
+    },
+    {
+      "id": "KV4DAwAAQBAJ",
+      "book_name": "UFO! (SpongeBob SquarePants)",
+      "authors_name": [
+        "Nickelodeon Publishing"
+      ],
+      "num_pages": 36,
+      "short_description": "Bikini Bottom suddenly goes dark one day and everyone panics! Are aliens invading SpongeBob SquarePants home?",
+      "image": "http://books.google.com/books/content?id=KV4DAwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "num_copies": 9,
+      "categories": [
+        "Juvenile Fiction"
+      ],
+      "ISBN": "9781612630052"
+    },
+    {
+      "id": "KzuhDwAAQBAJ",
+      "book_name": "SpongeBob Exposed!: The Insider's Guide to SpongeBob SquarePants (SpongeBob SquarePants)",
+      "authors_name": [
+        "Nickelodeon Publishing"
+      ],
+      "num_pages": 100,
+      "short_description": "A nostalgic guide detailing the creation of SpongeBob SquarePants. Featuring interviews with SpongeBob SquarePants' creator Stephen Hillenburg, a detailed early episode guide, a SpongeBob fan certificate, and other treats fill an insider's guide to the popular cartoon series.",
+      "image": "http://books.google.com/books/content?id=KzuhDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "num_copies": 1,
+      "categories": [
+        "Juvenile Fiction"
+      ],
+      "ISBN": "9781950837038"
+    },
+    {
+      "id": "Lry4SK8RmQgC",
+      "book_name": "The Hobbit: Illustrated by Alan Lee",
+      "authors_name": [
+        "J. R. R. Tolkien"
+      ],
+      "num_pages": 402,
+      "short_description": "First ever illustrated eBook of the classic bestseller featuring more than 60 colour paintings and pencil drawings by the award-winning artist, Alan Lee, Conceptual Designer on Peter Jackson’s THE HOBBIT: AN UNEXPECTED JOURNEY.",
+      "image": "http://books.google.com/books/content?id=Lry4SK8RmQgC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "num_copies": 3,
+      "categories": [
+        "Fiction"
+      ],
+      "ISBN": "9780007487318"
+    },
+    {
+      "id": "GN1PJGy9ghAC",
+      "book_name": "The Hobbit: An Unexpected Journey--The World of Hobbits",
+      "authors_name": [
+        "Paddy Kempshall"
+      ],
+      "num_pages": 48,
+      "short_description": "Enter the amazing World of Hobbits. Packed with photos from the new film, this book will tell you all you need to know about these amazing creatures – their appearance, appetites, homes, friends, deadly foes and much more.",
+      "image": "http://books.google.com/books/content?id=GN1PJGy9ghAC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "num_copies": 6,
+      "categories": [
+        "Juvenile Nonfiction"
+      ],
+      "ISBN": "9780547859125"
     }
   ],
   "history": [
@@ -1360,6 +1555,408 @@
       "action": "Deleted Book",
       "time": "28/05/2024, 19:22",
       "timeAdded": 1716913338791
+    },
+    {
+      "id": "c2ce",
+      "book_name": "123",
+      "action": "Created Book",
+      "time": "28/05/2024, 19:23",
+      "timeAdded": 1716913423565
+    },
+    {
+      "id": "f1c8",
+      "book_name": "123",
+      "action": "Deleted Book",
+      "time": "28/05/2024, 19:23",
+      "timeAdded": 1716913433759
+    },
+    {
+      "id": "zB9X2vKRZ34C",
+      "book_name": "What's a Christian to Do with Harry Potter?",
+      "ISBN": "9780307813565",
+      "action": "Added to favorite",
+      "time": "28/05/2024, 19:29",
+      "timeAdded": 1716913781656
+    },
+    {
+      "id": "ThAaBwAAQBAJ",
+      "book_name": "Harry Potter’s World Wide Influence",
+      "ISBN": "9781443816281",
+      "action": "Added to favorite",
+      "time": "28/05/2024, 19:32",
+      "timeAdded": 1716913924618
+    },
+    {
+      "id": "ThAaBwAAQBAJ",
+      "book_name": "Harry Potter’s World Wide Influence",
+      "ISBN": "9781443816281",
+      "action": "Removed from favorite",
+      "time": "28/05/2024, 19:32",
+      "timeAdded": 1716913944098
+    },
+    {
+      "id": "ThAaBwAAQBAJ",
+      "book_name": "Harry Potter’s World Wide Influence",
+      "ISBN": "9781443816281",
+      "action": "Removed from favorite",
+      "time": "28/05/2024, 19:32",
+      "timeAdded": 1716913957674
+    },
+    {
+      "id": "ThAaBwAAQBAJ",
+      "book_name": "Harry Potter’s World Wide Influence",
+      "ISBN": "9781443816281",
+      "action": "Added to favorite",
+      "time": "28/05/2024, 19:32",
+      "timeAdded": 1716913963885
+    },
+    {
+      "id": "ThAaBwAAQBAJ",
+      "book_name": "Harry Potter’s World Wide Influence",
+      "ISBN": "9781443816281",
+      "action": "Removed from favorite",
+      "time": "28/05/2024, 19:33",
+      "timeAdded": 1716914010659
+    },
+    {
+      "id": "ThAaBwAAQBAJ",
+      "book_name": "Harry Potter’s World Wide Influence",
+      "ISBN": "9781443816281",
+      "action": "Added to favorite",
+      "time": "28/05/2024, 19:33",
+      "timeAdded": 1716914012283
+    },
+    {
+      "id": "ThAaBwAAQBAJ",
+      "book_name": "Harry Potter’s World Wide Influence",
+      "ISBN": "9781443816281",
+      "action": "Removed from favorite",
+      "time": "28/05/2024, 19:33",
+      "timeAdded": 1716914020974
+    },
+    {
+      "id": "ThAaBwAAQBAJ",
+      "book_name": "Harry Potter’s World Wide Influence",
+      "ISBN": "9781443816281",
+      "action": "Added to favorite",
+      "time": "28/05/2024, 19:33",
+      "timeAdded": 1716914023562
+    },
+    {
+      "id": "ThAaBwAAQBAJ",
+      "book_name": "Harry Potter’s World Wide Influence",
+      "ISBN": "9781443816281",
+      "action": "Removed from favorite",
+      "time": "28/05/2024, 19:33",
+      "timeAdded": 1716914026166
+    },
+    {
+      "id": "OGjYVAIXxyQC",
+      "book_name": "The Complete Idiot's Guide to the World of Harry Potter",
+      "ISBN": "9781440636615",
+      "action": "Added to favorite",
+      "time": "28/05/2024, 19:34",
+      "timeAdded": 1716914060476
+    },
+    {
+      "id": "OGjYVAIXxyQC",
+      "book_name": "The Complete Idiot's Guide to the World of Harry Potter",
+      "ISBN": "9781440636615",
+      "action": "Removed from favorite",
+      "time": "28/05/2024, 19:34",
+      "timeAdded": 1716914062015
+    },
+    {
+      "id": "iO5pApw2JycC",
+      "book_name": "The Ivory Tower and Harry Potter",
+      "ISBN": "0826215491",
+      "action": "Added to favorite",
+      "time": "28/05/2024, 19:38",
+      "timeAdded": 1716914303411
+    },
+    {
+      "id": "iO5pApw2JycC",
+      "book_name": "The Ivory Tower and Harry Potter",
+      "ISBN": "0826215491",
+      "action": "Removed from favorite",
+      "time": "28/05/2024, 19:38",
+      "timeAdded": 1716914305226
+    },
+    {
+      "id": "iO5pApw2JycC",
+      "book_name": "The Ivory Tower and Harry Potter",
+      "ISBN": "0826215491",
+      "action": "Added to favorite",
+      "time": "28/05/2024, 19:38",
+      "timeAdded": 1716914308565
+    },
+    {
+      "id": "iO5pApw2JycC",
+      "book_name": "The Ivory Tower and Harry Potter",
+      "ISBN": "0826215491",
+      "action": "Removed from favorite",
+      "time": "28/05/2024, 19:38",
+      "timeAdded": 1716914309761
+    },
+    {
+      "id": "iO5pApw2JycC",
+      "book_name": "The Ivory Tower and Harry Potter",
+      "ISBN": "0826215491",
+      "action": "Added to favorite",
+      "time": "28/05/2024, 19:38",
+      "timeAdded": 1716914314044
+    },
+    {
+      "id": "iO5pApw2JycC",
+      "book_name": "The Ivory Tower and Harry Potter",
+      "ISBN": "0826215491",
+      "action": "Removed from favorite",
+      "time": "28/05/2024, 19:38",
+      "timeAdded": 1716914314407
+    },
+    {
+      "id": "iO5pApw2JycC",
+      "book_name": "The Ivory Tower and Harry Potter",
+      "ISBN": "0826215491",
+      "action": "Added to favorite",
+      "time": "28/05/2024, 19:38",
+      "timeAdded": 1716914317430
+    },
+    {
+      "id": "iO5pApw2JycC",
+      "book_name": "The Ivory Tower and Harry Potter",
+      "ISBN": "0826215491",
+      "action": "Removed from favorite",
+      "time": "28/05/2024, 19:38",
+      "timeAdded": 1716914317602
+    },
+    {
+      "id": "iO5pApw2JycC",
+      "book_name": "The Ivory Tower and Harry Potter",
+      "ISBN": "0826215491",
+      "action": "Removed from favorite",
+      "time": "28/05/2024, 19:38",
+      "timeAdded": 1716914319041
+    },
+    {
+      "id": "iO5pApw2JycC",
+      "book_name": "The Ivory Tower and Harry Potter",
+      "ISBN": "0826215491",
+      "action": "Deleted Book",
+      "time": "28/05/2024, 19:48",
+      "timeAdded": 1716914882203
+    },
+    {
+      "id": "CyE6DwAAQBAJ",
+      "book_name": "The Routledge Handbook of Chinese Translation",
+      "ISBN": "9781317383024",
+      "action": "Deleted Book",
+      "time": "28/05/2024, 19:48",
+      "timeAdded": 1716914886328
+    },
+    {
+      "id": "6362",
+      "book_name": "123",
+      "action": "Created Book",
+      "time": "28/05/2024, 19:49",
+      "timeAdded": 1716914946506
+    },
+    {
+      "id": "Dw-NAgAAQBAJ",
+      "book_name": "The Lord of the Rings and Philosophy",
+      "ISBN": "9780812698060",
+      "action": "Created Book",
+      "time": "28/05/2024, 19:49",
+      "timeAdded": 1716914975306
+    },
+    {
+      "id": "FKziXsnqLTEC",
+      "book_name": "The Lord of the Rings: The Fellowship of the Ring, The Two Towers, The Return of the King",
+      "ISBN": "9780007322596",
+      "action": "Created Book",
+      "time": "28/05/2024, 19:49",
+      "timeAdded": 1716914975323
+    },
+    {
+      "id": "xFr92V2k3PIC",
+      "book_name": "The Fellowship of the Ring (The Lord of the Rings, Book 1)",
+      "ISBN": "9780007322497",
+      "action": "Created Book",
+      "time": "28/05/2024, 19:49",
+      "timeAdded": 1716914975337
+    },
+    {
+      "id": "GfrqzgEACAAJ",
+      "book_name": "The Lord of the Rings",
+      "ISBN": "0008537763",
+      "action": "Created Book",
+      "time": "28/05/2024, 19:49",
+      "timeAdded": 1716914975350
+    },
+    {
+      "id": "Dw-NAgAAQBAJ",
+      "book_name": "The Lord of the Rings and Philosophy",
+      "ISBN": "9780812698060",
+      "action": "Created Book",
+      "time": "28/05/2024, 19:49",
+      "timeAdded": 1716914990876
+    },
+    {
+      "id": "5XOL49zCAHEC",
+      "book_name": "Watching the Lord of the Rings",
+      "ISBN": "0820463965",
+      "action": "Created Book",
+      "time": "28/05/2024, 19:49",
+      "timeAdded": 1716914990891
+    },
+    {
+      "id": "GyrbDwAAQBAJ",
+      "book_name": "The Lord of the Rings#1: Sembilan Pembawa Cincin (The Lord of the Rings Fellowship)",
+      "ISBN": "9786020615110",
+      "action": "Created Book",
+      "time": "28/05/2024, 19:49",
+      "timeAdded": 1716914990906
+    },
+    {
+      "id": "4mtauAEACAAJ",
+      "book_name": "Harry Potter and the Prisoner of Azkaban",
+      "ISBN": "1536443743",
+      "action": "Created Book",
+      "time": "28/05/2024, 19:50",
+      "timeAdded": 1716915029701
+    },
+    {
+      "id": "GZAoAQAAIAAJ",
+      "book_name": "Harry Potter and the Deathly Hallows",
+      "action": "Created Book",
+      "time": "28/05/2024, 19:50",
+      "timeAdded": 1716915029831
+    },
+    {
+      "id": "v1IrzgEACAAJ",
+      "book_name": "Harry Potter and the Chamber of Secrets: MinaLima Edition",
+      "ISBN": "152663788X",
+      "action": "Created Book",
+      "time": "28/05/2024, 19:50",
+      "timeAdded": 1716915029846
+    },
+    {
+      "id": "DKcWE3WXoj8C",
+      "book_name": "Harry Potter and International Relations",
+      "ISBN": "0742539598",
+      "action": "Created Book",
+      "time": "28/05/2024, 19:50",
+      "timeAdded": 1716915029859
+    },
+    {
+      "id": "c053",
+      "book_name": "123",
+      "action": "Deleted Book",
+      "time": "28/05/2024, 19:50",
+      "timeAdded": 1716915058676
+    },
+    {
+      "id": "GEWXQbASXZUC",
+      "book_name": "Understanding the Lord of the Rings",
+      "ISBN": "0618422536",
+      "action": "Created Book",
+      "time": "28/05/2024, 19:52",
+      "timeAdded": 1716915154375
+    },
+    {
+      "id": "440c",
+      "book_name": "123",
+      "action": "Created Book",
+      "time": "28/05/2024, 20:08",
+      "timeAdded": 1716916109830
+    },
+    {
+      "id": "KV4DAwAAQBAJ",
+      "book_name": "UFO! (SpongeBob SquarePants)",
+      "ISBN": "9781612630052",
+      "action": "Created Book",
+      "time": "28/05/2024, 20:09",
+      "timeAdded": 1716916148227
+    },
+    {
+      "id": "KzuhDwAAQBAJ",
+      "book_name": "SpongeBob Exposed!: The Insider's Guide to SpongeBob SquarePants (SpongeBob SquarePants)",
+      "ISBN": "9781950837038",
+      "action": "Created Book",
+      "time": "28/05/2024, 20:09",
+      "timeAdded": 1716916148350
+    },
+    {
+      "id": "HrbjU0pvYwQC",
+      "book_name": "Harry Potter Places Book One",
+      "ISBN": "9781937520588",
+      "action": "Removed copy",
+      "time": "28/05/2024, 20:10",
+      "timeAdded": 1716916224157
+    },
+    {
+      "id": "HrbjU0pvYwQC",
+      "book_name": "Harry Potter Places Book One",
+      "ISBN": "9781937520588",
+      "action": "Added copy",
+      "time": "28/05/2024, 20:10",
+      "timeAdded": 1716916226066
+    },
+    {
+      "id": "HrbjU0pvYwQC",
+      "book_name": "Harry Potter Places Book One",
+      "ISBN": "9781937520588",
+      "action": "Added to favorite",
+      "time": "28/05/2024, 20:10",
+      "timeAdded": 1716916227297
+    },
+    {
+      "id": "HrbjU0pvYwQC",
+      "book_name": "Harry Potter Places Book One",
+      "ISBN": "9781937520588",
+      "action": "Removed from favorite",
+      "time": "28/05/2024, 20:10",
+      "timeAdded": 1716916228626
+    },
+    {
+      "id": "HrbjU0pvYwQC",
+      "book_name": "Harry Potter Places Book One",
+      "ISBN": "9781937520588",
+      "action": "Deleted Book",
+      "time": "28/05/2024, 20:10",
+      "timeAdded": 1716916232903
+    },
+    {
+      "id": "Lry4SK8RmQgC",
+      "book_name": "The Hobbit: Illustrated by Alan Lee",
+      "ISBN": "9780007487318",
+      "action": "Created Book",
+      "time": "28/05/2024, 20:10",
+      "timeAdded": 1716916244311
+    },
+    {
+      "id": "GN1PJGy9ghAC",
+      "book_name": "The Hobbit: An Unexpected Journey--The World of Hobbits",
+      "ISBN": "9780547859125",
+      "action": "Created Book",
+      "time": "28/05/2024, 20:10",
+      "timeAdded": 1716916244430
+    },
+    {
+      "id": "ThAaBwAAQBAJ",
+      "book_name": "Harry Potter’s World Wide Influence",
+      "ISBN": "9781443816281",
+      "action": "Added to favorite",
+      "time": "28/05/2024, 21:21",
+      "timeAdded": 1716920489423
+    },
+    {
+      "id": "qQYfoV62d30C",
+      "book_name": "JK Rowling's Harry Potter Novels",
+      "ISBN": "0826452329",
+      "action": "Added to favorite",
+      "time": "28/05/2024, 21:33",
+      "timeAdded": 1716921189456
     }
   ],
   "favorites": [
@@ -1392,6 +1989,51 @@
         "Biography & Autobiography"
       ],
       "ISBN": "9781448211616"
+    },
+    {
+      "id": "zB9X2vKRZ34C",
+      "book_name": "What's a Christian to Do with Harry Potter?",
+      "authors_name": [
+        "Connie Neal"
+      ],
+      "num_pages": 224,
+      "short_description": "Answers to the Burning Questions Christian Parents, Educators, and Others Are Asking about Harry Potter. In the world of publishing, few successes have equaled that of J. K. Rowling’s Harry Potter series—magical stories centered on one boy’s adventures at Hogwarts, a school for witchcraft and wizardry. Yet this popular series presents a perplexing—even divisive—challenge to the Christian community. Although the books present a clear picture of the epic battle between good and evil, they appear to support the use of magic and have had a controversial impact on our culture. As a result, many of us are wondering, “How should I respond to this Harry Potter thing?” Find out what the Harry Potter books really say about witchcraft and wizardry. Hear what Christians on both sides of the debate are saying about Harry Potter—and decide what you believe. Learn how you can use the series to protect your child from real occult influences. In What’s a Christian to Do with Harry Potter?, you’ ll explore the valid concerns some Christians have about the series, sort out the fact and fiction at the center of the debate, discover biblical answers that may surprise you, and learn how you can tap into this powerful cultural phenomenon to help advance the kingdom of God. This book has not been prepared, approved, or licensed by any person or entity that created, published, or produced the Harry Potter books or related properties.",
+      "image": "http://books.google.com/books/content?id=zB9X2vKRZ34C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "num_copies": 10,
+      "categories": [
+        "Family & Relationships"
+      ],
+      "ISBN": "9780307813565"
+    },
+    {
+      "id": "ThAaBwAAQBAJ",
+      "book_name": "Harry Potter’s World Wide Influence",
+      "authors_name": [
+        "Diana Patterson"
+      ],
+      "num_pages": 337,
+      "short_description": "The Harry Potter series forms a single epic story that has been published in nearly 70 languages, and has been examined in a large number of disciplines. This collection of essays contributes to the scholarly discourse that forms Potter Studies. These essays take on the consideration of Rowling's work as being worthy of study as a phenomenon and influence, as well as a work of literary value. They add genuine statistical information about the reasons for the books' popularity, consider their effects on child readers, and examine some deep-rooted reasons for their having been manipulated in American publishing, in film adaptations, in musical complements, and in their thingification in popular culture around the world. Some of these essays take on the critics of the books' religion and considerations of psychological, as well as philosophical good and evil, and well as some stylistic anomalies. The fact that scholars from China, Germany, Poland, Romania, and Israel, in addition to English-speaking nations, have felt compelled to examine these books in detail testifies in part to Harry Potter's world-wide influence.",
+      "image": "http://books.google.com/books/content?id=ThAaBwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "num_copies": 7,
+      "categories": [
+        "Literary Criticism"
+      ],
+      "ISBN": "9781443816281"
+    },
+    {
+      "id": "qQYfoV62d30C",
+      "book_name": "JK Rowling's Harry Potter Novels",
+      "authors_name": [
+        "Philip Nel"
+      ],
+      "num_pages": 100,
+      "short_description": "Explores the themes found in the novels, provides information about reviews of the novels, and includes information about the life of J.K. Rowling.",
+      "image": "http://books.google.com/books/content?id=qQYfoV62d30C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "num_copies": 3,
+      "categories": [
+        "Literary Criticism"
+      ],
+      "ISBN": "0826452329"
     }
   ]
 }
