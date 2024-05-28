@@ -24,6 +24,7 @@
 
 body {
   background-color: var(--clr-background-primary);
+  font-family: 'Open Sans', sans-serif;
 }
 
 header{
@@ -81,13 +82,16 @@ ul {
 #searchBar {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 #searchButton{
   border: none;
-  border-radius: 12px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
   background-color: var(--clr-danger-primary);
-  padding: var(--padding-small);
-  margin-left: var(--margin-medium);
+  padding-right: var(--padding-small);
+  text-align: center;
+  height: 40px;
   cursor: pointer;
   transition: transform 0.2s;
 }
@@ -99,7 +103,8 @@ ul {
   padding: var(--padding-small);
   padding-left: 3em;
   border: 1px solid black;
-  border-radius: 20px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
 }
 
 .search-icon {
@@ -107,7 +112,7 @@ ul {
   width: 25px;
   position: relative;
   left: 35px;
-  top: 8px;
+  top: -2px;
 }
 
 main {
@@ -134,7 +139,7 @@ main {
 }
 
 #bookDescription {
-  max-height: 130px;
+  max-height: 200px;
   overflow-y: auto;
 }
 
@@ -243,6 +248,19 @@ img {
 
 }
 
+.spinnerPopup{
+  z-index: 9000;
+  background-color: rgba(23, 23, 23, 0.6);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .newBooksDetails {
   display: grid;
   align-items: center;
@@ -324,6 +342,7 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  gap: 20px;
   align-items: center;
 }
 
@@ -352,7 +371,7 @@ img {
   }
 }
 
-.spinner:before {
+.spinner{
   content: "";
   box-sizing: border-box;
   position: absolute;
@@ -366,6 +385,7 @@ img {
   border: 1px solid #ccc;
   border-top-color: #07d;
   animation: spinner 0.6s linear infinite;
+  z-index: 1000;
 }
 
 #actionTable {
@@ -493,4 +513,72 @@ img {
 #createBookByName .submitButton, #createBookByISBN .submitButton {
   margin-left: var(--margin-xxl);
   margin-top: 0px;
+}
+
+
+.snackbar {
+  visibility: hidden;
+  min-width: 250px; 
+  margin-left: -125px; 
+  color: #000000; 
+  text-align: center;
+  border-radius: 4px; 
+  padding: 16px; 
+  position: fixed;
+  z-index: 3000;
+  left: 50%; 
+  top: 30px; 
+}
+
+.snackbar.show {
+  visibility: visible; 
+  animation: fadein 0.5s, fadeout 0.5s 2s;
+}
+
+@keyframes fadein {
+  from {top: 0; opacity: 0;}
+  to {top: 30px; opacity: 1;}
+}
+@keyframes fadeout {
+  from {top: 30px; opacity: 1;}
+  to {top: 0; opacity: 0;}
+}
+
+.failSnackbar{
+  background-color: red;
+}
+.successSnackbar{
+  background-color: rgb(12, 186, 12);
+}
+
+.actionTable {
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.actionTable th,
+.actionTable td {
+  padding: 12px;
+  text-align: left;
+  border: 1px solid var(--clr-accent-primary); 
+}
+
+
+.actionTable th {
+  background-color: var(--clr-accent-primary); 
+  color: white;
+}
+
+
+.actionTable tr:nth-child(even) {
+  background-color: hsl(53, 4%, 62%); 
+}
+
+
+.actionTable tr:hover {
+  background-color: var(--clr-form-primary);
+}
+#fav{
+  font-size: 20px;
+  color: yellow;
 }

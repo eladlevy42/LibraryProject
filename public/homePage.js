@@ -5,11 +5,88 @@ let url = `${jsonServerUrl}/?_page=${currentPage}&_per_page=9`;
 let sorted = false;
 initBookArr();
 initHomeBooks();
+async function checkInFav() {
+  let btn = document.querySelector("#fav");
+  let bookName = document.querySelector("#bookTitle").textContent;
+  let url = `${jsonServerUrl}/?book_name=${bookName}`;
 
+  let response = await axios.get(url);
+  let bookDetail = response.data[0];
+  url = `${favURL}/?id=${bookDetail.id}`;
+  try {
+    response = await axios.get(url);
+    if (response.data.length > 0) {
+      btn.classList.remove("fa-regular");
+      btn.classList.add("fa-solid");
+      return true;
+    } else {
+      btn.classList.remove("fa-solid");
+      btn.classList.add("fa-regular");
+      return false;
+    }
+  } catch (error) {
+    alert("1error");
+  }
+}
+async function addToFav() {
+  let btn = document.querySelector("#fav");
+  let bookName = document.querySelector("#bookTitle").textContent;
+  let url = `${jsonServerUrl}/?book_name=${bookName}`;
+  try {
+    let response = await axios.get(url);
+    let bookDetail = response.data[0];
+    try {
+      const historyObject = buildHistoryObject(bookDetail, "Added to favorite");
+      await axios.post(favURL, bookDetail);
+      await axios.post(historyUrl, historyObject)
+      btn.classList.remove("fa-regular");
+      btn.classList.add("fa-solid");
+    } catch (error) {
+      console.log(error);
+    }
+  } catch (error) {
+    alert("2error");
+  }
+}
+async function removeFromFav() {
+  let btn = document.querySelector("#fav");
+  let bookName = document.querySelector("#bookTitle").textContent;
+  let url = `${jsonServerUrl}/?book_name=${bookName}`;
+  try {
+    let response = await axios.get(url);
+    let bookDetail = response.data[0];
+    url = `${favURL}/${bookDetail.id}`;
+    try {
+      const historyObject = buildHistoryObject(bookDetail, "Removed from favorite");
+      await axios.delete(url);
+      await axios.post(historyUrl, historyObject)
+      btn.classList.add("fa-regular");
+      btn.classList.remove("fa-solid");
+    } catch (error) {
+      console.log("3error");
+    }
+  } catch (error) {
+    alert("4error");
+  }
+}
 async function sortAZ() {
-  sorted = true;
+  sorted = !sorted;
+  if (sorted) {
+    document.querySelector("#sort").innerText = "reset sort";
+    url = `${jsonServerUrl}/?_page=${currentPage}&_per_page=9&_sort=book_name`;
+  } else {
+    document.querySelector("#sort").innerText = "sort A-Z";
+    url = `${jsonServerUrl}/?_page=${currentPage}&_per_page=9`;
+  }
 
   await openPage();
+}
+function updateUrl() {
+  if (sorted) {
+    url = `${jsonServerUrl}/?_page=${currentPage}&_per_page=9&_sort=book_name`;
+  } else {
+    url = `${jsonServerUrl}/?_page=${currentPage}&_per_page=9`;
+  }
 }
 async function initHomeBooks() {
   await openPage();
@@ -38,8 +115,15 @@ async function showMore(book) {
     "#bookGenre"
   ).textContent = `categories: ${bookDetail.categories}`;
   document.querySelector("#bookImage").src = bookDetail.image;
+  let btn = document.querySelector("#fav");
+  if (await checkInFav()) {
+    btn.classList.remove("fa-regular");
+    btn.classList.add("fa-solid");
+  } else {
+    btn.classList.add("fa-regular");
+    btn.classList.remove("fa-solid");
+  }
 }
-
 // Function to hide the detail wrapper
 function hideDetailWrapper() {
   document.querySelector(".detailWrapper").style.display = "none";
@@ -47,21 +131,13 @@ function hideDetailWrapper() {
 
 // Function to open a specific page of books
 async function openPage() {
-  if (sorted) {
-    url = `${jsonServerUrl}/?_page=${currentPage}&_per_page=9&_sort=book_name`;
-  } else {
-    url = `${jsonServerUrl}/?_page=${currentPage}&_per_page=9`;
-  }
+  updateUrl();
   let booksArr = [];
   const bookGridElement = document.querySelector("#booksGrid");
   booksArr = await axios.get(url).then((response) => {
     return response.data.data;
   });
   bookGridElement.innerHTML = "";
-  let spinner = document.createElement("div");
-  spinner.classList.add("spinner");
-  spinner.style.display = "block";
-  bookGridElement.appendChild(spinner);
   document.querySelector("#back").style.visibility = "hidden";
   document.querySelector("#next").style.visibility = "hidden";
   const imagePromises = booksArr.map((book) => loadImage(book.image));
@@ -123,7 +199,7 @@ async function switchPage(direction) {
 
 // Function to show the loading spinner
 function showSpinner() {
-  document.querySelector(".spinner").style.display = "block";
+  spinner.style.display = 'block'
 }
 
 // Function to load an image with a fallback to a placeholder
@@ -148,8 +224,8 @@ async function removeCopy() {
     copies--;
     bookDetail.num_copies = copies;
     url = `${jsonServerUrl}/${bookDetail.id}`;
-    await axios.patch(url, bookDetail);
     const historyObject = buildHistoryObject(bookDetail, "Removed copy");
+    await axios.patch(url, bookDetail);
     await axios.post(historyUrl, historyObject);
 
     document.querySelector("#bookNumCopies").textContent = `copies: ${copies}`;
@@ -167,8 +243,8 @@ async function addCopy() {
     copies++;
     bookDetail.num_copies = copies;
     url = `${jsonServerUrl}/${bookDetail.id}`;
-    await axios.patch(url, bookDetail);
     const historyObject = buildHistoryObject(bookDetail, "Added copy");
+    await axios.patch(url, bookDetail);
     await axios.post(historyUrl, historyObject);
 
     document.querySelector("#bookNumCopies").textContent = `copies: ${copies}`;
@@ -185,11 +261,15 @@ async function deleteBook() {
     let response = await axios.get(url);
     let bookDetail = response.data[0];
     url = `${jsonServerUrl}/${bookDetail.id}`;
-    await axios.delete(url);
+    console.log(bookDetail);
     const historyObject = buildHistoryObject(bookDetail, "Deleted Book");
+    console.log(historyObject);
+    await axios.delete(url);
+    console.log('deleted');
     await axios.post(historyUrl, historyObject);
+    console.log('posted');
     hideDetailWrapper();
-    openPage();
+    await openPage();
   } catch (error) {
     alert(error);
   }
@@ -197,9 +277,10 @@ async function deleteBook() {
 
 // Function to search for books by name
 async function searchBook() {
-  console.log(currentPage);
   currentBooks = [];
   const bookName = document.querySelector("#searchInput").value.toUpperCase();
+  // /////////might cause bugs
+  document.querySelector('#searchInput').value = ''
   while (currentBooks.length < 9) {
     let newUrl = `${jsonServerUrl}/?_page=${currentPage}&_per_page=9`;
     let response = await axios.get(newUrl);
@@ -300,6 +381,13 @@ document.querySelector("#removeCopy").addEventListener("click", removeCopy);
 document.querySelector("#addCopy").addEventListener("click", addCopy);
 document.querySelector("#deleteBook").addEventListener("click", deleteBook);
 document.querySelector("#sort").addEventListener("click", sortAZ);
+document.querySelector("#fav").addEventListener("click", async () => {
+  if (await checkInFav()) {
+    removeFromFav();
+  } else {
+    addToFav();
+  }
+});
 document.querySelector("#searchButton").addEventListener("click", (event) => {
   event.preventDefault();
   if (document.querySelector("#searchInput").value != "") {
