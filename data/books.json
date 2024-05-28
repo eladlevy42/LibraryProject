@@ -1284,7 +1284,7 @@
       "num_pages": 136,
       "short_description": "Nickelodeon’s SpongeBob SquarePants comes to the big screen in an all-new, super-silly 3-D movie releasing in February 2015. This junior novel retells the whole hilarious story and features eight pages of full-color scenes from the movie! It’s perfect for boys and girls ages 8 to 12.",
       "image": "http://books.google.com/books/content?id=933vBQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-      "num_copies": 6,
+      "num_copies": 7,
       "categories": [
         "Juvenile Fiction"
       ],
@@ -1599,6 +1599,14 @@
       "action": "Deleted Book",
       "time": "27/05/2024, 16:29",
       "timeAdded": 1716816573548
+    },
+    {
+      "id": "933vBQAAQBAJ",
+      "book_name": "SpongeBob Movie: Sponge Out of Water Junior Novel (The SpongeBob Movie: Sponge Out of Water in 3D)",
+      "ISBN": "9781612639420",
+      "action": "Added copy",
+      "time": "27/05/2024, 21:45",
+      "timeAdded": 1716835537236
     }
   ]
 }
