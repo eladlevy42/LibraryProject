@@ -7,8 +7,12 @@ initBookArr();
 initHomeBooks();
 
 async function sortAZ() {
-  sorted = true;
-
+  sorted = !sorted;
+  if (sorted) {
+    document.querySelector("#sort").innerText = "reset sort";
+  } else {
+    document.querySelector("#sort").innerText = "sort A-Z";
+  }
   await openPage();
 }
 async function initHomeBooks() {
@@ -39,7 +43,6 @@ async function showMore(book) {
   ).textContent = `categories: ${bookDetail.categories}`;
   document.querySelector("#bookImage").src = bookDetail.image;
 }
-
 // Function to hide the detail wrapper
 function hideDetailWrapper() {
   document.querySelector(".detailWrapper").style.display = "none";
@@ -196,7 +199,6 @@ async function deleteBook() {
 
 // Function to search for books by name
 async function searchBook() {
-  console.log(currentPage);
   currentBooks = [];
   const bookName = document.querySelector("#searchInput").value.toUpperCase();
   while (currentBooks.length < 9) {

@@ -1,21 +1,6 @@
 {
   "books": [
     {
-      "id": "n3vng7gyGCYC",
-      "book_name": "Harry Potter",
-      "authors_name": [
-        "Unknown Author"
-      ],
-      "num_pages": 1011,
-      "short_description": "No Description",
-      "image": "http://books.google.com/books/content?id=n3vng7gyGCYC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-      "num_copies": 10,
-      "categories": [
-        "Uncategorized"
-      ],
-      "ISBN": "No ISBN"
-    },
-    {
       "id": "8P8nDwAAQBAJ",
       "book_name": "Literary Allusion in Harry Potter",
       "authors_name": [
@@ -1607,6 +1592,14 @@
       "action": "Added copy",
       "time": "27/05/2024, 21:45",
       "timeAdded": 1716835537236
+    },
+    {
+      "id": "n3vng7gyGCYC",
+      "book_name": "Harry Potter",
+      "ISBN": "No ISBN",
+      "action": "Deleted Book",
+      "time": "28/05/2024, 13:31",
+      "timeAdded": 1716892279917
     }
   ]
 }
