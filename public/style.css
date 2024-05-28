@@ -1,4 +1,28 @@
 @import url(reset.css);
+:root{
+  --clr-primary:hsl(52, 94, 94);
+  --clr-accent-primary:hsl(74,32,32);
+  --clr-danger-primary:hsl(28,67,44);
+  --padding-xs:0.25em;
+  --padding-small:0.5em;
+  --padding-medium-small:0.75em;
+  --padding-medium:1em;
+  --padding-medium-large:1.25em;
+  --padding-large:1.5em;
+  --padding-xl:1.75em;
+  --padding-xxl:2em;
+  --margin-xs:0.25em;
+  --margin-small:0.5em;
+  --margin-medium-small:0.75em;
+  --margin-medium:1em;
+  --margin-medium-large:1.25em;
+  --margin-large:1.5em;
+  --margin-xl:1.75em;
+  --margin-xxl:2em;
+}
+body{
+  background-color: var(--clr-primary);
+}
 ul {
   list-style: none;
   padding: 0;
