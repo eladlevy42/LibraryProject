@@ -1,10 +1,16 @@
 // Initialize the book array and the home page books
+let searchPageIndex = 0;
+let searchResultsPages = [];
+let url = `${jsonServerUrl}/?_page=${currentPage}&_per_page=9`;
+let sorted = false;
 initBookArr();
 initHomeBooks();
 
-let searchPageIndex = 0;
-let searchResultsPages = [];
+async function sortAZ() {
+  sorted = true;
 
+  await openPage();
+}
 async function initHomeBooks() {
   await openPage();
 }
@@ -41,7 +47,11 @@ function hideDetailWrapper() {
 
 // Function to open a specific page of books
 async function openPage() {
-  const url = `${jsonServerUrl}/?_page=${currentPage}&_per_page=9`;
+  if (sorted) {
+    url = `${jsonServerUrl}/?_page=${currentPage}&_per_page=9&_sort=book_name`;
+  } else {
+    url = `${jsonServerUrl}/?_page=${currentPage}&_per_page=9`;
+  }
   let booksArr = [];
   const bookGridElement = document.querySelector("#booksGrid");
   booksArr = await axios.get(url).then((response) => {
@@ -186,7 +196,8 @@ async function deleteBook() {
 
 // Function to search for books by name
 async function searchBook() {
-  let currentBooks = [];
+  console.log(currentPage);
+  currentBooks = [];
   const bookName = document.querySelector("#searchInput").value.toUpperCase();
   while (currentBooks.length < 9) {
     let newUrl = `${jsonServerUrl}/?_page=${currentPage}&_per_page=9`;
@@ -221,7 +232,6 @@ async function printSearched() {
   let currentPageArr = searchResultsPages[searchPageIndex];
   if (currentPageArr != undefined) {
     document.querySelector("#booksGrid").innerHTML = "";
-
     currentPageArr.forEach((book) => {
       let bookElem = document.createElement("div");
       bookElem.classList.add("book");
@@ -288,10 +298,16 @@ async function printSearched() {
 document.querySelector("#removeCopy").addEventListener("click", removeCopy);
 document.querySelector("#addCopy").addEventListener("click", addCopy);
 document.querySelector("#deleteBook").addEventListener("click", deleteBook);
-
+document.querySelector("#sort").addEventListener("click", sortAZ);
 document.querySelector("#searchButton").addEventListener("click", (event) => {
   event.preventDefault();
-  currentPage = 1;
-  searchResultsPages = [];
-  searchBook();
+  if (document.querySelector("#searchInput").value != "") {
+    //resets the variables because its a new search
+    searchResultsPages = [];
+    searchPageIndex = 0;
+    currentPage = 1;
+    searchBook();
+  } else {
+    alert("Please enter a book name");
+  }
 });
