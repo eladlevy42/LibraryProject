@@ -316,7 +316,7 @@ img {
   color: black;
 }
 
-.newBook.selected .book-title, .newBook.selected .book-author {
+.newBook.selected .book-author {
   color: black;
 }
 
@@ -359,6 +359,21 @@ img {
 .newBook {
   overflow-y: auto;
   height: 250px;
+  transition: all 0.2s;
+}
+.newBook:hover{
+  height: 300px;
+  z-index: 200;
+  background-color: white;
+  transform: translateY(5px);
+  justify-content: space-between;
+}
+.newBook:hover .book-author{
+  color: black;
+}
+.newBook:hover .book-title{
+  height: auto;
+  white-space:initial;
 }
 
 .add-books-button {
