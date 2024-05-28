@@ -26,7 +26,7 @@
           <button id="addCopy">add copy</button
           ><button id="removeCopy">remove copy</button>
         </div>
-        <button id="deleteBook">delete book</button>
+        <i class="fa-solid fa-trash-can" id="deleteBook"></i>
       </div>
     </div>
     <header>
@@ -89,10 +89,11 @@
       </select>
       <button id="sortCategories" type="button">sort by categorie</button>
     </header>
-    <main>
+    <main class="margin-top-huge">
+      <button id="sort">sort a-z</button>
       <div id="gridWrapper">
         <i
-          class="fa-solid fa-backward arrow"
+          class="fa-solid fa-backward arrow arrow-left"
           id="back"
           onclick="switchPage('back')"
         ></i>
@@ -100,11 +101,12 @@
         <div id="booksGrid"></div>
         <i
           id="next"
-          class="fa-solid fa-forward arrow"
+          class="fa-solid fa-forward arrow arrow-right"
           onclick="switchPage('next')"
         ></i>
       </div>
     </main>
+
     <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
     <script src="secret.js"></script>
     <script src="common.js"></script>

@@ -1,6 +1,28 @@
 const createBookGoogleUrl = `https://www.googleapis.com/books/v1/volumes?`;
 let newBooksDetails = document.querySelector(".newBooksDetails");
 let newBookWrapper = document.querySelector(".detailWrapper");
+let createBookByName = document.querySelector('#createBookByName')
+let createBookByISBN = document.getElementById("createBookByISBN")
+let formChange = document.getElementById('formSelect')
+let isbnBookForm = document.querySelector('.formISBNWrapper')
+let nameBookForm = document.querySelector('.formNameWrapper')
+
+function handleFormVisibility() {
+  if (formChange.value == 'Name') {
+      createBookByName.style.display = 'block';
+      nameBookForm.style.display = 'flex'
+      createBookByISBN.style.display = 'none';
+      isbnBookForm.style.display = 'none'
+  } else if (formChange.value == 'ISBN') {
+      nameBookForm.style.display = 'none'
+      createBookByName.style.display = 'none';
+      createBookByISBN.style.display = 'block';
+      isbnBookForm.style.display = 'flex'
+  }
+}
+formChange.addEventListener('change', handleFormVisibility);
+handleFormVisibility()
+
 
 async function createNewBookByISBN() {
   const identifier = "ISBN";
@@ -77,6 +99,7 @@ function addButtonToPopup() {
 function processNewBooks(book) {
   let bookDiv = document.createElement("div");
   bookDiv.classList.add("book");
+  bookDiv.classList.add('newBook')
   let bookImg = document.createElement("img");
   bookImg.src = book.image;
   bookImg.alt = book.book_name;
@@ -195,20 +218,17 @@ function hideBooksWrapper() {
   resetPopup();
 }
 
-document
-  .getElementById("createBookByName")
-  .addEventListener("submit", function (event) {
+createBookByName.addEventListener("submit", function (event) {
     event.preventDefault();
     createNewBookByName();
     document.getElementById("bookName").value = "";
   });
 
-document
-  .getElementById("createBookByISBN")
-  .addEventListener("submit", function (event) {
+
+createBookByISBN.addEventListener("submit", function (event) {
     event.preventDefault();
     createNewBookByISBN();
-    document.getElementById("ISBN").value = "";
+    document.getElementById("bookISBN").value = "";
   });
 
 mainForm.addEventListener("submit", function (event) {
