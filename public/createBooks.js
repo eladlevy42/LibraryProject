@@ -6,6 +6,8 @@ let createBookByISBN = document.getElementById("createBookByISBN")
 let formChange = document.getElementById('formSelect')
 let isbnBookForm = document.querySelector('.formISBNWrapper')
 let nameBookForm = document.querySelector('.formNameWrapper')
+let tempPopup = document.querySelector('.spinnerPopup')
+
 
 function handleFormVisibility() {
   if (formChange.value == 'Name') {
@@ -33,23 +35,23 @@ async function createNewBookByISBN() {
     const response = await axios.get(url);
     let items = response.data.items;
     if (!items || items.length === 0) {
-      alert("No matching books found");
+      showSnackbar(noBooksFailSnackbar)
       return;
     }
     let book = items[0];
     let parsedBook = parseBookInfo(book);
     const bookExists = await checkBookExists(parsedBook.book_name);
     if (bookExists) {
-      alert("Book already exists!");
+      showSnackbar(bookExistsFailSnackbar)
       return;
     }
-    await axios.post(jsonServerUrl, parsedBook);
     const historyObject = buildHistoryObject(parsedBook, "Created Book");
+    await axios.post(jsonServerUrl, parsedBook);
     await axios.post(historyUrl, historyObject);
-    alert("Created book successfully!");
+    showSnackbar(addBookSuccessSnackbar)
   } catch (error) {
     console.log(error);
-    alert(error);
+    showSnackbar(generalFailSnackbar)
   }
 }
 
@@ -59,10 +61,12 @@ async function createNewBookByName() {
   let bookIdentifierValue = bookIdentifier.value;
   const url = `${createBookGoogleUrl}q=${bookIdentifierValue}&key=${apiKey}`;
   try {
+    tempPopup.style.display = 'block'
     const response = await axios.get(url);
     let items = response.data.items;
     if (!items || items.length === 0) {
-      alert("No matching books found");
+      showSnackbar(noBooksFailSnackbar)
+      tempPopup.style.display = 'none'
       return;
     }
     for (let item of items) {
@@ -75,16 +79,18 @@ async function createNewBookByName() {
       booksAdded++
     }
     if(booksAdded === 0){
-        alert('no books found')
+      tempPopup.style.display = 'none'
+        showSnackbar(noBooksFailSnackbar)
         return
     }
+    tempPopup.style.display = 'none'
     newBookWrapper.style.display = "flex";
     let addButton = addButtonToPopup();
     addButton.addEventListener("click", addItemToServer);
     newBooksDetails.appendChild(addButton);
   } catch (error) {
     console.log(error);
-    alert(error);
+    showSnackbar(generalFailSnackbar)
   }
 }
 
@@ -123,24 +129,19 @@ function processNewBooks(book) {
 let selectedBooks = [];
 
 async function addItemToServer() {
-  try {
-    for (let book of selectedBooks) {
+  const results = { success: [], failure: [] };
+  for (let book of selectedBooks) {
+    try {
       const historyObject = buildHistoryObject(book, "Created Book");
-      console.log("Posting history object:", historyObject);
-      await axios
-        .post(historyUrl, historyObject)
-        .then((response) => console.log("History added:", response.data))
-        .catch((error) => console.error("Error adding to history:", error));
-
-      await axios
-        .post(jsonServerUrl, book)
-        .then((response) => console.log("Book added:", response.data))
-        .catch((error) => console.error("Error adding book:", error));
+      await axios.post(historyUrl, historyObject);
+      await axios.post(jsonServerUrl, book);
+      results.success.push(book.book_name);
+    } catch (error) {
+      results.failure.push({ book: book.book_name, error: error.message });
     }
-    resetPopup();
-  } catch (error) {
-    alert(error);
   }
+  resetPopup();
+  showResultsSummary(results);
 }
 
 function toggleBookSelection(book, bookDiv) {
@@ -167,20 +168,22 @@ let mainForm = document.getElementById("createBookByDetails");
 async function createBookByDetails() {
   let formData = new FormData(mainForm);
   const formDataObj = handleFormData(formData);
+  try {
   const bookExists = await checkBookExists(formDataObj.book_name);
   if (bookExists) {
-    alert("Book already exists");
+    showSnackbar(bookExistsFailSnackbar)
     return;
   }
-  console.log(formDataObj);
-  try {
+    console.log(formDataObj);
+    const historyObject = buildHistoryObject(formDataObj, "Created Book");
     await axios.post(jsonServerUrl, formDataObj, {
       headers: { "Content-Type": "application/json" },
     });
-    const historyObject = buildHistoryObject(formDataObj, "Created Book");
     await axios.post(historyUrl, historyObject);
+    console.log(`${historyObject} succeded`);
+    showSnackbar(addBookSuccessSnackbar)
   } catch (error) {
-    alert(error);
+    showSnackbar(generalFailSnackbar)
   }
 }
 
@@ -236,3 +239,25 @@ mainForm.addEventListener("submit", function (event) {
   createBookByDetails();
   mainForm.reset();
 });
+
+
+function showResultsSummary(results) {
+  let summaryMessage = `Books successfully added: ${results.success.length}\n`;
+  if (results.failure.length > 0) {
+    summaryMessage += `Books failed to add:\n`;
+    results.failure.forEach(failure => {
+      summaryMessage += `${failure.book}: ${failure.error}\n`;
+    });
+  }
+  if (results.success.length == 0) {
+    console.log('hi');
+    addByNameSnackbar.classList.remove('successSnackbar');
+    addByNameSnackbar.classList.add('failSnackbar');
+  } else {
+    console.log('hi');
+    addByNameSnackbar.classList.remove('failSnackbar');
+    addByNameSnackbar.classList.add('successSnackbar');
+  }
+  addByNameSnackbar.textContent = summaryMessage
+  showSnackbar(addByNameSnackbar)
+}

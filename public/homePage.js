@@ -5,11 +5,11 @@ let url = `${jsonServerUrl}/?_page=${currentPage}&_per_page=9`;
 let sorted = false;
 initBookArr();
 initHomeBooks();
+
 async function checkInFav() {
   let btn = document.querySelector("#fav");
   let bookName = document.querySelector("#bookTitle").textContent;
   let url = `${jsonServerUrl}/?book_name=${bookName}`;
-
   let response = await axios.get(url);
   let bookDetail = response.data[0];
   url = `${favURL}/?id=${bookDetail.id}`;
@@ -25,7 +25,7 @@ async function checkInFav() {
       return false;
     }
   } catch (error) {
-    alert("1error");
+    showSnackbar(generalFailSnackbar);
   }
 }
 async function addToFav() {
@@ -36,14 +36,17 @@ async function addToFav() {
     let response = await axios.get(url);
     let bookDetail = response.data[0];
     try {
-      axios.post(favURL, bookDetail);
+      const historyObject = buildHistoryObject(bookDetail, "Added to favorite");
+      await axios.post(favURL, bookDetail);
+      await axios.post(historyUrl, historyObject);
       btn.classList.remove("fa-regular");
       btn.classList.add("fa-solid");
+      showSnackbar(addedFavoriteSuccessSnackbar);
     } catch (error) {
-      console.log(error);
+      showSnackbar(generalFailSnackbar);
     }
   } catch (error) {
-    alert("2error");
+    showSnackbar(generalFailSnackbar);
   }
 }
 async function removeFromFav() {
@@ -55,15 +58,20 @@ async function removeFromFav() {
     let bookDetail = response.data[0];
     url = `${favURL}/${bookDetail.id}`;
     try {
+      const historyObject = buildHistoryObject(
+        bookDetail,
+        "Removed from favorite"
+      );
       await axios.delete(url);
-
+      await axios.post(historyUrl, historyObject);
       btn.classList.add("fa-regular");
       btn.classList.remove("fa-solid");
+      showSnackbar(removedFavoriteFailSnackbar);
     } catch (error) {
-      console.log("3error");
+      showSnackbar(generalFailSnackbar);
     }
   } catch (error) {
-    alert("4error");
+    showSnackbar(generalFailSnackbar);
   }
 }
 async function sortAZ() {
@@ -135,10 +143,6 @@ async function openPage() {
     return response.data.data;
   });
   bookGridElement.innerHTML = "";
-  let spinner = document.createElement("div");
-  spinner.classList.add("spinner");
-  spinner.style.display = "block";
-  bookGridElement.appendChild(spinner);
   document.querySelector("#back").style.visibility = "hidden";
   document.querySelector("#next").style.visibility = "hidden";
   const imagePromises = booksArr.map((book) => loadImage(book.image));
@@ -195,12 +199,13 @@ async function switchPage(direction) {
     currentPage--;
   }
   showSpinner();
+
   await openPage();
 }
 
 // Function to show the loading spinner
 function showSpinner() {
-  document.querySelector(".spinner").style.display = "block";
+  spinner.style.display = "block";
 }
 
 // Function to load an image with a fallback to a placeholder
@@ -218,18 +223,25 @@ async function removeCopy() {
   let bookISBN = document.querySelector("#bookISBN").textContent;
   bookISBN = bookISBN.substring(6);
   let url = `${jsonServerUrl}/?ISBN=${bookISBN}`;
-  let response = await axios.get(url);
-  let bookDetail = response.data[0];
-  let copies = bookDetail.num_copies;
-  if (copies > 0) {
-    copies--;
-    bookDetail.num_copies = copies;
-    url = `${jsonServerUrl}/${bookDetail.id}`;
-    await axios.patch(url, bookDetail);
-    const historyObject = buildHistoryObject(bookDetail, "Removed copy");
-    await axios.post(historyUrl, historyObject);
-
-    document.querySelector("#bookNumCopies").textContent = `copies: ${copies}`;
+  //////////////
+  try {
+    let response = await axios.get(url);
+    let bookDetail = response.data[0];
+    let copies = bookDetail.num_copies;
+    if (copies > 0) {
+      copies--;
+      bookDetail.num_copies = copies;
+      url = `${jsonServerUrl}/${bookDetail.id}`;
+      const historyObject = buildHistoryObject(bookDetail, "Removed copy");
+      await axios.patch(url, bookDetail);
+      await axios.post(historyUrl, historyObject);
+      document.querySelector(
+        "#bookNumCopies"
+      ).textContent = `copies: ${copies}`;
+    }
+  } catch (error) {
+    console.error(error);
+    showSnackbar(generalFailSnackbar);
   }
 }
 
@@ -244,13 +256,14 @@ async function addCopy() {
     copies++;
     bookDetail.num_copies = copies;
     url = `${jsonServerUrl}/${bookDetail.id}`;
-    await axios.patch(url, bookDetail);
     const historyObject = buildHistoryObject(bookDetail, "Added copy");
+    await axios.patch(url, bookDetail);
     await axios.post(historyUrl, historyObject);
 
     document.querySelector("#bookNumCopies").textContent = `copies: ${copies}`;
   } catch (error) {
-    alert(error);
+    console.error(error);
+    showSnackbar(generalFailSnackbar);
   }
 }
 
@@ -262,13 +275,17 @@ async function deleteBook() {
     let response = await axios.get(url);
     let bookDetail = response.data[0];
     url = `${jsonServerUrl}/${bookDetail.id}`;
-    await axios.delete(url);
+    console.log(bookDetail);
     const historyObject = buildHistoryObject(bookDetail, "Deleted Book");
+    console.log(historyObject);
+    await axios.delete(url);
+    showSnackbar(deleteSuccessSnackbar);
     await axios.post(historyUrl, historyObject);
     hideDetailWrapper();
-    openPage();
+    await openPage();
   } catch (error) {
-    alert(error);
+    console.error(error);
+    showSnackbar(generalFailSnackbar);
   }
 }
 
@@ -276,6 +293,7 @@ async function deleteBook() {
 async function searchBook() {
   currentBooks = [];
   const bookName = document.querySelector("#searchInput").value.toUpperCase();
+  ///////////////////
   while (currentBooks.length < 9) {
     let newUrl = `${jsonServerUrl}/?_page=${currentPage}&_per_page=9`;
     let response = await axios.get(newUrl);
@@ -300,7 +318,7 @@ async function searchBook() {
     printSearched();
   } else {
     document.querySelector("#next").style.visibility = "visible";
-    alert("No books found");
+    showSnackbar(noBooksFailSnackbar);
   }
 }
 
@@ -339,7 +357,6 @@ async function printSearched() {
         document.querySelector("#booksGrid").appendChild(bookElem);
       }
     }
-
     if (searchPageIndex <= 0) {
       document.querySelector("#back").style.visibility = "hidden";
       searchPageIndex = 0;
@@ -392,6 +409,6 @@ document.querySelector("#searchButton").addEventListener("click", (event) => {
     currentPage = 1;
     searchBook();
   } else {
-    alert("Please enter a book name");
+    showSnackbar(enterNameFailSnackbar);
   }
 });

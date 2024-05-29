@@ -3,14 +3,33 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     />
-    <title>Create book</title>
+    <title>Document</title>
   </head>
   <body>
+    <div class="snackbar failSnackbar generalMessage">
+      Couldn't connect to server! try again later.
+    </div>
+    <div class="snackbar successSnackbar addBookSuccess">
+      Book added successfuly!
+    </div>
+    <div class="snackbar failSnackbar noBooksFound">
+      No matching books found!
+    </div>
+    <div class="snackbar failSnackbar bookAlreadyExists">
+      Book already exists!
+    </div>
+    <div class="snackbar addByName"></div>
     <div class="detailWrapper newBooksWrapper">
       <i
         class="fa-solid fa-x closeBookWrapper"
@@ -18,6 +37,7 @@
       ></i>
       <div class="newBooksDetails"></div>
     </div>
+    <div class="spinnerPopup"><div class="spinner"></div></div>
     <header>
       <nav class="navBar">
         <ul>
