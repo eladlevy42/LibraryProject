@@ -10,12 +10,14 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
       rel="stylesheet"
     />
-    <title>Home</title>
-    <link rel="stylesheet" href="style.css" />
-    <link
+<link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     />
+    <title>Home</title>
+
+    <link rel="stylesheet" href="style.css" />
+    
   </head>
   <body>
     <div class="snackbar failSnackbar generalMessage">
@@ -34,7 +36,7 @@
     </div>
     <div class="detailWrapper">
       <div id="detailBook">
-        <i class="fa-solid fa-x" onclick="hideDetailWrapper()"></i>
+        <i class="fa-solid fa-x" id="Xdetail" onclick="hideDetailWrapper()"></i>
         <h4 id="bookTitle"></h4>
         <img id="bookImage" src="" alt="bookImage" />
         <p id="bookAuthor"></p>
@@ -52,38 +54,11 @@
       </div>
     </div>
     <header>
-      <nav class="navBar">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="createBooks.html">Create a new book</a></li>
-          <li><a href="actionHistory.html">View action history</a></li>
-          <li>
+      <div class="sideBar"><div id="burger"><i class="fa-solid fa-bars"></i></div>
+        <i class="fa-solid fa-xmark" id="Xside"></i></li>
+          <ul>
+          
             <form id="searchBar">
-              <svg
-                fill="hsl(11, 81%, 21%)"
-                class="search-icon"
-                version="1.1"
-                id="Capa_1"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-                viewBox="0 0 490.4 490.4"
-                xml:space="preserve"
-                stroke="#045e8b"
-              >
-                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                <g
-                  id="SVGRepo_tracerCarrier"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                ></g>
-                <g id="SVGRepo_iconCarrier">
-                  <g>
-                    <path
-                      d="M484.1,454.796l-110.5-110.6c29.8-36.3,47.6-82.8,47.6-133.4c0-116.3-94.3-210.6-210.6-210.6S0,94.496,0,210.796 s94.3,210.6,210.6,210.6c50.8,0,97.4-18,133.8-48l110.5,110.5c12.9,11.8,25,4.2,29.2,0C492.5,475.596,492.5,463.096,484.1,454.796z M41.1,210.796c0-93.6,75.9-169.5,169.5-169.5s169.6,75.9,169.6,169.5s-75.9,169.5-169.5,169.5S41.1,304.396,41.1,210.796z"
-                    ></path>
-                  </g>
-                </g>
-              </svg>
               <input
                 id="searchInput"
                 type="text"
@@ -96,10 +71,13 @@
               </button>
             </form>
           </li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="createBooks.html">Create a new book</a></li>
+          <li><a href="actionHistory.html">View action history</a></li>
         </ul>
-      </nav>
+      </div>
     </header>
-    <main class="margin-top-huge">
+    <main >
       <h1 class="mainPageHeader">Your Books</h1>
       <div class="spinner"></div>
       <div id="sortBar">
