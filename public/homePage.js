@@ -1,7 +1,7 @@
 // Initialize the book array and the home page books
 let searchPageIndex = 0;
 let searchResultsPages = [];
-let url = `${jsonServerUrl}/?_page=${currentPage}&_per_page=9`;
+let url = `${jsonServerUrl}/?_page=${currentPage}&_per_page=12`;
 let sorted = false;
 let showFav = false;
 let pages = totalPages;
@@ -11,7 +11,7 @@ initBookArr();
 initHomeBooks();
 
 async function resetAll() {
-  url = `${jsonServerUrl}/?_page=${currentPage}&_per_page=9`;
+  url = `${jsonServerUrl}/?_page=${currentPage}&_per_page=12`;
   currentPage = 1;
   showFav = false;
   sorted = false;
@@ -114,14 +114,14 @@ async function sortAZ() {
   }
 }
 function updateUrl() {
-  url = `${jsonServerUrl}/?_page=${currentPage}&_per_page=9`;
+  url = `${jsonServerUrl}/?_page=${currentPage}&_per_page=12`;
   if (sorted) {
     url = `${url}&_sort=book_name`;
     if (showFav) {
-      url = `${favURL}/?_page=${currentPage}&_per_page=9&_sort=book_name`;
+      url = `${favURL}/?_page=${currentPage}&_per_page=12&_sort=book_name`;
     }
   } else if (showFav) {
-    url = `${favURL}/?_page=${currentPage}&_per_page=9`;
+    url = `${favURL}/?_page=${currentPage}&_per_page=12`;
   }
 }
 async function initHomeBooks() {
@@ -164,17 +164,8 @@ async function showMore(book) {
 function hideDetailWrapper() {
   document.querySelector(".detailWrapper").style.display = "none";
 }
-
-// Function to open a specific page of books
-async function openPage() {
-  searched = false;
-  updateUrl();
-
-  let booksArr = [];
+async function buildBookGrid(booksArr) {
   const bookGridElement = document.querySelector("#booksGrid");
-  booksArr = await axios.get(url).then((response) => {
-    return response.data.data;
-  });
   bookGridElement.innerHTML = "";
   document.querySelector("#back").style.visibility = "hidden";
   document.querySelector("#next").style.visibility = "hidden";
@@ -182,8 +173,6 @@ async function openPage() {
   const images = await Promise.all(imagePromises);
   booksArr.forEach((book, index) => {
     spinner.style.display = "none";
-    document.querySelector("#back").style.visibility = "visible";
-    document.querySelector("#next").style.visibility = "visible";
     let gridItem = document.createElement("div");
     gridItem.id = book.id;
     gridItem.classList.add("book");
@@ -204,20 +193,33 @@ async function openPage() {
       showMore(gridItem);
     });
   });
-  if (booksArr.length < 9) {
+  if (booksArr.length < 12) {
     //fill the empty grid items with empty book divs
-    for (let i = 0; i < 9 - booksArr.length; i++) {
+    for (let i = 0; i < 12 - booksArr.length; i++) {
       let gridItem = document.createElement("div");
       gridItem.classList.add("book");
       bookGridElement.appendChild(gridItem);
     }
   }
+}
+// Function to open a specific page of books
+async function openPage() {
+  searched = false;
+  updateUrl();
+  let booksArr = [];
+  const bookGridElement = document.querySelector("#booksGrid");
+  booksArr = await axios.get(url).then((response) => {
+    return response.data.data;
+  });
+  buildBookGrid(booksArr);
+
   if (currentPage == 1) {
     document.querySelector("#back").style.visibility = "hidden";
+    console.log(currentPage);
   } else {
     document.querySelector("#back").style.visibility = "visible";
   }
-  if (currentPage == pages || booksArr.length < 9) {
+  if (currentPage == pages || booksArr.length < 12) {
     document.querySelector("#next").style.visibility = "hidden";
   } else {
     document.querySelector("#next").style.visibility = "visible";
@@ -339,15 +341,15 @@ async function searchBook() {
   const bookName = document.querySelector("#searchInput").value.toUpperCase();
 
   // document.querySelector("#searchInput").value = "";
-  while (currentBooks.length < 9) {
-    url = `${jsonServerUrl}/?_page=${currentPage}&_per_page=9`;
+  while (currentBooks.length < 12) {
+    url = `${jsonServerUrl}/?_page=${currentPage}&_per_page=12`;
     let response = await axios.get(url);
     let newBookArr = response.data.data;
 
     for (let book of newBookArr) {
       if (
         book.book_name.toUpperCase().includes(bookName) &&
-        currentBooks.length < 9 &&
+        currentBooks.length < 12 &&
         !currentBooks.some((b) => b.id === book.id)
       ) {
         currentBooks.push(book);
@@ -368,74 +370,72 @@ async function searchBook() {
     showSnackbar(noBooksFailSnackbar);
   }
 }
-
+function buildSearchBookGrid(currentPageArr) {
+  document.querySelector("#booksGrid").innerHTML = "";
+  currentPageArr.forEach((book) => {
+    let bookElem = document.createElement("div");
+    bookElem.classList.add("book");
+    bookElem.id = book.id;
+    let image = document.createElement("img");
+    image.src = book.image;
+    image.alt = book.book_name;
+    let title = document.createElement("span");
+    title.classList.add("book-title");
+    title.textContent = book.book_name;
+    let author = document.createElement("span");
+    author.classList.add("book-author");
+    author.textContent = book.authors_name;
+    bookElem.appendChild(image);
+    bookElem.appendChild(title);
+    bookElem.appendChild(author);
+    bookElem.addEventListener("click", () => {
+      showMore(bookElem);
+    });
+    document.querySelector("#booksGrid").appendChild(bookElem);
+  });
+  if (currentPageArr.length < 12) {
+    //fill the empty grid items with empty book divs
+    for (let i = 0; i < 12 - currentPageArr.length; i++) {
+      let bookElem = document.createElement("div");
+      bookElem.classList.add("book");
+      document.querySelector("#booksGrid").appendChild(bookElem);
+    }
+  }
+  if (searchPageIndex <= 0) {
+    document.querySelector("#back").style.visibility = "hidden";
+    searchPageIndex = 0;
+  } else {
+    document.querySelector("#back").style.visibility = "visible";
+    document.querySelector("#back").onclick = () => {
+      if (searchPageIndex > 0) {
+        searchPageIndex--;
+        currentPage--;
+        printSearched();
+      }
+    };
+  }
+  if (currentPage > pages + 1 || currentPageArr.length < 12) {
+    document.querySelector("#next").style.visibility = "hidden";
+  } else {
+    document.querySelector("#next").style.visibility = "visible";
+    document.querySelector("#next").onclick = () => {
+      searchPageIndex++;
+      if (searchPageIndex > searchResultsPages.length - 1) {
+        searchBook();
+      } else {
+        currentPage++;
+        printSearched();
+      }
+    };
+  }
+}
 // Function to print the searched books
 async function printSearched() {
   let currentPageArr = searchResultsPages[searchPageIndex].slice();
   if (sorted) {
     currentPageArr.sort((a, b) => a.book_name.localeCompare(b.book_name));
   }
-  if (currentPageArr != undefined) {
-    document.querySelector("#booksGrid").innerHTML = "";
-    currentPageArr.forEach((book) => {
-      let bookElem = document.createElement("div");
-      bookElem.classList.add("book");
-      bookElem.id = book.id;
-      let image = document.createElement("img");
-      image.src = book.image;
-      image.alt = book.book_name;
-      let title = document.createElement("span");
-      title.classList.add("book-title");
-      title.textContent = book.book_name;
-      let author = document.createElement("span");
-      author.classList.add("book-author");
-      author.textContent = book.authors_name;
-      bookElem.appendChild(image);
-      bookElem.appendChild(title);
-      bookElem.appendChild(author);
-      bookElem.addEventListener("click", () => {
-        showMore(bookElem);
-      });
-      document.querySelector("#booksGrid").appendChild(bookElem);
-    });
-    if (currentPageArr.length < 9) {
-      //fill the empty grid items with empty book divs
-      for (let i = 0; i < 9 - currentPageArr.length; i++) {
-        let bookElem = document.createElement("div");
-        bookElem.classList.add("book");
-        document.querySelector("#booksGrid").appendChild(bookElem);
-      }
-    }
-    if (searchPageIndex <= 0) {
-      document.querySelector("#back").style.visibility = "hidden";
-      searchPageIndex = 0;
-    } else {
-      document.querySelector("#back").style.visibility = "visible";
-      document.querySelector("#back").onclick = () => {
-        if (searchPageIndex > 0) {
-          searchPageIndex--;
-          currentPage--;
-          printSearched();
-        }
-      };
-    }
-    if (currentPage > pages + 1 || currentPageArr.length < 9) {
-      document.querySelector("#next").style.visibility = "hidden";
-    } else {
-      document.querySelector("#next").style.visibility = "visible";
-      document.querySelector("#next").onclick = () => {
-        searchPageIndex++;
-        if (searchPageIndex > searchResultsPages.length - 1) {
-          searchBook();
-        } else {
-          currentPage++;
-          printSearched();
-        }
-      };
-    }
-  } else {
-    openPage();
-  }
+  buildSearchBookGrid(currentPageArr);
 }
 
 function debounce() {

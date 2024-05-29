@@ -1322,20 +1322,6 @@
       "ISBN": "9780547859125"
     },
     {
-      "id": "ZO_xY1V-2PgC",
-      "book_name": "Relief of New Milford Consolidated School District No. 123, of Illinois, Rock River Consolidated School District No. 125, of Illinois, Michael H. Lorden, Charles Samuelson, John August Johnson, Ross P. Beckstrom Co",
-      "authors_name": [
-        "United States. Congress. House. Committee on War Claims. Subcommittee No. 3"
-      ],
-      "num_pages": 84,
-      "short_description": "No Description",
-      "image": "http://books.google.com/books/content?id=ZO_xY1V-2PgC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-      "num_copies": 9,
-      "categories": [
-        "Eminent domain"
-      ]
-    },
-    {
       "id": "QDCmAwAAQBAJ",
       "book_name": "123 Bath & Shower Just 4 me.",
       "authors_name": [
@@ -2172,6 +2158,41 @@
       "action": "Deleted Book",
       "time": "29/05/2024, 11:55",
       "timeAdded": 1716972929299
+    },
+    {
+      "id": "3e70",
+      "book_name": "sdf",
+      "action": "Created Book",
+      "time": "29/05/2024, 12:22",
+      "timeAdded": 1716974520043
+    },
+    {
+      "id": "ZO_xY1V-2PgC",
+      "book_name": "Relief of New Milford Consolidated School District No. 123, of Illinois, Rock River Consolidated School District No. 125, of Illinois, Michael H. Lorden, Charles Samuelson, John August Johnson, Ross P. Beckstrom Co",
+      "action": "Deleted Book",
+      "time": "29/05/2024, 12:22",
+      "timeAdded": 1716974547247
+    },
+    {
+      "id": "51bd",
+      "book_name": "sdf",
+      "action": "Deleted Book",
+      "time": "29/05/2024, 12:22",
+      "timeAdded": 1716974556314
+    },
+    {
+      "id": "02bd",
+      "book_name": "a",
+      "action": "Created Book",
+      "time": "29/05/2024, 12:24",
+      "timeAdded": 1716974649022
+    },
+    {
+      "id": "1436",
+      "book_name": "a",
+      "action": "Deleted Book",
+      "time": "29/05/2024, 12:24",
+      "timeAdded": 1716974654204
     }
   ],
   "favorites": [
