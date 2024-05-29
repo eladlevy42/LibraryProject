@@ -586,6 +586,7 @@ img {
 
 .actionTable tr:hover {
   background-color: var(--clr-form-primary);
+  color: white;
 }
 #fav{
   font-size: 20px;
@@ -611,6 +612,11 @@ img {
 @media screen and (max-height : 870px) {
   #detailBook{
     aspect-ratio: 1/1;
+  }
+}
+@media screen and (max-height : 700px) {
+  #detailBook{
+    max-height:650px ;
   }
 }
 @media screen and (max-width : 820px) {
