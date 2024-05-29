@@ -151,21 +151,6 @@
       "ISBN": "9781939529190"
     },
     {
-      "id": "mvmGPgAACAAJ",
-      "book_name": "Harry Potter and the Sorcerer's Stone",
-      "authors_name": [
-        "J. K. Rowling"
-      ],
-      "num_pages": 320,
-      "short_description": "Rescued from the outrageous neglect of his aunt and uncle, a young boy with a great destiny proves his worth while attending Hogwarts School for Wizards and Witches.",
-      "image": "http://books.google.com/books/content?id=mvmGPgAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
-      "num_copies": 2,
-      "categories": [
-        "Juvenile Fiction"
-      ],
-      "ISBN": "043920352X"
-    },
-    {
       "id": "BoX-6R21MgQC",
       "book_name": "The Psychology of Harry Potter",
       "authors_name": [
@@ -2155,6 +2140,14 @@
       "action": "Created Book",
       "time": "29/05/2024, 09:00",
       "timeAdded": 1716962437710
+    },
+    {
+      "id": "mvmGPgAACAAJ",
+      "book_name": "Harry Potter and the Sorcerer's Stone",
+      "ISBN": "043920352X",
+      "action": "Deleted Book",
+      "time": "29/05/2024, 09:24",
+      "timeAdded": 1716963884400
     }
   ],
   "favorites": [

@@ -642,11 +642,12 @@ img {
     padding: var(--margin-small);
   }
   .margin-top-huge{
-    margin-top: 175px;
+    margin-top: 200px;
   }
   .navBar ul{
     display: flex;
     flex-direction: column;
+    gap: 10px;
   }
   .closeBookWrapper{
     left: 330px;
@@ -755,5 +756,8 @@ img {
     position: sticky;
     top: -150px;
     left: -510px;
+  }
+  #searchBar{
+    width: 200px;
   }
 }
