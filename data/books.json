@@ -31,21 +31,6 @@
       "ISBN": "9781443816281"
     },
     {
-      "id": "OGjYVAIXxyQC",
-      "book_name": "The Complete Idiot's Guide to the World of Harry Potter",
-      "authors_name": [
-        "Tere Stouffer"
-      ],
-      "num_pages": 276,
-      "short_description": "For fans of all ages. Here is an entertaining and easily referenced presentation of insider information to the world that J. K. Rowling has created in her spellbinding series of novels. The Complete Idiot’s Guide® to the World of Harry Potter explores all aspects of the wizarding world and explains them in terms of their relationship to historical, literary, religious, scientific, or mythological roots. —In-depth information on the facts behind all seven books in the Harry Potter series. —Covers all the relevant influences for the Harry Potter series, from religion and mythology to science and literature. —Can be read from cover to cover or used as a quick-reference guide.",
-      "image": "http://books.google.com/books/content?id=OGjYVAIXxyQC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-      "num_copies": 7,
-      "categories": [
-        "Literary Criticism"
-      ],
-      "ISBN": "9781440636615"
-    },
-    {
       "id": "zB9X2vKRZ34C",
       "book_name": "What's a Christian to Do with Harry Potter?",
       "authors_name": [
@@ -1485,19 +1470,61 @@
       "ISBN": "9781442977891"
     },
     {
-      "id": "wrOQLV6xB-wC",
-      "book_name": "Harry Potter and the Sorcerer's Stone",
+      "id": "cjyUAwAAQBAJ",
+      "book_name": "Yale Law Journal: Volume 123, Number 7 - May 2014",
       "authors_name": [
-        "J.K. Rowling"
+        "Yale Law Journal"
       ],
-      "num_pages": 311,
-      "short_description": "Turning the envelope over, his hand trembling, Harry saw a purple wax seal bearing a coat of arms; a lion, an eagle, a badger and a snake surrounding a large letter 'H'. Harry Potter has never even heard of Hogwarts when the letters start dropping on the doormat at number four, Privet Drive. Addressed in green ink on yellowish parchment with a purple seal, they are swiftly confiscated by his grisly aunt and uncle. Then, on Harry's eleventh birthday, a great beetle-eyed giant of a man called Rubeus Hagrid bursts in with some astonishing news: Harry Potter is a wizard, and he has a place at Hogwarts School of Witchcraft and Wizardry. An incredible adventure is about to begin! Having become classics of our time, the Harry Potter eBooks never fail to bring comfort and escapism. With their message of hope, belonging and the enduring power of truth and love, the story of the Boy Who Lived continues to delight generations of new readers.",
-      "image": "http://books.google.com/books/content?id=wrOQLV6xB-wC&printsec=frontcover&img=1&zoom=1&source=gbs_api",
-      "num_copies": 2,
+      "num_pages": 444,
+      "short_description": "The May 2014 issue of The Yale Law Journal features new articles and essays on law and legal theory by internationally recognized scholars. Contents include: • Article, \"Illegitimate Borders: Jus Sanguinis Citizenship and the Legal Construction of Family, Race, and Nation,\" by Kristin Collins • Article, \"Legitimacy and Federal Criminal Enforcement Power,\" by Lauren M. Ouziel • Feature, \"The Age of Consent,\" by Philip C. Bobbitt • Review, \"Judging Justice on Appeal,\" by Marin K. Levy • Note, \"The Growth of Litigation Finance in DOJ Whistleblower Suits: Implications and Recommendations,\" by Mathew Andrews • Note, \"Reducing Inequality on the Cheap: When Legal Rule Design Should Incorporate Equity as Well as Efficiency,\" by Zachary Liscow • Note, \"Domestic Violence Asylum After Matter of L-R-,\" by Jessica Marsden • Comment, \"Beating Blackwater: Using Domestic Legislation to Enforce the International Code of Conduct for Private Military Companies,\" by Reema Shah This quality ebook edition features linked notes, active Contents, active URLs in notes, and proper Bluebook formatting. This May 2014 issue is Volume 123, Number 7.",
+      "image": "http://books.google.com/books/content?id=cjyUAwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "num_copies": 3,
       "categories": [
-        "Juvenile Fiction"
+        "Law"
       ],
-      "ISBN": "9781781100486"
+      "ISBN": "9781610278638"
+    },
+    {
+      "id": "tU9rDQAAQBAJ",
+      "book_name": "Witchblade #123",
+      "authors_name": [
+        "Ron Marz"
+      ],
+      "num_pages": 24,
+      "short_description": "NYPD Detective Sara Pezzini wields half of the powerful ancient artifact known as the Witchblade. But now she faces a foe that predates even the mystical gauntlet, confronting a deadly horror that has descended upon Brooklyn's Ultra Orthodox Jewish community. Could the biblical Angel of Death truly have been unleashed?......Meanwhile, the bearer of the other half of the Witchblade, Dani Baptiste, suspects one of her dance students is far more than she seems.",
+      "image": "http://books.google.com/books/content?id=tU9rDQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "num_copies": 1,
+      "categories": [
+        "Comics & Graphic Novels"
+      ]
+    },
+    {
+      "id": "EOJ_OgnuhxoC",
+      "book_name": "H.R. 123, H.R. 2498 and H.R. 2535",
+      "authors_name": [
+        "United States. Congress. House. Committee on Natural Resources. Subcommittee on Water and Power"
+      ],
+      "num_pages": 76,
+      "short_description": "No Description",
+      "image": "http://books.google.com/books/content?id=EOJ_OgnuhxoC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "num_copies": 3,
+      "categories": [
+        "Federal aid to water resources development"
+      ]
+    },
+    {
+      "id": "Zf-Qtqz4IRgC",
+      "book_name": "Section 123: Civilian Nuclear Cooperation Agreements",
+      "authors_name": [
+        "United States. Congress. Senate. Committee on Foreign Relations"
+      ],
+      "num_pages": 108,
+      "short_description": "No Description",
+      "image": "http://books.google.com/books/content?id=Zf-Qtqz4IRgC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "num_copies": 5,
+      "categories": [
+        "Nuclear energy"
+      ]
     }
   ],
   "history": [
@@ -2171,6 +2198,43 @@
       "action": "Created Book",
       "time": "29/05/2024, 10:00",
       "timeAdded": 1716966011330
+    },
+    {
+      "id": "cjyUAwAAQBAJ",
+      "book_name": "Yale Law Journal: Volume 123, Number 7 - May 2014",
+      "ISBN": "9781610278638",
+      "action": "Created Book",
+      "time": "29/05/2024, 10:30",
+      "timeAdded": 1716967824739
+    },
+    {
+      "id": "tU9rDQAAQBAJ",
+      "book_name": "Witchblade #123",
+      "action": "Created Book",
+      "time": "29/05/2024, 10:30",
+      "timeAdded": 1716967824816
+    },
+    {
+      "id": "EOJ_OgnuhxoC",
+      "book_name": "H.R. 123, H.R. 2498 and H.R. 2535",
+      "action": "Created Book",
+      "time": "29/05/2024, 10:30",
+      "timeAdded": 1716967824864
+    },
+    {
+      "id": "Zf-Qtqz4IRgC",
+      "book_name": "Section 123: Civilian Nuclear Cooperation Agreements",
+      "action": "Created Book",
+      "time": "29/05/2024, 10:30",
+      "timeAdded": 1716967824907
+    },
+    {
+      "id": "OGjYVAIXxyQC",
+      "book_name": "The Complete Idiot's Guide to the World of Harry Potter",
+      "ISBN": "9781440636615",
+      "action": "Deleted Book",
+      "time": "29/05/2024, 10:32",
+      "timeAdded": 1716967931666
     }
   ],
   "favorites": [
@@ -2279,6 +2343,21 @@
         "Literary Criticism"
       ],
       "ISBN": "9789042019577"
+    },
+    {
+      "id": "ld_YAgAAQBAJ",
+      "book_name": "Fic",
+      "authors_name": [
+        "Anne Jamison"
+      ],
+      "num_pages": 434,
+      "short_description": "What is fanfiction, and what is it not? Why does fanfiction matter? And what makes it so important to the future of literature? Fic is a groundbreaking exploration of the history and culture of fan writing and what it means for the way we think about reading, writing, and authorship. It's a story about literature, community, and technology—about what stories are being told, who's telling them, how, and why. With provocative discussions from both professional and fan writers, on subjects from Star Trek to The X-Files and Buffy the Vampire Slayer to Harry Potter, Twilight, and beyond, Fic sheds light on the widely misunderstood world(s) of fanfiction—not only how fanfiction is transforming the literary landscape, but how it already has. Fic features a foreword by Lev Grossman (author of The Magicians) and interviews with Jonathan Lethem, Doug Wright, Eurydice (Vivean Dean), and Katie Forsythe/wordstrings. Cyndy Aleo (algonquinrt; d0tpark3r) V. Arrow (aimmyarrowshigh) Tish Beaty (his_tweet) Brad Bell Amber Benson Peter Berg (Homfrog) Kristina Busse Rachel Caine Francesca Coppa Randi Flanagan (BellaFlan) Jolie Fontenot Wendy C. Fries (Atlin Merrick) Ron Hogan Bethan Jones Christina Lauren (Christina Hobbs/tby789 and Lauren Billings/LolaShoes) Jacqueline Lichtenberg Rukmini Pande and Samira Nadkarni Chris Rankin Tiffany Reisz Andrew Shaffer Andy Sawyer Heidi Tandy (Heidi8) Darren Wershler Jules Wilkinson (missyjack) Jen Zern (NautiBitz)",
+      "image": "http://books.google.com/books/content?id=ld_YAgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "num_copies": 9,
+      "categories": [
+        "Literary Criticism"
+      ],
+      "ISBN": "9781939529190"
     }
   ]
 }
