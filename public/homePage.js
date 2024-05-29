@@ -406,7 +406,7 @@ function buildSearchBookGrid(currentPageArr) {
     // bookElem.addEventListener("click", () => {
     //   showMore(bookElem);
     // });
-    gridItem.addEventListener("click", () => {
+    bookElem.addEventListener("click", () => {
       showMore(bookName);
     });
     document.querySelector("#booksGrid").appendChild(bookElem);
