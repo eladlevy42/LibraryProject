@@ -336,7 +336,9 @@ img {
 }
 
 #deleteBook:hover {
-  animation: shake-left-to-right 0.2s infinite;
+  animation-name: shake-left-to-right;
+  animation-duration: 0.2s;
+  animation-iteration-count: 8;
 }
 
 @keyframes shake-left-to-right {

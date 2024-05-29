@@ -1754,6 +1754,43 @@
       "action": "Created Book",
       "time": "29/05/2024, 10:00",
       "timeAdded": 1716966011330
+    },
+    {
+      "id": "cjyUAwAAQBAJ",
+      "book_name": "Yale Law Journal: Volume 123, Number 7 - May 2014",
+      "ISBN": "9781610278638",
+      "action": "Created Book",
+      "time": "29/05/2024, 10:30",
+      "timeAdded": 1716967824739
+    },
+    {
+      "id": "tU9rDQAAQBAJ",
+      "book_name": "Witchblade #123",
+      "action": "Created Book",
+      "time": "29/05/2024, 10:30",
+      "timeAdded": 1716967824816
+    },
+    {
+      "id": "EOJ_OgnuhxoC",
+      "book_name": "H.R. 123, H.R. 2498 and H.R. 2535",
+      "action": "Created Book",
+      "time": "29/05/2024, 10:30",
+      "timeAdded": 1716967824864
+    },
+    {
+      "id": "Zf-Qtqz4IRgC",
+      "book_name": "Section 123: Civilian Nuclear Cooperation Agreements",
+      "action": "Created Book",
+      "time": "29/05/2024, 10:30",
+      "timeAdded": 1716967824907
+    },
+    {
+      "id": "OGjYVAIXxyQC",
+      "book_name": "The Complete Idiot's Guide to the World of Harry Potter",
+      "ISBN": "9781440636615",
+      "action": "Deleted Book",
+      "time": "29/05/2024, 10:32",
+      "timeAdded": 1716967931666
     }
   ],
   "favorites": [
