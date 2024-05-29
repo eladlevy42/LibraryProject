@@ -6,17 +6,16 @@ let allBooks = [];
 let getBooks;
 let totalPages;
 let currentPage = 1; //the current page of the grid. the total pages will be 9 when the 9th page is only 4 books.
-let spinner = document.querySelector('.spinner');
-let generalFailSnackbar = document.querySelector('.generalMessage')
-let deleteSuccessSnackbar = document.querySelector('.deleteSuccess')
-let addBookSuccessSnackbar = document.querySelector('.addBookSuccess')
-let noBooksFailSnackbar = document.querySelector('.noBooksFound')
-let bookExistsFailSnackbar = document.querySelector('.bookAlreadyExists')
-let addByNameSnackbar = document.querySelector('.addByName')
-let enterNameFailSnackbar = document.querySelector('.enterName')
-let removedFavoriteFailSnackbar = document.querySelector('.removeFavorite')
-let addedFavoriteSuccessSnackbar = document.querySelector('.addFavorite')
-
+let spinner = document.querySelector(".spinner");
+let generalFailSnackbar = document.querySelector(".generalMessage");
+let deleteSuccessSnackbar = document.querySelector(".deleteSuccess");
+let addBookSuccessSnackbar = document.querySelector(".addBookSuccess");
+let noBooksFailSnackbar = document.querySelector(".noBooksFound");
+let bookExistsFailSnackbar = document.querySelector(".bookAlreadyExists");
+let addByNameSnackbar = document.querySelector(".addByName");
+let enterNameFailSnackbar = document.querySelector(".enterName");
+let removedFavoriteFailSnackbar = document.querySelector(".removeFavorite");
+let addedFavoriteSuccessSnackbar = document.querySelector(".addFavorite");
 
 function parseBookInfo(book) {
   let volumeInfo = book.volumeInfo;
@@ -44,7 +43,7 @@ async function initBookArr() {
     allBooks = response.data;
     totalPages = Math.ceil(allBooks.length / 9);
   } catch (error) {
-    showSnackbar(generalFailSnackbar)
+    showSnackbar(generalFailSnackbar);
   }
 }
 
@@ -76,24 +75,30 @@ function getCurrentDateTime() {
   return `${day}/${month}/${year}, ${hours}:${minutes}`;
 }
 
-
 function showSpinner() {
   document.querySelector(".spinner").style.display = "block";
 }
 
-
 function showSnackbar(snackbarMessage) {
-  snackbarMessage.classList.remove('show');
+  snackbarMessage.classList.remove("show");
   void snackbarMessage.offsetWidth; // Trigger reflow to restart the animation
-  snackbarMessage.classList.add('show');
-  
+  snackbarMessage.classList.add("show");
+
   // Clear any existing timeout associated with this snackbar
   if (snackbarMessage.timeoutId) {
     clearTimeout(snackbarMessage.timeoutId);
   }
-  
+
   // Set a new timeout to hide the snackbar
-  snackbarMessage.timeoutId = setTimeout(function() {
+  snackbarMessage.timeoutId = setTimeout(function () {
     snackbarMessage.classList.remove("show");
   }, 2400);
 }
+document.querySelector("#Xside").addEventListener("click", () => {
+  document.querySelector(".sideBar").classList.remove("show");
+  document.querySelector("#burger").style.visibility = "visible";
+});
+document.querySelector("#burger").addEventListener("click", () => {
+  document.querySelector(".sideBar").classList.add("show");
+  document.querySelector("#burger").style.visibility = "hidden";
+});
