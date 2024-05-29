@@ -16,6 +16,7 @@ async function resetAll() {
   showFav = false;
   sorted = false;
   searched = false;
+  updateFavLable();
   resetSearched();
   await openPage();
 }
