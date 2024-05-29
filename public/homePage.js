@@ -168,8 +168,8 @@ function hideDetailWrapper() {
 async function buildBookGrid(booksArr) {
   const bookGridElement = document.querySelector("#booksGrid");
   bookGridElement.innerHTML = "";
-  document.querySelector("#back").style.visibility = "hidden";
-  document.querySelector("#next").style.visibility = "hidden";
+  document.getElementById('next').style.visibility = 'hidden'
+  document.getElementById('back').style.visibility = 'hidden'
   const imagePromises = booksArr.map((book) => loadImage(book.image));
   const images = await Promise.all(imagePromises);
   booksArr.forEach((book, index) => {
@@ -215,10 +215,10 @@ async function openPage() {
   buildBookGrid(booksArr);
 
   if (currentPage == 1) {
-    document.querySelector("#back").style.visibility = "hidden";
+    document.getElementById('back').style.visibility = "hidden";
     console.log(currentPage);
   } else {
-    document.querySelector("#back").style.visibility = "visible";
+    document.getElementById('back').style.visibility = "visible";
   }
   if (currentPage == pages || booksArr.length < 12) {
     document.querySelector("#next").style.visibility = "hidden";
@@ -237,6 +237,7 @@ async function switchPage(direction) {
   showSpinner();
   try {
     await openPage();
+    document.getElementById('booksGrid').style.visibility = "visible";
   } catch (error) {
     console.log(error);
   }
@@ -244,7 +245,9 @@ async function switchPage(direction) {
 
 // Function to show the loading spinner
 function showSpinner() {
-  document.querySelector("#booksGrid").visibility = "visible";
+  document.getElementById('booksGrid').style.visibility = "hidden";
+  document.getElementById('next').style.visibility = 'hidden'
+  document.getElementById('back').style.visibility = 'hidden'
   spinner.style.display = "block";
 }
 

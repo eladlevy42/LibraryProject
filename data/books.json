@@ -76,21 +76,6 @@
       "ISBN": "1589395824"
     },
     {
-      "id": "rhQvDQAAQBAJ",
-      "book_name": "Cinematic Guide: Albus Dumbledore (Harry Potter)",
-      "authors_name": [
-        "Felicity Baker"
-      ],
-      "num_pages": 68,
-      "short_description": "The Essential Film Companion for ALBUS DUMBLEDORE that's perfect for the youngest fans! This hardcover guidebook features your favorite scenes and quotes from all eight Harry Potter movies!The experience of this eBook will be best if viewed on a tablet.",
-      "image": "http://books.google.com/books/content?id=rhQvDQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-      "num_copies": 10,
-      "categories": [
-        "Juvenile Nonfiction"
-      ],
-      "ISBN": "9781338160215"
-    },
-    {
       "id": "qQYfoV62d30C",
       "book_name": "JK Rowling's Harry Potter Novels",
       "authors_name": [
@@ -1307,21 +1292,6 @@
       "ISBN": "9781105640247"
     },
     {
-      "id": "_r8VAgAAQBAJ",
-      "book_name": "Yale Law Journal: Volume 123, Number 2 - November 2013",
-      "authors_name": [
-        "Yale Law Journal"
-      ],
-      "num_pages": 287,
-      "short_description": "This November issue of The Yale Law Journal (the second of Volume 123, academic year 2013-2014) features new articles and essays on law and legal theory by internationally recognized scholars. Contents include: * Article, \"Leviathan and Interpretive Revolution: The Administrative State, the Judiciary, and the Rise of Legislative History, 1890-1950,\" by Nicholas R. Parrillo * Essay, \"Reconsidering Citizens United as a Press Clause Case,\" Michael W. McConnell * Note, \"The Mens Rea of Accomplice Liability: Supporting Intentions\" * Comment, \"A First Amendment Approach to Generic Drug Manufacturer Tort Liability\" * Comment, \"The EU General Data Protection Regulation: Toward a Property Regime for Protecting Data Privacy\" Quality ebook formatting includes fully linked footnotes, active Table of Contents (including linked Contents for individual articles), active URLs in notes, and properly presented tables and graphs throughout.",
-      "image": "http://books.google.com/books/content?id=_r8VAgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-      "num_copies": 3,
-      "categories": [
-        "Law"
-      ],
-      "ISBN": "9781610278898"
-    },
-    {
       "id": "DQQhCwAAQBAJ",
       "book_name": "Harry Potter and the Chamber of Secrets",
       "authors_name": [
@@ -2217,6 +2187,36 @@
       "action": "Deleted Book",
       "time": "29/05/2024, 15:21",
       "timeAdded": 1716985262047
+    },
+    {
+      "id": "3b7e",
+      "book_name": "123",
+      "action": "Created Book",
+      "time": "29/05/2024, 15:23",
+      "timeAdded": 1716985435093
+    },
+    {
+      "id": "b558",
+      "book_name": "123",
+      "action": "Deleted Book",
+      "time": "29/05/2024, 15:24",
+      "timeAdded": 1716985448672
+    },
+    {
+      "id": "_r8VAgAAQBAJ",
+      "book_name": "Yale Law Journal: Volume 123, Number 2 - November 2013",
+      "ISBN": "9781610278898",
+      "action": "Deleted Book",
+      "time": "29/05/2024, 15:24",
+      "timeAdded": 1716985497577
+    },
+    {
+      "id": "rhQvDQAAQBAJ",
+      "book_name": "Cinematic Guide: Albus Dumbledore (Harry Potter)",
+      "ISBN": "9781338160215",
+      "action": "Deleted Book",
+      "time": "29/05/2024, 15:26",
+      "timeAdded": 1716985561323
     }
   ],
   "favorites": [

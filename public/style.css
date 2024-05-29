@@ -222,12 +222,14 @@ main {
   position: absolute;
   top: 500px;
   right: 250px;
+  visibility: hidden;
 }
 
 #back{
   position: absolute;
   top: 500px;
   left: 250px;
+  visibility: hidden;
 }
 #bookDescription {
   max-height: 200px;
