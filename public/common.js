@@ -51,7 +51,7 @@ function buildHistoryObject(book, action) {
   let bookName = book.book_name;
   let bookISBN = book.ISBN;
   let bookAction = action;
-  let bookId = book.id;
+  let bookId = generateUUID();
   let actionTime = getCurrentDateTime();
   const historyObject = {
     id: bookId,
@@ -61,7 +61,15 @@ function buildHistoryObject(book, action) {
     time: actionTime,
     timeAdded: Date.now(),
   };
+  console.log(historyObject);
   return historyObject;
+}
+
+function generateUUID() {
+  return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
+    var r = Math.random() * 16 | 0, v = c == 'x' ? r : (r & 0x3 | 0x8);
+    return v.toString(16);
+  });
 }
 
 function getCurrentDateTime() {

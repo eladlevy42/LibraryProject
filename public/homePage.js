@@ -303,7 +303,7 @@ async function addCopy() {
     const historyObject = buildHistoryObject(bookDetail, "Added copy");
     await axios.patch(url, bookDetail);
     await axios.post(historyUrl, historyObject);
-
+    console.log('posted');
     document.querySelector("#bookNumCopies").textContent = `copies: ${copies}`;
   } catch (error) {
     console.error(error);
