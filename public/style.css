@@ -801,8 +801,8 @@ img {
   }
   .arrow {
     position: sticky;
-    top: -150px;
-    left: -510px;
+    /* top: -150px;
+    left: -510px; */
   }
   #searchBar {
     width: 200px;
