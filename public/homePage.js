@@ -46,7 +46,9 @@ async function addToFav() {
     let response = await axios.get(url);
     let bookDetail = response.data[0];
     try {
+      const historyObject = buildHistoryObject(bookDetail, "Added to favorite");
       await axios.post(favURL, bookDetail);
+      await axios.post(historyUrl, historyObject);
       btn.classList.remove("fa-regular");
       btn.classList.add("fa-solid");
       showSnackbar(addedFavoriteSuccessSnackbar);
@@ -66,7 +68,12 @@ async function removeFromFav() {
     let bookDetail = response.data[0];
     url = `${favURL}/${bookDetail.id}`;
     try {
+      const historyObject = buildHistoryObject(
+        bookDetail,
+        "Removed from favorite"
+      );
       await axios.delete(url);
+      await axios.post(historyUrl, historyObject);
       btn.classList.add("fa-regular");
       btn.classList.remove("fa-solid");
       showSnackbar(removedFavoriteFailSnackbar);
