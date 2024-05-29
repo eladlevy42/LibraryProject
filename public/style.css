@@ -163,11 +163,23 @@ main {
 
 #booksGrid {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  max-width: 1000px;
   padding: var(--padding-medium);
   gap: 1em;
 }
 
+#next{
+  position: absolute;
+  top: 600px;
+  right: 130px;
+}
+
+#back{
+  position: absolute;
+  top: 600px;
+  left: 130px;
+}
 #bookDescription {
   max-height: 200px;
   overflow-y: auto;
@@ -648,10 +660,19 @@ img {
   .newBook {
     height: auto;
   }
+  #booksGrid{
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 @media screen and (max-width: 1006px) {
   #searchInput {
     width: 280px;
+  }
+  #next{
+    right: 50px;
+  }
+  #back{
+    left: 50px;
   }
 }
 @media screen and (max-height: 870px) {
@@ -673,10 +694,7 @@ img {
   #detailBook {
     width: 500px;
   }
-  /* .fa-x{
-    left: 230px;
-    top: -10px;
-  } */
+  
   #bookTitle {
     font-size: 1em;
   }
@@ -697,6 +715,13 @@ img {
   .closeBookWrapper {
     left: 330px;
   }
+  #next{
+    right: 15px;
+  }
+  #back{
+    left: 15px;
+  }
+  
 }
 @media screen and (max-width: 700px) {
   .newBooksDetails {
@@ -722,6 +747,9 @@ img {
   #gridWrapper {
     position: relative;
   }
+  #sortBar{
+    width: 350px;
+  }
 }
 @media screen and (max-width: 600px) {
   .actionTable th,
@@ -745,6 +773,9 @@ img {
   #booksGrid {
     grid-template-columns: repeat(1, 1fr);
   }
+  #sortBar{
+    width: 300px;
+  }
   .newBooksDetails {
     width: 300px;
   }
@@ -754,10 +785,13 @@ img {
   #detailBook {
     width: 320px;
   }
-  /* .fa-x{
-    left: 140px;
-    top: -10px;
-  } */
+  #back, #next{
+    position: sticky;
+    bottom: 53px;
+  }
+  #next{
+    left: 410px;
+  }
 }
 @media screen and (max-width: 470px) {
   #createBookByDetails h2 {
@@ -798,11 +832,6 @@ img {
   #createBookByISBN .submitButton {
     margin-left: 0px;
     margin-top: 0;
-  }
-  .arrow {
-    position: sticky;
-    /* top: -150px;
-    left: -510px; */
   }
   #searchBar {
     width: 200px;

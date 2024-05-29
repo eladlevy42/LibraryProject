@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicons\favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -109,21 +110,19 @@
         <span id="reset">Reset</span>
       </div>
       <div id="gridWrapper">
-        <i
-          class="fa-solid fa-backward arrow arrow-left"
-          id="back"
-          onclick="switchPage('back')"
-        ></i>
-
         <div id="booksGrid"></div>
-        <i
-          id="next"
-          class="fa-solid fa-forward arrow arrow-right"
-          onclick="switchPage('next')"
-        ></i>
       </div>
     </main>
-
+    <i
+      class="fa-solid fa-backward arrow arrow-left"
+      id="back"
+      onclick="switchPage('back')"
+    ></i>
+    <i
+      id="next"
+      class="fa-solid fa-forward arrow arrow-right"
+      onclick="switchPage('next')"
+    ></i>
     <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
     <script src="secret.js"></script>
     <script src="common.js"></script>
