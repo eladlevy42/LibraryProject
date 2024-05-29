@@ -1,6 +1,7 @@
 // Initialize the book array and the home page books
 let searchPageIndex = 0;
 let searchResultsPages = [];
+currentPage = 1;
 let url = `${jsonServerUrl}/?_page=${currentPage}&_per_page=12`;
 let sorted = false;
 let showFav = false;
@@ -18,7 +19,7 @@ async function resetAll() {
   searched = false;
   updateFavLable();
   resetSearched();
-  document.getElementById('searchInput').value = ''
+  document.getElementById("searchInput").value = "";
   await openPage();
 }
 function updateFavLable() {
@@ -168,8 +169,8 @@ function hideDetailWrapper() {
 async function buildBookGrid(booksArr) {
   const bookGridElement = document.querySelector("#booksGrid");
   bookGridElement.innerHTML = "";
-  document.getElementById('next').style.visibility = 'hidden'
-  document.getElementById('back').style.visibility = 'hidden'
+  document.getElementById("next").style.visibility = "hidden";
+  document.getElementById("back").style.visibility = "hidden";
   const imagePromises = booksArr.map((book) => loadImage(book.image));
   const images = await Promise.all(imagePromises);
   booksArr.forEach((book, index) => {
@@ -190,9 +191,7 @@ async function buildBookGrid(booksArr) {
     gridItem.appendChild(title);
     gridItem.appendChild(author);
     bookGridElement.appendChild(gridItem);
-    gridItem.addEventListener("click", () => {
-      showMore(gridItem);
-    });
+    gridItem.onclick = showMore(this);
   });
   if (booksArr.length < 12) {
     //fill the empty grid items with empty book divs
@@ -215,10 +214,10 @@ async function openPage() {
   buildBookGrid(booksArr);
 
   if (currentPage == 1) {
-    document.getElementById('back').style.visibility = "hidden";
+    document.getElementById("back").style.visibility = "hidden";
     console.log(currentPage);
   } else {
-    document.getElementById('back').style.visibility = "visible";
+    document.getElementById("back").style.visibility = "visible";
   }
   if (currentPage == pages || booksArr.length < 12) {
     document.querySelector("#next").style.visibility = "hidden";
@@ -237,7 +236,7 @@ async function switchPage(direction) {
   showSpinner();
   try {
     await openPage();
-    document.getElementById('booksGrid').style.visibility = "visible";
+    document.getElementById("booksGrid").style.visibility = "visible";
   } catch (error) {
     console.log(error);
   }
@@ -245,9 +244,9 @@ async function switchPage(direction) {
 
 // Function to show the loading spinner
 function showSpinner() {
-  document.getElementById('booksGrid').style.visibility = "hidden";
-  document.getElementById('next').style.visibility = 'hidden'
-  document.getElementById('back').style.visibility = 'hidden'
+  document.getElementById("booksGrid").style.visibility = "hidden";
+  document.getElementById("next").style.visibility = "hidden";
+  document.getElementById("back").style.visibility = "hidden";
   spinner.style.display = "block";
 }
 
