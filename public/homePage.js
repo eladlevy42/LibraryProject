@@ -32,13 +32,12 @@ function updateFavLable() {
 async function checkInFav() {
   let btn = document.querySelector("#fav");
   let bookName = document.querySelector("#bookTitle").textContent;
-  let url = `${jsonServerUrl}/?book_name=${bookName}`;
-  let response = await axios.get(url);
-  let bookDetail = response.data[0];
-  url = `${favURL}/?id=${bookDetail.id}`;
+  let url = `${favURL}/?book_name=${bookName}`;
+  console.log(url);
   try {
-    response = await axios.get(url);
-    if (response.data.length > 0) {
+    let response = await axios.get(url);
+    let bookDetail = response.data[0];
+    if (bookDetail != undefined) {
       btn.classList.remove("fa-regular");
       btn.classList.add("fa-solid");
       return true;
@@ -129,10 +128,12 @@ function updateUrl() {
 async function initHomeBooks() {
   await openPage();
 }
-async function showMore(book) {
-  const bookId = book.id;
-  const url = `${jsonServerUrl}/?id=${bookId}`;
+async function showMore(bookName) {
+  console.log(bookName);
+  let url = `${jsonServerUrl}/?book_name=${bookName}`;
+  console.log(url);
   let bookDetail = await axios.get(url).then((response) => {
+    console.log(response.data[0]);
     return response.data[0];
   });
   let detailWrapperElem = document.querySelector(".detailWrapper");
@@ -175,12 +176,13 @@ async function buildBookGrid(booksArr) {
   const images = await Promise.all(imagePromises);
   booksArr.forEach((book, index) => {
     spinner.style.display = "none";
+    let bookName = book.book_name;
     let gridItem = document.createElement("div");
     gridItem.id = book.id;
     gridItem.classList.add("book");
     let image = document.createElement("img");
     image.src = images[index];
-    image.alt = book.bookName;
+    image.alt = book.book_name;
     let title = document.createElement("span");
     title.classList.add("book-title");
     title.textContent = book.book_name;
@@ -191,7 +193,9 @@ async function buildBookGrid(booksArr) {
     gridItem.appendChild(title);
     gridItem.appendChild(author);
     bookGridElement.appendChild(gridItem);
-    gridItem.onclick = showMore(this);
+    gridItem.addEventListener("click", () => {
+      showMore(bookName);
+    });
   });
   if (booksArr.length < 12) {
     //fill the empty grid items with empty book divs
@@ -309,17 +313,22 @@ async function addCopy() {
 
 async function deleteBook() {
   let bookName = document.querySelector("#bookTitle").textContent;
-
   let url = `${jsonServerUrl}/?book_name=${bookName}`;
+
   try {
     let response = await axios.get(url);
     let bookDetail = response.data[0];
     url = `${jsonServerUrl}/${bookDetail.id}`;
     const historyObject = buildHistoryObject(bookDetail, "Deleted Book");
     await axios.delete(url);
+    if (await checkInFav()) {
+      url = `${favURL}/${bookDetail.id}`;
+      await axios.delete(url);
+    }
     showSnackbar(deleteSuccessSnackbar);
     await axios.post(historyUrl, historyObject);
     hideDetailWrapper();
+
     await openPage();
   } catch (error) {
     console.error(error);
@@ -378,6 +387,7 @@ function buildSearchBookGrid(currentPageArr) {
   document.querySelector("#booksGrid").visibility = "visible";
   document.querySelector("#booksGrid").innerHTML = "";
   currentPageArr.forEach((book) => {
+    let bookName = book.book_name;
     let bookElem = document.createElement("div");
     bookElem.classList.add("book");
     bookElem.id = book.id;
@@ -393,8 +403,11 @@ function buildSearchBookGrid(currentPageArr) {
     bookElem.appendChild(image);
     bookElem.appendChild(title);
     bookElem.appendChild(author);
-    bookElem.addEventListener("click", () => {
-      showMore(bookElem);
+    // bookElem.addEventListener("click", () => {
+    //   showMore(bookElem);
+    // });
+    gridItem.addEventListener("click", () => {
+      showMore(bookName);
     });
     document.querySelector("#booksGrid").appendChild(bookElem);
   });
