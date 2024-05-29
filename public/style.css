@@ -1,9 +1,9 @@
 @import url(reset.css);
 :root {
-  --clr-background-primary: hsl(52, 94%, 94%);
-  --clr-accent-primary: hsl(200, 94%, 21%);
-  --clr-danger-primary: hsl(28, 100%, 51%);
-  --clr-form-primary: hsl(200, 94%, 21%);
+  --clr-background-primary: hsl(52, 94%, 88%);
+  --clr-accent-primary: hsl(11, 81%, 21%);
+  --clr-danger-primary: hsl(30, 100%, 50%);
+  --clr-form-primary: hsl(11, 81%, 21%);
   --padding-xs: 0.25em;
   --padding-small: 0.5em;
   --padding-medium-small: 0.75em;
@@ -197,7 +197,7 @@ main {
 
 .book-title {
   font-size: clamp(10px, 2vw, 14px);
-  background-color: hsl(200, 68%, 54%);
+  background-color: hsl(11, 78%, 62%);
   height: 30px;
   width: 100%; /* Ensure it takes full width of the card */
   padding-top: var(--margin-xs);
@@ -375,11 +375,7 @@ img {
 }
 
 .selected {
-  background-color: lightseagreen;
-  color: black;
-}
-
-.newBook.selected .book-author {
+  background-color: hsl(120, 40%, 50%);
   color: black;
 }
 
@@ -428,15 +424,17 @@ img {
 .newBook:hover {
   height: 300px;
   z-index: 200;
-  background-color: hsl(200, 80%, 62%);
   transform: translateY(5px);
   justify-content: space-between;
 }
 .newBook.selected:hover {
+  background-color: hsl(126, 98%, 31%);
+}
+.newBook.selected:hover .book-title{
   background-color: lightseagreen;
 }
-.newBook:hover .book-author {
-  color: black;
+.newBook.selected .book-title{
+  background-color: lightseagreen;
 }
 .newBook:hover .book-title {
   height: auto;
@@ -614,11 +612,12 @@ img {
 }
 
 .actionTable tr:nth-child(even) {
-  background-color: hsl(53, 4%, 62%);
+  background-color: #70655E;
+  color: white;
 }
 
 .actionTable tr:hover {
-  background-color: var(--clr-form-primary);
+  background-color: #930019;
   color: white;
 }
 #fav {
