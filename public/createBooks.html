@@ -1,89 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
     <title>Document</title>
-</head>
-<body>
-    <div class="snackbar failSnackbar generalMessage">Couldn't connect to server! try again later.</div>
-    <div class="snackbar successSnackbar addBookSuccess">Book added successfuly!</div>
-    <div class="snackbar failSnackbar noBooksFound">No matching books found!</div>
-    <div class="snackbar failSnackbar bookAlreadyExists">Book already exists!</div>
+  </head>
+  <body>
+    <div class="snackbar failSnackbar generalMessage">
+      Couldn't connect to server! try again later.
+    </div>
+    <div class="snackbar successSnackbar addBookSuccess">
+      Book added successfuly!
+    </div>
+    <div class="snackbar failSnackbar noBooksFound">
+      No matching books found!
+    </div>
+    <div class="snackbar failSnackbar bookAlreadyExists">
+      Book already exists!
+    </div>
     <div class="snackbar addByName"></div>
     <div class="detailWrapper newBooksWrapper">
-        <i class="fa-solid fa-x closeBookWrapper" onclick="hideBooksWrapper()"></i>
-        <div class="newBooksDetails">
-            
-        </div>
+      <i
+        class="fa-solid fa-x closeBookWrapper"
+        onclick="hideBooksWrapper()"
+      ></i>
+      <div class="newBooksDetails"></div>
     </div>
     <div class="spinnerPopup"><div class="spinner"></div></div>
     <header>
-        <nav class="navBar">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="createBooks.html">Create a new book</a></li>
-                <li><a href="actionHistory.html">View action history</a></li>
-            </ul>
-        </nav>
+      <nav class="navBar">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="createBooks.html">Create a new book</a></li>
+          <li><a href="actionHistory.html">View action history</a></li>
+        </ul>
+      </nav>
     </header>
 
-
     <div class="margin-top-huge">
-        <div class="mainFormWrapper">
-            <form id="createBookByDetails">
-                <h2>Create book by Details:</h2>
-                <label class="required" for="bookNameDetails">Book name:</label>
-                <input type="text" name="book_name" id="bookNameDetails" placeholder="The Hobbit" required>
-                <label class="required" for="authorsNameDetails">Authors name:</label>
-                <label for="authorsNameDetails" class="semiLabel">If multiple authors; enter the names seperated by a comma (,)</label>
-                <input type="text" name="authors_name" id="authorsNameDetails" placeholder="J.R.R Tolkien" required>
-                <label class="required" for="bookPages">Number of pages:</label>
-                <input type="number" name="num_pages" id="bookPages" placeholder="xxx..." required>
-                <label class="required" for="bookDetailDescription">Short description:</label>
-                <input type="text" name="short_description" id="bookDetailDescription" placeholder="Once upon a time..." required>
-                <label for="bookCover">Book cover:</label>
-                <input type="text" name="image" id="bookCover">
-                <label class="required" for="bookCopies">Number of copies:</label>
-                <input type="number" name="num_copies" id="bookCopies" placeholder="123" required>
-                <label class="required" for="bookCategories">Categories:</label>
-                <label for="bookCategories" class="semiLabel">If multiple categories; enter the categories seperated by a comma (,)</label>
-                <input type="text" name="categories" id="bookCategories" placeholder="fantasy, action, romance" required>
-                <label for="bookISBNDetails">ISBN:</label>
-                <input type="text" name="ISBN" id="bookISBNDetails" placeholder="123-456789012">
-                <button class="submitButton" type="submit">Create book</button>
-            </form>
-        </div>
-        <h2 class="orHeader">Or</h2>
-        <h4 class="formSelectHeader">Create book by <select id="formSelect">
-            <option value="Name">Name</option>
-            <option value="ISBN">ISBN</option>
-        </select></h4>
-        <div class="formNameWrapper">
-            <form id="createBookByName">
-        
-                <label class="required" for="bookName">Book name:</label>
-                <input type="text" name="bookName" id="bookName" placeholder="The Hobbit" required>
-                <button class="submitButton" type="submit">Create book</button>
-            </form>
-        </div>
-        <div class="formISBNWrapper">
-            <form id="createBookByISBN">
-        
-                <label class="required" for="bookISBN">Book ISBN:</label>
-                <input type="text" name="bookISBN" id="bookISBN" placeholder="123-456789012" required>
-                <button class="submitButton" type="submit">Create book</button>
-            </form>
-        </div>
+      <div class="mainFormWrapper">
+        <form id="createBookByDetails">
+          <h2>Create book by Details:</h2>
+          <label class="required" for="bookNameDetails">Book name:</label>
+          <input
+            type="text"
+            name="book_name"
+            id="bookNameDetails"
+            placeholder="The Hobbit"
+            required
+          />
+          <label class="required" for="authorsNameDetails">Authors name:</label>
+          <label for="authorsNameDetails" class="semiLabel"
+            >If multiple authors; enter the names seperated by a comma
+            (,)</label
+          >
+          <input
+            type="text"
+            name="authors_name"
+            id="authorsNameDetails"
+            placeholder="J.R.R Tolkien"
+            required
+          />
+          <label class="required" for="bookPages">Number of pages:</label>
+          <input
+            type="number"
+            name="num_pages"
+            id="bookPages"
+            placeholder="xxx..."
+            required
+          />
+          <label class="required" for="bookDetailDescription"
+            >Short description:</label
+          >
+          <input
+            type="text"
+            name="short_description"
+            id="bookDetailDescription"
+            placeholder="Once upon a time..."
+            required
+          />
+          <label for="bookCover">Book cover:</label>
+          <input type="text" name="image" id="bookCover" />
+          <label class="required" for="bookCopies">Number of copies:</label>
+          <input
+            type="number"
+            name="num_copies"
+            id="bookCopies"
+            placeholder="123"
+            required
+          />
+          <label class="required" for="bookCategories">Categories:</label>
+          <label for="bookCategories" class="semiLabel"
+            >If multiple categories; enter the categories seperated by a comma
+            (,)</label
+          >
+          <input
+            type="text"
+            name="categories"
+            id="bookCategories"
+            placeholder="fantasy, action, romance"
+            required
+          />
+          <label for="bookISBNDetails">ISBN:</label>
+          <input
+            type="text"
+            name="ISBN"
+            id="bookISBNDetails"
+            placeholder="123-456789012"
+          />
+          <button class="submitButton" type="submit">Create book</button>
+        </form>
+      </div>
+      <h2 class="orHeader">Or</h2>
+      <h4 class="formSelectHeader">
+        Create book by
+        <select id="formSelect">
+          <option value="Name">Name</option>
+          <option value="ISBN">ISBN</option>
+        </select>
+      </h4>
+      <div class="formNameWrapper">
+        <form id="createBookByName">
+          <label class="required" for="bookName">Book name:</label>
+          <input
+            type="text"
+            name="bookName"
+            id="bookName"
+            placeholder="The Hobbit"
+            required
+          />
+          <button class="submitButton" type="submit">Create book</button>
+        </form>
+      </div>
+      <div class="formISBNWrapper">
+        <form id="createBookByISBN">
+          <label class="required" for="bookISBN">Book ISBN:</label>
+          <input
+            type="text"
+            name="bookISBN"
+            id="bookISBN"
+            placeholder="123-456789012"
+            required
+          />
+          <button class="submitButton" type="submit">Create book</button>
+        </form>
+      </div>
     </div>
     <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
     <script src="secret.js"></script>
     <script src="common.js"></script>
     <script src="createBooks.js"></script>
-</body>
+  </body>
 </html>

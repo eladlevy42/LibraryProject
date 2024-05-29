@@ -3,14 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<<<<<<< HEAD
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <<<<<<< HEAD
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
     <title>Document</title>
-=======
+    =======
     <title>Home</title>
->>>>>>> 3eed8e460a218073feba172eef983d248288bf9d
+    >>>>>>> 3eed8e460a218073feba172eef983d248288bf9d
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
@@ -18,12 +21,20 @@
     />
   </head>
   <body>
-    <div class="snackbar failSnackbar generalMessage">Couldn't connect to server! try again later.</div>
-    <div class="snackbar successSnackbar deleteSuccess">Book deleted successfuly!</div>
+    <div class="snackbar failSnackbar generalMessage">
+      Couldn't connect to server! try again later.
+    </div>
+    <div class="snackbar successSnackbar deleteSuccess">
+      Book deleted successfuly!
+    </div>
     <div class="snackbar failSnackbar noBooksFound">No books found!</div>
     <div class="snackbar failSnackbar enterName">Enter a book name!</div>
-    <div class="snackbar successSnackbar addFavorite">Added book to favorites!</div>
-    <div class="snackbar failSnackbar removeFavorite">Removed book from favorites!</div>
+    <div class="snackbar successSnackbar addFavorite">
+      Added book to favorites!
+    </div>
+    <div class="snackbar failSnackbar removeFavorite">
+      Removed book from favorites!
+    </div>
     <div class="detailWrapper">
       <div id="detailBook">
         <i class="fa-solid fa-x" onclick="hideDetailWrapper()"></i>
@@ -83,7 +94,9 @@
                 placeholder="Search..."
                 required
               />
-              <button id="searchButton" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+              <button id="searchButton" type="submit">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
             </form>
           </li>
         </ul>
@@ -92,7 +105,8 @@
     <main class="margin-top-huge">
       <h1 class="mainPageHeader">Your Books</h1>
       <div class="spinner"></div>
-      <button id="sort">sort a-z</button>
+      <i id="sort" class="fa-solid fa-arrow-down-a-z"></i>
+      <span id="showFav">Show Favorites</span>
       <div id="gridWrapper">
         <i
           class="fa-solid fa-backward arrow arrow-left"
