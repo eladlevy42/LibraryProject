@@ -31,21 +31,6 @@
       "ISBN": "No ISBN"
     },
     {
-      "id": "NamyhpiMCuQC",
-      "book_name": "A Memorial of the Rev. James W. Dale, D.D.",
-      "authors_name": [
-        "James Roberts"
-      ],
-      "num_pages": 154,
-      "short_description": "No Description",
-      "image": "http://books.google.com/books/content?id=NamyhpiMCuQC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-      "num_copies": 6,
-      "categories": [
-        "Clergy"
-      ],
-      "ISBN": "No ISBN"
-    },
-    {
       "id": "Hlo_aH173uoC",
       "book_name": "Hippopathology: a Systematic Treatise on the Disorders and Lameness of the Horse",
       "authors_name": [
@@ -550,21 +535,6 @@
       "ISBN": "9780743469876"
     },
     {
-      "id": "dvxkR0spGUMC",
-      "book_name": "Hitch",
-      "authors_name": [
-        "John Russell Taylor"
-      ],
-      "num_pages": 288,
-      "short_description": "One of cinema's greatest directors, a virtuoso visual artist, and a genius of the suspense genre, Alfred Hitchcock (1899–1980) is universally known for such masterpieces as Strangers on a Train, Rear Window, Vertigo, North by Northwest, Psycho, and The Birds. John Russell Taylor, a distinguished film critic and friend of Hitchcock's, enjoyed his full cooperation. Based on numerous interviews, with photos from the private family albums, and an in-depth study of the making of his last film, this biography of the director is as intriguing, revealing, perverse, and entertaining as any Hitchcock classic.",
-      "image": "http://books.google.com/books/content?id=dvxkR0spGUMC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-      "num_copies": 5,
-      "categories": [
-        "Biography & Autobiography"
-      ],
-      "ISBN": "9781448211616"
-    },
-    {
       "id": "Hqp1AgAAQBAJ",
       "book_name": "Yale Law Journal: Volume 123, Number 4 - January 2014",
       "authors_name": [
@@ -746,21 +716,6 @@
         "Literary Criticism"
       ],
       "ISBN": "0618422536"
-    },
-    {
-      "id": "KV4DAwAAQBAJ",
-      "book_name": "UFO! (SpongeBob SquarePants)",
-      "authors_name": [
-        "Nickelodeon Publishing"
-      ],
-      "num_pages": 36,
-      "short_description": "Bikini Bottom suddenly goes dark one day and everyone panics! Are aliens invading SpongeBob SquarePants home?",
-      "image": "http://books.google.com/books/content?id=KV4DAwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-      "num_copies": 9,
-      "categories": [
-        "Juvenile Fiction"
-      ],
-      "ISBN": "9781612630052"
     },
     {
       "id": "KzuhDwAAQBAJ",
@@ -1209,6 +1164,35 @@
         "Fiction"
       ],
       "ISBN": "9780345534835"
+    },
+    {
+      "id": "-eEmAQAAIAAJ",
+      "book_name": "Hitch and Alma",
+      "authors_name": [
+        "Robert Schoen"
+      ],
+      "num_pages": 236,
+      "short_description": "This fascinating, speculative exploration of Alfred Hitchcock reveals the thin line he walked between his obsessions over leading ladies and his lifelong devotion to his intellectual equal and collaborator, Alma Reville Hitchcock.",
+      "image": "http://books.google.com/books/content?id=-eEmAQAAIAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+      "num_copies": 10,
+      "categories": [
+        "Motion picture plays"
+      ]
+    },
+    {
+      "id": "UiEAOcfu-IoC",
+      "book_name": "The Hitch Hiker/Texas",
+      "authors_name": [
+        "Hitch Hiker"
+      ],
+      "num_pages": 86,
+      "short_description": "THIS BOOK IS DEDICATED to people and children without a song, a song thats suppose to keep them alive, a song called, everything i need to survive to those who got lost on the way to their future, because of never having the support of those that kept it away from them, and i hope that i can make a difference in some peoples lives by give something back financialy, to make some of you happier with a better FUTURE. if you do read one of my books and i cant get to you, please stand up and go into your future to help yourself and take some of your friends with as a team, i believe that you will make it if you choose to make it. build your own song. Hitch Hiker",
+      "image": "http://books.google.com/books/content?id=UiEAOcfu-IoC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "num_copies": 10,
+      "categories": [
+        "Fiction"
+      ],
+      "ISBN": "9781462035069"
     }
   ],
   "history": [
@@ -3009,6 +2993,53 @@
       "action": "Deleted Book",
       "time": "29/05/2024, 20:47",
       "timeAdded": 1717004843574
+    },
+    {
+      "id": "NamyhpiMCuQC",
+      "book_name": "A Memorial of the Rev. James W. Dale, D.D.",
+      "ISBN": "No ISBN",
+      "action": "Deleted Book",
+      "time": "29/05/2024, 20:50",
+      "timeAdded": 1717005015160
+    },
+    {
+      "id": "GOUbAbq33q4C",
+      "book_name": "A Defence of the Record of Revelation Agaisnt \"Christian Theology and Modern Scepticism.\".",
+      "ISBN": "No ISBN",
+      "action": "Removed from favorite",
+      "time": "29/05/2024, 20:52",
+      "timeAdded": 1717005138387
+    },
+    {
+      "id": "-eEmAQAAIAAJ",
+      "book_name": "Hitch and Alma",
+      "action": "Created Book",
+      "time": "29/05/2024, 20:54",
+      "timeAdded": 1717005272408
+    },
+    {
+      "id": "UiEAOcfu-IoC",
+      "book_name": "The Hitch Hiker/Texas",
+      "ISBN": "9781462035069",
+      "action": "Created Book",
+      "time": "29/05/2024, 20:54",
+      "timeAdded": 1717005272461
+    },
+    {
+      "id": "KV4DAwAAQBAJ",
+      "book_name": "UFO! (SpongeBob SquarePants)",
+      "ISBN": "9781612630052",
+      "action": "Deleted Book",
+      "time": "29/05/2024, 20:54",
+      "timeAdded": 1717005297124
+    },
+    {
+      "id": "dvxkR0spGUMC",
+      "book_name": "Hitch",
+      "ISBN": "9781448211616",
+      "action": "Deleted Book",
+      "time": "29/05/2024, 20:56",
+      "timeAdded": 1717005363236
     }
   ],
   "favorites": [
@@ -3024,21 +3055,6 @@
       "num_copies": 4,
       "categories": [
         "Horses"
-      ],
-      "ISBN": "No ISBN"
-    },
-    {
-      "id": "NamyhpiMCuQC",
-      "book_name": "A Memorial of the Rev. James W. Dale, D.D.",
-      "authors_name": [
-        "James Roberts"
-      ],
-      "num_pages": 154,
-      "short_description": "No Description",
-      "image": "http://books.google.com/books/content?id=NamyhpiMCuQC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-      "num_copies": 6,
-      "categories": [
-        "Clergy"
       ],
       "ISBN": "No ISBN"
     }
