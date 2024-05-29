@@ -3,9 +3,19 @@ let searchPageIndex = 0;
 let searchResultsPages = [];
 let url = `${jsonServerUrl}/?_page=${currentPage}&_per_page=9`;
 let sorted = false;
+let showFav = false;
+let pages = totalPages;
+let searched = false;
+let timer;
 initBookArr();
 initHomeBooks();
-
+function updateFavLable() {
+  if (showFav) {
+    document.querySelector("#showFav").textContent = "Show All Books";
+  } else {
+    document.querySelector("#showFav").textContent = "Show Favorites";
+  }
+}
 async function checkInFav() {
   let btn = document.querySelector("#fav");
   let bookName = document.querySelector("#bookTitle").textContent;
@@ -74,21 +84,29 @@ async function removeFromFav() {
     showSnackbar(generalFailSnackbar);
   }
 }
+async function showFavorite() {
+  currentPage = 1;
+  sorted = false;
+  searched = false;
+  showFav = !showFav;
+  updateFavLable();
+  await openPage();
+}
 async function sortAZ() {
   sorted = !sorted;
-  if (sorted) {
-    document.querySelector("#sort").innerText = "reset sort";
-    url = `${jsonServerUrl}/?_page=${currentPage}&_per_page=9&_sort=book_name`;
+  updateFavLable();
+  if (searched) {
+    await printSearched();
   } else {
-    document.querySelector("#sort").innerText = "sort A-Z";
-    url = `${jsonServerUrl}/?_page=${currentPage}&_per_page=9`;
+    currentPage = 1;
+    await openPage();
   }
-
-  await openPage();
 }
 function updateUrl() {
   if (sorted) {
-    url = `${jsonServerUrl}/?_page=${currentPage}&_per_page=9&_sort=book_name`;
+    url = `${url}&_sort=book_name`;
+  } else if (showFav) {
+    url = `${favURL}/?_page=${currentPage}&_per_page=9`;
   } else {
     url = `${jsonServerUrl}/?_page=${currentPage}&_per_page=9`;
   }
@@ -136,7 +154,9 @@ function hideDetailWrapper() {
 
 // Function to open a specific page of books
 async function openPage() {
+  searched = false;
   updateUrl();
+
   let booksArr = [];
   const bookGridElement = document.querySelector("#booksGrid");
   booksArr = await axios.get(url).then((response) => {
@@ -184,7 +204,7 @@ async function openPage() {
   } else {
     document.querySelector("#back").style.visibility = "visible";
   }
-  if (currentPage == totalPages) {
+  if (currentPage == pages || booksArr.length < 9) {
     document.querySelector("#next").style.visibility = "hidden";
   } else {
     document.querySelector("#next").style.visibility = "visible";
@@ -193,7 +213,7 @@ async function openPage() {
 
 // Function to switch pages based on the direction (next or back)
 async function switchPage(direction) {
-  if (direction == "next" && currentPage != totalPages) {
+  if (direction == "next" && currentPage != pages) {
     currentPage++;
   } else if (currentPage != 1 && direction == "back") {
     currentPage--;
@@ -275,9 +295,9 @@ async function deleteBook() {
     let response = await axios.get(url);
     let bookDetail = response.data[0];
     url = `${jsonServerUrl}/${bookDetail.id}`;
-    console.log(bookDetail);
+
     const historyObject = buildHistoryObject(bookDetail, "Deleted Book");
-    console.log(historyObject);
+
     await axios.delete(url);
     showSnackbar(deleteSuccessSnackbar);
     await axios.post(historyUrl, historyObject);
@@ -291,13 +311,18 @@ async function deleteBook() {
 
 // Function to search for books by name
 async function searchBook() {
+  showFav = false;
+  searched = true;
+  updateFavLable();
   currentBooks = [];
   const bookName = document.querySelector("#searchInput").value.toUpperCase();
-  ///////////////////
+
+  document.querySelector("#searchInput").value = "";
   while (currentBooks.length < 9) {
-    let newUrl = `${jsonServerUrl}/?_page=${currentPage}&_per_page=9`;
-    let response = await axios.get(newUrl);
+    url = `${jsonServerUrl}/?_page=${currentPage}&_per_page=9`;
+    let response = await axios.get(url);
     let newBookArr = response.data.data;
+
     for (let book of newBookArr) {
       if (
         book.book_name.toUpperCase().includes(bookName) &&
@@ -313,6 +338,7 @@ async function searchBook() {
       break;
     }
   }
+
   if (currentBooks[0] != undefined) {
     searchResultsPages.push(currentBooks);
     printSearched();
@@ -324,14 +350,16 @@ async function searchBook() {
 
 // Function to print the searched books
 async function printSearched() {
-  let currentPageArr = searchResultsPages[searchPageIndex];
+  let currentPageArr = searchResultsPages[searchPageIndex].slice();
+  if (sorted) {
+    currentPageArr.sort((a, b) => a.book_name.localeCompare(b.book_name));
+  }
   if (currentPageArr != undefined) {
     document.querySelector("#booksGrid").innerHTML = "";
     currentPageArr.forEach((book) => {
       let bookElem = document.createElement("div");
       bookElem.classList.add("book");
       bookElem.id = book.id;
-
       let image = document.createElement("img");
       image.src = book.image;
       image.alt = book.book_name;
@@ -370,7 +398,7 @@ async function printSearched() {
         }
       };
     }
-    if (currentPage > totalPages + 1) {
+    if (currentPage > pages + 1 || currentPageArr.length < 9) {
       document.querySelector("#next").style.visibility = "hidden";
     } else {
       document.querySelector("#next").style.visibility = "visible";
@@ -387,6 +415,19 @@ async function printSearched() {
   } else {
     openPage();
   }
+}
+
+function debounce() {
+  clearTimeout(timer);
+  timer = setTimeout(() => {
+    if (document.querySelector("#searchInput").value != "") {
+      //resets the variables because its a new search
+      searchResultsPages = [];
+      searchPageIndex = 0;
+      currentPage = 1;
+      searchBook();
+    }
+  }, 1000);
 }
 /////// Event listeners ///////////
 document.querySelector("#removeCopy").addEventListener("click", removeCopy);
@@ -412,3 +453,5 @@ document.querySelector("#searchButton").addEventListener("click", (event) => {
     showSnackbar(enterNameFailSnackbar);
   }
 });
+document.querySelector("#showFav").addEventListener("click", showFavorite);
+document.querySelector("#searchInput").addEventListener("input", debounce);
