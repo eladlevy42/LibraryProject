@@ -18,6 +18,7 @@ async function resetAll() {
   searched = false;
   updateFavLable();
   resetSearched();
+  document.getElementById('searchInput').value = ''
   await openPage();
 }
 function updateFavLable() {

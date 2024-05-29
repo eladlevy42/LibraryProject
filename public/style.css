@@ -71,16 +71,28 @@ ul {
   transform: scale(1.2) rotate(5deg);
 }
 #sortBar {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  align-items: center;
   padding: var(--padding-medium);
-  gap: 1em;
+  justify-content: space-between;
+  width: 500px;
 }
 #sort,
 #showFav,
 #reset {
   cursor: pointer;
+  font-size: 20px;
   color: var(--clr-accent-primary);
+  transition: transform 0.3s;
+}
+#showFav{
+  margin-left: var(--margin-medium);
+  display: inline-block;
+}
+#sort:hover,
+#showFav:hover,
+#reset:hover{
+  transform: scale(1.2);
 }
 .mainPageHeader {
   color: var(--clr-accent-primary);
