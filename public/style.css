@@ -77,7 +77,8 @@ ul {
   gap: 1em;
 }
 #sort,
-#showFav {
+#showFav,
+#reset {
   cursor: pointer;
   color: var(--clr-accent-primary);
 }
@@ -430,10 +431,10 @@ img {
 .newBook.selected:hover {
   background-color: hsl(126, 98%, 31%);
 }
-.newBook.selected:hover .book-title{
+.newBook.selected:hover .book-title {
   background-color: lightseagreen;
 }
-.newBook.selected .book-title{
+.newBook.selected .book-title {
   background-color: lightseagreen;
 }
 .newBook:hover .book-title {
@@ -612,7 +613,7 @@ img {
 }
 
 .actionTable tr:nth-child(even) {
-  background-color: #70655E;
+  background-color: #70655e;
   color: white;
 }
 
