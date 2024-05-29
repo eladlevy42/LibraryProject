@@ -212,7 +212,7 @@ async function openPage() {
     return response.data.data;
   });
   buildBookGrid(booksArr);
-
+  document.querySelector("#booksGrid").visibility = "hidden";
   if (currentPage == 1) {
     document.querySelector("#back").style.visibility = "hidden";
     console.log(currentPage);
@@ -243,7 +243,6 @@ async function switchPage(direction) {
 
 // Function to show the loading spinner
 function showSpinner() {
-  document.querySelector("#booksGrid").visibility = "visible";
   spinner.style.display = "block";
 }
 
@@ -341,7 +340,6 @@ async function searchBook() {
   currentBooks = [];
   const bookName = document.querySelector("#searchInput").value.toUpperCase();
 
-  // document.querySelector("#searchInput").value = "";
   while (currentBooks.length < 15) {
     url = `${jsonServerUrl}/?_page=${currentPage}&_per_page=15`;
     let response = await axios.get(url);
