@@ -16,21 +16,6 @@
       "ISBN": "9781351978736"
     },
     {
-      "id": "OGjYVAIXxyQC",
-      "book_name": "The Complete Idiot's Guide to the World of Harry Potter",
-      "authors_name": [
-        "Tere Stouffer"
-      ],
-      "num_pages": 276,
-      "short_description": "For fans of all ages. Here is an entertaining and easily referenced presentation of insider information to the world that J. K. Rowling has created in her spellbinding series of novels. The Complete Idiot’s Guide® to the World of Harry Potter explores all aspects of the wizarding world and explains them in terms of their relationship to historical, literary, religious, scientific, or mythological roots. —In-depth information on the facts behind all seven books in the Harry Potter series. —Covers all the relevant influences for the Harry Potter series, from religion and mythology to science and literature. —Can be read from cover to cover or used as a quick-reference guide.",
-      "image": "http://books.google.com/books/content?id=OGjYVAIXxyQC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-      "num_copies": 7,
-      "categories": [
-        "Literary Criticism"
-      ],
-      "ISBN": "9781440636615"
-    },
-    {
       "id": "zB9X2vKRZ34C",
       "book_name": "What's a Christian to Do with Harry Potter?",
       "authors_name": [
@@ -1042,7 +1027,7 @@
       "num_pages": 264,
       "short_description": "The January 2014 issue of The Yale Law Journal features new articles and essays on law and legal theory by internationally recognized scholars. The contents for Volume 123, Number 4 include: * \"Ice Cube Bonds: Allocating the Price of Process in Chapter 11 Bankruptcy,\" by Melissa B. Jacoby & Edward J. Janger * \"The Evolution of Shareholder Voting Rights: Separation of Ownership and Consumption,\" by Henry Hansmann & Mariana Pargendler * Note, \"Vindicating Vindictiveness: Prosecutorial Discretion and Plea Bargaining, Past and Future,\" by Doug Lieb * Note, \"Why Motives Matter: Reframing the Crowding Out Effect of Legal Incentives,\" by Emad H. Atiq Quality ebook formatting includes fully linked footnotes, active Table of Contents (including linked Contents for individual articles), active URLs in notes, and properly presented tables and graphs throughout.",
       "image": "http://books.google.com/books/content?id=Hqp1AgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-      "num_copies": 5,
+      "num_copies": 4,
       "categories": [
         "Law"
       ],
@@ -1277,21 +1262,6 @@
       "ISBN": "9780547859125"
     },
     {
-      "id": "QDCmAwAAQBAJ",
-      "book_name": "123 Bath & Shower Just 4 me.",
-      "authors_name": [
-        "Rain Fields"
-      ],
-      "num_pages": 25,
-      "short_description": "No Description",
-      "image": "http://books.google.com/books/content?id=QDCmAwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-      "num_copies": 7,
-      "categories": [
-        "Uncategorized"
-      ],
-      "ISBN": "9781105640247"
-    },
-    {
       "id": "DQQhCwAAQBAJ",
       "book_name": "Harry Potter and the Chamber of Secrets",
       "authors_name": [
@@ -1380,6 +1350,94 @@
         "Juvenile Fiction"
       ],
       "ISBN": "9781781100486"
+    },
+    {
+      "id": "2Y1aCgAAQBAJ",
+      "book_name": "Archie #546",
+      "authors_name": [
+        "Craig Boldman"
+      ],
+      "num_pages": 27,
+      "short_description": "The Trade-Off (by Craig Boldman & Stan Goldberg): Archie and Reggie have time on their hands - 15 minutes a pop, in fact - when they take Veronica on a date in alternating shifts! A Knight To Remember (by George Gladir & Stan Goldberg): A look back at teens in Medeival Times - and even if Archie doesn't slay the dragon, this story will certainly slay you!",
+      "image": "http://books.google.com/books/content?id=2Y1aCgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "num_copies": 7,
+      "categories": [
+        "Juvenile Fiction"
+      ],
+      "ISBN": "9781681831053"
+    },
+    {
+      "id": "e01FAQAAMAAJ",
+      "book_name": "Subcommittee No. 4 Consideration of H.R. 1044, H.R. 546, H.R. 3037, H.R. 5034, H.R. 7595, H.R. 8095, and H.R. 8484",
+      "authors_name": [
+        "United States. Congress. House. Committee on Armed Services"
+      ],
+      "num_pages": 44,
+      "short_description": "Committee Serial No. 14. Considers. H.R. 1044, to transfer land from the Navy Dept to the city of Norfolk, Va. H.R. 546, to retrocede to the State of Wisconsin, the police rights to highways within Camp McCoy, Wis. H.R. 3037, to provide for payment of costs of transporting the remains of deceased dependents of members of the armed services. H.R. 5034, to provide for disposal of abandoned property in the possession of DOD. H.R. 7595, to provide for transportation of dependents of military personnel in need of medical care not available in the locality in which the serviceman is stationed. H.R. 8095, to authorize military personnel to receive travel allowances to provide for transportation from a temporary duty station back to the permanent duty station when being reassigned permanently to that temporary station. H.R. 8484, to authorize transportation of privately owned motor vehicles of military personnel changing their permanent duty station.",
+      "image": "http://books.google.com/books/content?id=e01FAQAAMAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "num_copies": 7,
+      "categories": [
+        "Families of military personnel"
+      ]
+    },
+    {
+      "id": "fjqNDwAAQBAJ",
+      "book_name": "YS/T 546-2008 Translated English of Chinese Standard. (YST 546-2008, YS/T546-2008, YST546-2008)",
+      "authors_name": [
+        "https://www.chinesestandard.net"
+      ],
+      "num_pages": 8,
+      "short_description": "This Standard specifies the requirements, test methods, inspection rules, marking, package, transportation, storage, ordering list (or contract) of high purity lithium carbonate. This Standard is applicable to the high purity lithium carbonate produced by the carbonate precipitation method using refined lithium hydroxide monohydrate as raw materials. The product is used for preparing lithium niobite, lithium tantalite acoustic grade single crystal, optical grade single crystal, and audio and video equipment.",
+      "image": "http://books.google.com/books/content?id=fjqNDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "num_copies": 10,
+      "categories": [
+        "Science"
+      ],
+      "ISBN": "No ISBN"
+    },
+    {
+      "id": "zVX58YbjNE0C",
+      "book_name": "H.R. 546, H.R. 2457 and H.R. 2715",
+      "authors_name": [
+        "United States. Congress. House. Committee on Resources. Subcommittee on National Parks, Recreation, and Public Lands"
+      ],
+      "num_pages": 24,
+      "short_description": "No Description",
+      "image": "http://books.google.com/books/content?id=zVX58YbjNE0C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "num_copies": 5,
+      "categories": [
+        "Castillo de San Marcos National Monument (Saint Augustine, Fla.)"
+      ]
+    },
+    {
+      "id": "yLs7e8aPXdIC",
+      "book_name": "Geological Survey of Canada, Open File 546",
+      "authors_name": [
+        "Unknown Author"
+      ],
+      "num_pages": 76,
+      "short_description": "No Description",
+      "image": "http://books.google.com/books/content?id=yLs7e8aPXdIC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "num_copies": 2,
+      "categories": [
+        "Uncategorized"
+      ],
+      "ISBN": "No ISBN"
+    },
+    {
+      "id": "OGjYVAIXxyQC",
+      "book_name": "The Complete Idiot's Guide to the World of Harry Potter",
+      "authors_name": [
+        "Tere Stouffer"
+      ],
+      "num_pages": 276,
+      "short_description": "For fans of all ages. Here is an entertaining and easily referenced presentation of insider information to the world that J. K. Rowling has created in her spellbinding series of novels. The Complete Idiot’s Guide® to the World of Harry Potter explores all aspects of the wizarding world and explains them in terms of their relationship to historical, literary, religious, scientific, or mythological roots. —In-depth information on the facts behind all seven books in the Harry Potter series. —Covers all the relevant influences for the Harry Potter series, from religion and mythology to science and literature. —Can be read from cover to cover or used as a quick-reference guide.",
+      "image": "http://books.google.com/books/content?id=OGjYVAIXxyQC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "num_copies": 1,
+      "categories": [
+        "Literary Criticism"
+      ],
+      "ISBN": "9781440636615"
     }
   ],
   "history": [
@@ -2217,6 +2275,122 @@
       "action": "Deleted Book",
       "time": "29/05/2024, 15:26",
       "timeAdded": 1716985561323
+    },
+    {
+      "id": "Orq0EAAAQBAJ",
+      "book_name": "Prison 456",
+      "ISBN": "9798986611310",
+      "action": "Added to favorite",
+      "time": "29/05/2024, 15:42",
+      "timeAdded": 1716986574599
+    },
+    {
+      "id": "Orq0EAAAQBAJ",
+      "book_name": "Prison 456",
+      "ISBN": "9798986611310",
+      "action": "Removed from favorite",
+      "time": "29/05/2024, 15:42",
+      "timeAdded": 1716986575635
+    },
+    {
+      "id": "FkfrgTySNGQC",
+      "book_name": "The Health Detective’s 456 Most Powerful Healing Secrets (Volume 3 of 3) (EasyRead Super Large 20pt Edition)",
+      "ISBN": "9781442978010",
+      "action": "Added to favorite",
+      "time": "29/05/2024, 15:43",
+      "timeAdded": 1716986601228
+    },
+    {
+      "id": "FkfrgTySNGQC",
+      "book_name": "The Health Detective’s 456 Most Powerful Healing Secrets (Volume 3 of 3) (EasyRead Super Large 20pt Edition)",
+      "ISBN": "9781442978010",
+      "action": "Removed from favorite",
+      "time": "29/05/2024, 15:43",
+      "timeAdded": 1716986602204
+    },
+    {
+      "id": "Hqp1AgAAQBAJ",
+      "book_name": "Yale Law Journal: Volume 123, Number 4 - January 2014",
+      "ISBN": "9781610278720",
+      "action": "Added to favorite",
+      "time": "29/05/2024, 15:43",
+      "timeAdded": 1716986629642
+    },
+    {
+      "id": "Hqp1AgAAQBAJ",
+      "book_name": "Yale Law Journal: Volume 123, Number 4 - January 2014",
+      "ISBN": "9781610278720",
+      "action": "Removed copy",
+      "time": "29/05/2024, 15:43",
+      "timeAdded": 1716986631218
+    },
+    {
+      "id": "09bd",
+      "book_name": "123",
+      "action": "Created Book",
+      "time": "29/05/2024, 15:44",
+      "timeAdded": 1716986648895
+    },
+    {
+      "id": "2Y1aCgAAQBAJ",
+      "book_name": "Archie #546",
+      "ISBN": "9781681831053",
+      "action": "Created Book",
+      "time": "29/05/2024, 15:44",
+      "timeAdded": 1716986664853
+    },
+    {
+      "id": "e01FAQAAMAAJ",
+      "book_name": "Subcommittee No. 4 Consideration of H.R. 1044, H.R. 546, H.R. 3037, H.R. 5034, H.R. 7595, H.R. 8095, and H.R. 8484",
+      "action": "Created Book",
+      "time": "29/05/2024, 15:44",
+      "timeAdded": 1716986664931
+    },
+    {
+      "id": "fjqNDwAAQBAJ",
+      "book_name": "YS/T 546-2008 Translated English of Chinese Standard. (YST 546-2008, YS/T546-2008, YST546-2008)",
+      "ISBN": "No ISBN",
+      "action": "Created Book",
+      "time": "29/05/2024, 15:44",
+      "timeAdded": 1716986665124
+    },
+    {
+      "id": "zVX58YbjNE0C",
+      "book_name": "H.R. 546, H.R. 2457 and H.R. 2715",
+      "action": "Created Book",
+      "time": "29/05/2024, 15:44",
+      "timeAdded": 1716986665250
+    },
+    {
+      "id": "yLs7e8aPXdIC",
+      "book_name": "Geological Survey of Canada, Open File 546",
+      "ISBN": "No ISBN",
+      "action": "Created Book",
+      "time": "29/05/2024, 15:44",
+      "timeAdded": 1716986665322
+    },
+    {
+      "id": "b6e4",
+      "book_name": "123",
+      "action": "Deleted Book",
+      "time": "29/05/2024, 15:44",
+      "timeAdded": 1716986680840
+    },
+    {
+      "id": "OGjYVAIXxyQC",
+      "book_name": "The Complete Idiot's Guide to the World of Harry Potter",
+      "ISBN": "9781440636615",
+      "action": "Deleted Book",
+      "time": "29/05/2024, 15:44",
+      "timeAdded": 1716986699708
+    },
+    {
+      "id": "OGjYVAIXxyQC",
+      "book_name": "The Complete Idiot's Guide to the World of Harry Potter",
+      "ISBN": "9781440636615",
+      "action": "Created Book",
+      "time": "29/05/2024, 15:45",
+      "timeAdded": 1716986714178
     }
   ],
   "favorites": [
@@ -2309,6 +2483,21 @@
         "Literary Criticism"
       ],
       "ISBN": "9780786489916"
+    },
+    {
+      "id": "Hqp1AgAAQBAJ",
+      "book_name": "Yale Law Journal: Volume 123, Number 4 - January 2014",
+      "authors_name": [
+        "Yale Law Journal"
+      ],
+      "num_pages": 264,
+      "short_description": "The January 2014 issue of The Yale Law Journal features new articles and essays on law and legal theory by internationally recognized scholars. The contents for Volume 123, Number 4 include: * \"Ice Cube Bonds: Allocating the Price of Process in Chapter 11 Bankruptcy,\" by Melissa B. Jacoby & Edward J. Janger * \"The Evolution of Shareholder Voting Rights: Separation of Ownership and Consumption,\" by Henry Hansmann & Mariana Pargendler * Note, \"Vindicating Vindictiveness: Prosecutorial Discretion and Plea Bargaining, Past and Future,\" by Doug Lieb * Note, \"Why Motives Matter: Reframing the Crowding Out Effect of Legal Incentives,\" by Emad H. Atiq Quality ebook formatting includes fully linked footnotes, active Table of Contents (including linked Contents for individual articles), active URLs in notes, and properly presented tables and graphs throughout.",
+      "image": "http://books.google.com/books/content?id=Hqp1AgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "num_copies": 5,
+      "categories": [
+        "Law"
+      ],
+      "ISBN": "9781610278720"
     }
   ]
 }

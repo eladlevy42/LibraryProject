@@ -486,8 +486,8 @@ img {
   margin-top: -15px;
   margin-left: -15px;
   border-radius: 50%;
-  border: 1px solid #ccc;
-  border-top-color: #07d;
+  border: 3px solid #ccc;
+  border-top-color: var(--clr-accent-primary);
   animation: spinner 0.6s linear infinite;
   z-index: 1000;
 }
