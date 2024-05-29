@@ -79,7 +79,7 @@ ul {
   padding-inline: var(--padding-large);
   margin-left: 10%;
   border-radius: 50%;
-  background-color: var(--clr-accent-primary);
+  background-color: hsl(11, 83%, 30%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -785,6 +785,9 @@ img {
   #back{
     left: 15px;
   }
+  .snackbar{
+    left: 50%;
+  }
   
 }
 @media screen and (max-width: 700px) {
@@ -912,6 +915,6 @@ img {
     width: 160px;
   }
   #burger{
-    top: 10px;
+    top: 5px;
   }
 }

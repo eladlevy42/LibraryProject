@@ -91,21 +91,6 @@
       "ISBN": "9781939529190"
     },
     {
-      "id": "BoX-6R21MgQC",
-      "book_name": "The Psychology of Harry Potter",
-      "authors_name": [
-        "Neil Mulholland"
-      ],
-      "num_pages": 338,
-      "short_description": "Harry Potter has provided a portal to the wizarding world for millions of readers, but an examination of Harry, his friends and his enemies will take us on yet another journey: through the psyche of the Muggle (and wizard!) mind. The twists and turns of the series, as well as the psychological depth and complexity of J. K. Rowling’s characters, have kept fans enthralled with and puzzling over the many mysteries that permeate Hogwarts and beyond: • Do the Harry Potter books encourage disobedience? • Why is everyone so fascinated by Professor Lupin? • What exactly will Harry and his friends do when they finally pass those N.E.W.T.s? • Do even wizards live by the ticking of the clock? • Is Harry destined to end up alone? And why did it take Ron and Hermione so long to get together? Now, in The Psychology of Harry Potter, leading psychologists delve into the ultimate Chamber of Secrets, analyzing human mind and motivation by examining the themes and characters that make the Harry Potter books the bestselling fantasy series of all time. Grab a spot on the nearest couch, and settle in for some fresh revelations about our favorite young wizard!",
-      "image": "http://books.google.com/books/content?id=BoX-6R21MgQC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-      "num_copies": 8,
-      "categories": [
-        "Literary Criticism"
-      ],
-      "ISBN": "9781935251378"
-    },
-    {
       "id": "H8buBQAAQBAJ",
       "book_name": "J.K. Rowling: A Bibliography 1997-2013",
       "authors_name": [
@@ -114,7 +99,7 @@
       "num_pages": 753,
       "short_description": "'As someone who respects comprehensive research, I am in awe of the level of detail and amount of time Philip Errington has dedicated to this slavishly thorough and somewhat mind-boggling bibliography.' J. K. Rowling This is the definitive bibliography of the writings of J. K. Rowling. In addition to complete bibliographic details of each edition of all her books, pamphlets and original contributions to published works, there is detailed information on the publishing history of her work, including fascinating extracts from correspondence, and information on Rowling at auction. This will be the first source on Rowling consulted by textual scholars, book dealers and collectors, auction houses, critics and researchers. The aim of the book is to record fact and dispel rumour on the fascinating publishing history of the Harry Potter series.",
       "image": "http://books.google.com/books/content?id=H8buBQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-      "num_copies": 6,
+      "num_copies": 7,
       "categories": [
         "Fiction"
       ],
@@ -1438,6 +1423,231 @@
         "Literary Criticism"
       ],
       "ISBN": "9781440636615"
+    },
+    {
+      "id": "VD80DwAAQBAJ",
+      "book_name": "Harry",
+      "authors_name": [
+        "Katie Nicholl"
+      ],
+      "num_pages": 272,
+      "short_description": "The most intimate and informative portrait yet of Prince Harry, from royal expert Katie Nicholl, author of the bestselling William and Harry and Kate. From his earliest public appearances as a mischievous redheaded toddler, Prince Harry has captured the hearts of royal enthusiasts around the world. In Harry, Britain's leading expert on the young royals offers an in-depth look at the wayward prince turned national treasure. Nicholl sheds new light on growing up royal, Harry's relationship with his mother, his troubled youth and early adulthood, and how his military service in Afghanistan inspired him to create his legacy, the Invictus Games. Harry: Life, Loss, and Love features interviews with friends, those who have worked with the prince, and former Palace aides. Nicholl explores Harry's relationship with his family, in particular, the Queen, his father, stepmother, and brother, and reveals his secret \"second family\" in Botswana. She uncovers new information about his former girlfriends and chronicles his romance and engagement to American actress Meghan Markle. Harry is a compelling portrait of one of the most popular members of the royal family, and reveals the inside story of the most intriguing royal romance in a decade.",
+      "image": "http://books.google.com/books/content?id=VD80DwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "num_copies": 9,
+      "categories": [
+        "Biography & Autobiography"
+      ],
+      "ISBN": "9781602865273"
+    },
+    {
+      "id": "yicDl0rgpNQC",
+      "book_name": "The Cadet Life of Prince Harry",
+      "authors_name": [
+        "Vasile Michael"
+      ],
+      "num_pages": 221,
+      "short_description": "RMA Sandhurst is the place where you learn the fundamental meaning of military thinking and wisdom. Living and training in RMA Sandhurst means being born again, little by little. Here you blend your own being with the miracle of military education. It is a difficult road, with steep slopes, but extremely attractive for someone having such a voluntary character as Prince Harry. For him, to live the life of a cadet means to change gradually. To become a real man, ready to face life and the military career!",
+      "image": "http://books.google.com/books/content?id=yicDl0rgpNQC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "num_copies": 9,
+      "categories": [
+        "Military cadets"
+      ],
+      "ISBN": "9781434353924"
+    },
+    {
+      "id": "crUNM3YUJCQC",
+      "book_name": "The Book of Harry Potter Trifles, Trivias & Particularities",
+      "authors_name": [
+        "Racheline Maltese"
+      ],
+      "num_pages": 306,
+      "short_description": "Tests the knowledge of Harry Potter fans with a series of quests, each divided by three skill levels, using the Harry Potter series and two books written by J.K. Rowling for charity as guides.",
+      "image": "http://books.google.com/books/content?id=crUNM3YUJCQC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "num_copies": 8,
+      "categories": [
+        "Juvenile Nonfiction"
+      ],
+      "ISBN": "9780977954520"
+    },
+    {
+      "id": "f6y2_oFOcjQC",
+      "book_name": "The Making of the Potterverse",
+      "authors_name": [
+        "Scott Thomas"
+      ],
+      "num_pages": 227,
+      "short_description": "Experience the magic again with this chronicle of the young wizard who took the world by storm! From the moment that J. K. Rowling conceived the idea of Harry Potter during a train ride, until the 1997 UK publication of Harry Potter and the Philosopher’s Stone, The Making of the Potterverse tells the history of one of today’s most beloved sagas—in print, on screen, and in real life as waves of Pottermania swept fans young and old. Covering the phenomenon through the theatrical release of Harry Potter and the Order of the Phoenix, this book covers all of the major and minor news events centering on the world of Harry Potter, interweaving quotes from the films’ cast and crew members—among them Daniel Radcliffe, Emma Watson, and Rupert Grint; directors Chris Columbus (The Sorcerer’s Stone, The Chamber of Secrets), Alfonso Cuarón (The Prisoner of Azkaban), and Mike Newell (The Goblet of Fire); producer David Heyman, and behind-the-scenes personnel who bring the magic to life.",
+      "image": "http://books.google.com/books/content?id=f6y2_oFOcjQC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "num_copies": 3,
+      "categories": [
+        "Literary Criticism"
+      ],
+      "ISBN": "9781554902880"
+    },
+    {
+      "id": "KAXfDwAAQBAJ",
+      "book_name": "Harry's Apology",
+      "authors_name": [
+        "David Martin Anderson"
+      ],
+      "num_pages": 216,
+      "short_description": "Harry Kaplonsky is a veteran of World War II, a survivor of the USS Houston's sinking in the South Pacific, and one of the few men still alive who can recount in detail the one thousand and fifteen days of captivity in the notorious Omori POW prison south of Tokyo. It is there Harry was tortured and beaten and witnessed countless atrocities including the murder of his best friend, Curly. Only problem, Harry can't seem to erase the event from his memories, and he sure can't seem to forgive his captors for the barbaric things which took place during his imprisonment. Now, sixty years later, he's angry and on a mission to sue the Obuchi government for an apology. Since his liberation in August, 1945, Harry's life has been spiraling downward, highlighted by one failed relationship after another, five marriages in total, all marred by battering and cruelty. For Harry the suit is more than a legal means to even the score, it is the last opportunity to lay blame for his own failings. Only days from death, Harry's litigation appears to be lapsing with his demise unless he can convince one of the other four Omori survivors to collaborate in the litigation. Unfortunately, all four despise him and won't enjoin the suit. Furthermore, the U.S. government is siding with the Japanese in hopes of winning trade concessions, and vows to fight Harry to the end. The government's legal team is led by none other than Harry's bastard son, Harold, turning the legal battle into a nasty family affair. All appears to be going adversely against the old veteran. Enter Tinker, an aspiring author in the throws of a literary dry spell. She is searching for the one great story (oddly, a non-fiction piece) to turn her fledgling career around. It is the television interview with Harry by Larry King, however, that motivates her into journeying to Texas for the annual USS Houston survivors' reunion and a shot at the rights to Harry's story. A victim of childhood physical abuse herself, Tinker's past soon becomes intertwined with Harry's, the battering both experienced providing common ground. During the course of the interview, Tinker discovers the dark secrets surrounding Harry and his seeming culpability in the deaths of five crewmates. It is this connection which has created a schism between Harry and the last of the Omori survivors. In the end, Tinker must not only reunite the five Omori brothers, she must also come to terms with her own past and forgive her estranged father.",
+      "image": "http://books.google.com/books/content?id=KAXfDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "num_copies": 2,
+      "categories": [
+        "Fiction"
+      ],
+      "ISBN": "9781892617156"
+    },
+    {
+      "id": "BoX-6R21MgQC",
+      "book_name": "The Psychology of Harry Potter",
+      "authors_name": [
+        "Neil Mulholland"
+      ],
+      "num_pages": 338,
+      "short_description": "Harry Potter has provided a portal to the wizarding world for millions of readers, but an examination of Harry, his friends and his enemies will take us on yet another journey: through the psyche of the Muggle (and wizard!) mind. The twists and turns of the series, as well as the psychological depth and complexity of J. K. Rowling’s characters, have kept fans enthralled with and puzzling over the many mysteries that permeate Hogwarts and beyond: • Do the Harry Potter books encourage disobedience? • Why is everyone so fascinated by Professor Lupin? • What exactly will Harry and his friends do when they finally pass those N.E.W.T.s? • Do even wizards live by the ticking of the clock? • Is Harry destined to end up alone? And why did it take Ron and Hermione so long to get together? Now, in The Psychology of Harry Potter, leading psychologists delve into the ultimate Chamber of Secrets, analyzing human mind and motivation by examining the themes and characters that make the Harry Potter books the bestselling fantasy series of all time. Grab a spot on the nearest couch, and settle in for some fresh revelations about our favorite young wizard!",
+      "image": "http://books.google.com/books/content?id=BoX-6R21MgQC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "num_copies": 3,
+      "categories": [
+        "Literary Criticism"
+      ],
+      "ISBN": "9781935251378"
+    },
+    {
+      "id": "GZAoAQAAIAAJ",
+      "book_name": "Harry Potter and the Deathly Hallows",
+      "authors_name": [
+        "J. K. Rowling"
+      ],
+      "num_pages": 792,
+      "short_description": "\"The final adventure in J.K. Rowling's phenomenal, best-selling Harry Potter book series\"--Provided by publisher.",
+      "image": "http://books.google.com/books/content?id=GZAoAQAAIAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+      "num_copies": 10,
+      "categories": [
+        "Bildungsromans"
+      ]
+    },
+    {
+      "id": "gal9MtXKC68C",
+      "book_name": "‏هيرى پوٹر اور رازوں کا کمره :‏",
+      "authors_name": [
+        "J. K. Rowling",
+        "Darakhshanda Asghar Khokhar"
+      ],
+      "num_pages": 314,
+      "short_description": "An Urdu language edition of the second Harry Potter tale.",
+      "image": "http://books.google.com/books/content?id=gal9MtXKC68C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "num_copies": 8,
+      "categories": [
+        "Juvenile Fiction"
+      ],
+      "ISBN": "0195798767"
+    },
+    {
+      "id": "rz9ZscY96JAC",
+      "book_name": "The Health Detective’s 456 Most Powerful Healing Secrets (Volume 1 of 2) (EasyRead Edition)",
+      "authors_name": [
+        "Unknown Author"
+      ],
+      "num_pages": 370,
+      "short_description": "No Description",
+      "image": "http://books.google.com/books/content?id=rz9ZscY96JAC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "num_copies": 5,
+      "categories": [
+        "Uncategorized"
+      ],
+      "ISBN": "9781442974159"
+    },
+    {
+      "id": "EiAc-ftzqu4C",
+      "book_name": "The Health Detective’s 456 Most Powerful Healing Secrets (Volume 2 of 3) (EasyRead Super Large 20pt Edition)",
+      "authors_name": [
+        "Unknown Author"
+      ],
+      "num_pages": 410,
+      "short_description": "No Description",
+      "image": "http://books.google.com/books/content?id=EiAc-ftzqu4C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "num_copies": 1,
+      "categories": [
+        "Uncategorized"
+      ],
+      "ISBN": "9781442978003"
+    },
+    {
+      "id": "UXv_i0r3tMwC",
+      "book_name": "The Health Detective's 456 Most Powerful Healing Secrets",
+      "authors_name": [
+        "Nan Kathryn Fuchs"
+      ],
+      "num_pages": 466,
+      "short_description": "No Description",
+      "image": "http://books.google.com/books/content?id=UXv_i0r3tMwC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "num_copies": 4,
+      "categories": [
+        "Large type books"
+      ],
+      "ISBN": "9781442977624"
+    },
+    {
+      "id": "L3LTSRFivqgC",
+      "book_name": "The History of the Hobbit",
+      "authors_name": [
+        "John D. Rateliff"
+      ],
+      "num_pages": 450,
+      "short_description": "The second half of a major new examination of how J.R.R. Tolkien came to write his original masterpiece 'The Hobbit', including his complete unpublished draft version of the story, and many little-known illustrations and previously unpublished maps by Tolkien himself.",
+      "image": "http://books.google.com/books/content?id=L3LTSRFivqgC&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+      "num_copies": 5,
+      "categories": [
+        "Fiction"
+      ],
+      "ISBN": "9780007266470"
+    },
+    {
+      "id": "jLogAgAAQBAJ",
+      "book_name": "The Hobbit",
+      "authors_name": [
+        "Paddy Kempshall"
+      ],
+      "num_pages": 51,
+      "short_description": "This movie storybook shows Bilbo and The Company in the next installment of their exciting adventure.",
+      "image": "http://books.google.com/books/content?id=jLogAgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "num_copies": 4,
+      "categories": [
+        "Juvenile Nonfiction"
+      ],
+      "ISBN": "9780547901985"
+    },
+    {
+      "id": "4LEjf7GgIGIC",
+      "book_name": "THE HOBBIT",
+      "authors_name": [
+        "J. R. R. TOLKIEN"
+      ],
+      "num_pages": 292,
+      "short_description": "No Description",
+      "image": "http://books.google.com/books/content?id=4LEjf7GgIGIC&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+      "num_copies": 7,
+      "categories": [
+        "Uncategorized"
+      ],
+      "ISBN": "No ISBN"
+    },
+    {
+      "id": "akaTEAAAQBAJ",
+      "book_name": "The Hobbit (Movie Tie-in Edition)",
+      "authors_name": [
+        "J.R.R. Tolkien"
+      ],
+      "num_pages": 0,
+      "short_description": "The enchanting prequel to The Lord of the Rings, The Hobbit is the classic fantasy that inspired Peter Jackson’s major motion picture trilogy When Thorin Oakenshield and his band of dwarves embark upon a dangerous quest to reclaim the hoard of gold stolen from them by the evil dragon Smaug, Gandalf the wizard suggests an unlikely accomplice: Bilbo Baggins, an unassuming Hobbit dwelling in peaceful Hobbiton. Along the way, the company faces trolls, goblins, giant spiders, and worse. But as they journey from the wonders of Rivendell to the terrors of Mirkwood and beyond, Bilbo will find that there is more to him than anyone—himself included—ever dreamed. Unexpected qualities of courage and cunning, and a love of adventure, propel Bilbo toward his great destiny . . . a destiny that waits in the dark caverns beneath the Misty Mountains, where a twisted creature known as Gollum jealously guards a precious magic ring. © New Line Productions, Inc. All rights reserved. THE HOBBIT: AN UNEXPECTED JOURNEY and the names of the characters, items, events and places therein are trademarks of The Saul Zaentz Company d/b/a Middle-earth Enterprises under license to New Line Productions, Inc.",
+      "image": "http://books.google.com/books/content?id=akaTEAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+      "num_copies": 1,
+      "categories": [
+        "Fiction"
+      ],
+      "ISBN": "9780345534835"
     }
   ],
   "history": [
@@ -2391,6 +2601,229 @@
       "action": "Created Book",
       "time": "29/05/2024, 15:45",
       "timeAdded": 1716986714178
+    },
+    {
+      "id": "VD80DwAAQBAJ",
+      "book_name": "Harry",
+      "ISBN": "9781602865273",
+      "action": "Created Book",
+      "time": "29/05/2024, 18:52",
+      "timeAdded": 1716997970494
+    },
+    {
+      "id": "yicDl0rgpNQC",
+      "book_name": "The Cadet Life of Prince Harry",
+      "ISBN": "9781434353924",
+      "action": "Created Book",
+      "time": "29/05/2024, 18:52",
+      "timeAdded": 1716997970618
+    },
+    {
+      "id": "crUNM3YUJCQC",
+      "book_name": "The Book of Harry Potter Trifles, Trivias & Particularities",
+      "ISBN": "9780977954520",
+      "action": "Created Book",
+      "time": "29/05/2024, 18:52",
+      "timeAdded": 1716997970630
+    },
+    {
+      "id": "f6y2_oFOcjQC",
+      "book_name": "The Making of the Potterverse",
+      "ISBN": "9781554902880",
+      "action": "Created Book",
+      "time": "29/05/2024, 18:52",
+      "timeAdded": 1716997970643
+    },
+    {
+      "id": "KAXfDwAAQBAJ",
+      "book_name": "Harry's Apology",
+      "ISBN": "9781892617156",
+      "action": "Created Book",
+      "time": "29/05/2024, 18:52",
+      "timeAdded": 1716997970657
+    },
+    {
+      "id": "H8buBQAAQBAJ",
+      "book_name": "J.K. Rowling: A Bibliography 1997-2013",
+      "ISBN": "9781849669771",
+      "action": "Added copy",
+      "time": "29/05/2024, 19:24",
+      "timeAdded": 1716999895436
+    },
+    {
+      "id": "H8buBQAAQBAJ",
+      "book_name": "J.K. Rowling: A Bibliography 1997-2013",
+      "ISBN": "9781849669771",
+      "action": "Added copy",
+      "time": "29/05/2024, 19:24",
+      "timeAdded": 1716999899780
+    },
+    {
+      "id": "H8buBQAAQBAJ",
+      "book_name": "J.K. Rowling: A Bibliography 1997-2013",
+      "ISBN": "9781849669771",
+      "action": "Removed copy",
+      "time": "29/05/2024, 19:25",
+      "timeAdded": 1716999902290
+    },
+    {
+      "id": "H8buBQAAQBAJ",
+      "book_name": "J.K. Rowling: A Bibliography 1997-2013",
+      "ISBN": "9781849669771",
+      "action": "Removed from favorite",
+      "time": "29/05/2024, 19:25",
+      "timeAdded": 1716999914485
+    },
+    {
+      "id": "BoX-6R21MgQC",
+      "book_name": "The Psychology of Harry Potter",
+      "ISBN": "9781935251378",
+      "action": "Created Book",
+      "time": "29/05/2024, 19:26",
+      "timeAdded": 1717000005225
+    },
+    {
+      "id": "GZAoAQAAIAAJ",
+      "book_name": "Harry Potter and the Deathly Hallows",
+      "action": "Created Book",
+      "time": "29/05/2024, 19:26",
+      "timeAdded": 1717000005243
+    },
+    {
+      "id": "gal9MtXKC68C",
+      "book_name": "‏هيرى پوٹر اور رازوں کا کمره :‏",
+      "ISBN": "0195798767",
+      "action": "Created Book",
+      "time": "29/05/2024, 19:26",
+      "timeAdded": 1717000005257
+    },
+    {
+      "id": "rz9ZscY96JAC",
+      "book_name": "The Health Detective’s 456 Most Powerful Healing Secrets (Volume 1 of 2) (EasyRead Edition)",
+      "ISBN": "9781442974159",
+      "action": "Created Book",
+      "time": "29/05/2024, 19:28",
+      "timeAdded": 1717000116991
+    },
+    {
+      "id": "EiAc-ftzqu4C",
+      "book_name": "The Health Detective’s 456 Most Powerful Healing Secrets (Volume 2 of 3) (EasyRead Super Large 20pt Edition)",
+      "ISBN": "9781442978003",
+      "action": "Created Book",
+      "time": "29/05/2024, 19:28",
+      "timeAdded": 1717000117110
+    },
+    {
+      "id": "UXv_i0r3tMwC",
+      "book_name": "The Health Detective's 456 Most Powerful Healing Secrets",
+      "ISBN": "9781442977624",
+      "action": "Created Book",
+      "time": "29/05/2024, 19:28",
+      "timeAdded": 1717000117127
+    },
+    {
+      "id": "8P8nDwAAQBAJ",
+      "book_name": "Literary Allusion in Harry Potter",
+      "ISBN": "9781351978736",
+      "action": "Added to favorite",
+      "time": "29/05/2024, 19:29",
+      "timeAdded": 1717000145425
+    },
+    {
+      "id": "8P8nDwAAQBAJ",
+      "book_name": "Literary Allusion in Harry Potter",
+      "ISBN": "9781351978736",
+      "action": "Removed from favorite",
+      "time": "29/05/2024, 19:29",
+      "timeAdded": 1717000190759
+    },
+    {
+      "id": "zB9X2vKRZ34C",
+      "book_name": "What's a Christian to Do with Harry Potter?",
+      "ISBN": "9780307813565",
+      "action": "Removed from favorite",
+      "time": "29/05/2024, 19:30",
+      "timeAdded": 1717000241069
+    },
+    {
+      "id": "zB9X2vKRZ34C",
+      "book_name": "What's a Christian to Do with Harry Potter?",
+      "ISBN": "9780307813565",
+      "action": "Added to favorite",
+      "time": "29/05/2024, 19:30",
+      "timeAdded": 1717000249190
+    },
+    {
+      "id": "zB9X2vKRZ34C",
+      "book_name": "What's a Christian to Do with Harry Potter?",
+      "ISBN": "9780307813565",
+      "action": "Removed from favorite",
+      "time": "29/05/2024, 19:30",
+      "timeAdded": 1717000255189
+    },
+    {
+      "id": "zB9X2vKRZ34C",
+      "book_name": "What's a Christian to Do with Harry Potter?",
+      "ISBN": "9780307813565",
+      "action": "Added to favorite",
+      "time": "29/05/2024, 19:30",
+      "timeAdded": 1717000256137
+    },
+    {
+      "id": "zB9X2vKRZ34C",
+      "book_name": "What's a Christian to Do with Harry Potter?",
+      "ISBN": "9780307813565",
+      "action": "Removed from favorite",
+      "time": "29/05/2024, 19:31",
+      "timeAdded": 1717000263919
+    },
+    {
+      "id": "zB9X2vKRZ34C",
+      "book_name": "What's a Christian to Do with Harry Potter?",
+      "ISBN": "9780307813565",
+      "action": "Added to favorite",
+      "time": "29/05/2024, 19:31",
+      "timeAdded": 1717000270766
+    },
+    {
+      "id": "zB9X2vKRZ34C",
+      "book_name": "What's a Christian to Do with Harry Potter?",
+      "ISBN": "9780307813565",
+      "action": "Removed from favorite",
+      "time": "29/05/2024, 19:31",
+      "timeAdded": 1717000272911
+    },
+    {
+      "id": "L3LTSRFivqgC",
+      "book_name": "The History of the Hobbit",
+      "ISBN": "9780007266470",
+      "action": "Created Book",
+      "time": "29/05/2024, 19:33",
+      "timeAdded": 1717000401978
+    },
+    {
+      "id": "jLogAgAAQBAJ",
+      "book_name": "The Hobbit",
+      "ISBN": "9780547901985",
+      "action": "Created Book",
+      "time": "29/05/2024, 19:33",
+      "timeAdded": 1717000401997
+    },
+    {
+      "id": "4LEjf7GgIGIC",
+      "book_name": "THE HOBBIT",
+      "ISBN": "No ISBN",
+      "action": "Created Book",
+      "time": "29/05/2024, 19:33",
+      "timeAdded": 1717000402014
+    },
+    {
+      "id": "akaTEAAAQBAJ",
+      "book_name": "The Hobbit (Movie Tie-in Edition)",
+      "ISBN": "9780345534835",
+      "action": "Created Book",
+      "time": "29/05/2024, 19:33",
+      "timeAdded": 1717000402031
     }
   ],
   "favorites": [
@@ -2423,21 +2856,6 @@
         "Biography & Autobiography"
       ],
       "ISBN": "9781448211616"
-    },
-    {
-      "id": "zB9X2vKRZ34C",
-      "book_name": "What's a Christian to Do with Harry Potter?",
-      "authors_name": [
-        "Connie Neal"
-      ],
-      "num_pages": 224,
-      "short_description": "Answers to the Burning Questions Christian Parents, Educators, and Others Are Asking about Harry Potter. In the world of publishing, few successes have equaled that of J. K. Rowling’s Harry Potter series—magical stories centered on one boy’s adventures at Hogwarts, a school for witchcraft and wizardry. Yet this popular series presents a perplexing—even divisive—challenge to the Christian community. Although the books present a clear picture of the epic battle between good and evil, they appear to support the use of magic and have had a controversial impact on our culture. As a result, many of us are wondering, “How should I respond to this Harry Potter thing?” Find out what the Harry Potter books really say about witchcraft and wizardry. Hear what Christians on both sides of the debate are saying about Harry Potter—and decide what you believe. Learn how you can use the series to protect your child from real occult influences. In What’s a Christian to Do with Harry Potter?, you’ ll explore the valid concerns some Christians have about the series, sort out the fact and fiction at the center of the debate, discover biblical answers that may surprise you, and learn how you can tap into this powerful cultural phenomenon to help advance the kingdom of God. This book has not been prepared, approved, or licensed by any person or entity that created, published, or produced the Harry Potter books or related properties.",
-      "image": "http://books.google.com/books/content?id=zB9X2vKRZ34C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-      "num_copies": 10,
-      "categories": [
-        "Family & Relationships"
-      ],
-      "ISBN": "9780307813565"
     },
     {
       "id": "ThAaBwAAQBAJ",
@@ -2498,6 +2916,21 @@
         "Law"
       ],
       "ISBN": "9781610278720"
+    },
+    {
+      "id": "H8buBQAAQBAJ",
+      "book_name": "J.K. Rowling: A Bibliography 1997-2013",
+      "authors_name": [
+        "Philip W. Errington"
+      ],
+      "num_pages": 753,
+      "short_description": "'As someone who respects comprehensive research, I am in awe of the level of detail and amount of time Philip Errington has dedicated to this slavishly thorough and somewhat mind-boggling bibliography.' J. K. Rowling This is the definitive bibliography of the writings of J. K. Rowling. In addition to complete bibliographic details of each edition of all her books, pamphlets and original contributions to published works, there is detailed information on the publishing history of her work, including fascinating extracts from correspondence, and information on Rowling at auction. This will be the first source on Rowling consulted by textual scholars, book dealers and collectors, auction houses, critics and researchers. The aim of the book is to record fact and dispel rumour on the fascinating publishing history of the Harry Potter series.",
+      "image": "http://books.google.com/books/content?id=H8buBQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "num_copies": 7,
+      "categories": [
+        "Fiction"
+      ],
+      "ISBN": "9781849669771"
     }
   ]
 }
