@@ -1483,6 +1483,21 @@
         "Uncategorized"
       ],
       "ISBN": "9781442977891"
+    },
+    {
+      "id": "wrOQLV6xB-wC",
+      "book_name": "Harry Potter and the Sorcerer's Stone",
+      "authors_name": [
+        "J.K. Rowling"
+      ],
+      "num_pages": 311,
+      "short_description": "Turning the envelope over, his hand trembling, Harry saw a purple wax seal bearing a coat of arms; a lion, an eagle, a badger and a snake surrounding a large letter 'H'. Harry Potter has never even heard of Hogwarts when the letters start dropping on the doormat at number four, Privet Drive. Addressed in green ink on yellowish parchment with a purple seal, they are swiftly confiscated by his grisly aunt and uncle. Then, on Harry's eleventh birthday, a great beetle-eyed giant of a man called Rubeus Hagrid bursts in with some astonishing news: Harry Potter is a wizard, and he has a place at Hogwarts School of Witchcraft and Wizardry. An incredible adventure is about to begin! Having become classics of our time, the Harry Potter eBooks never fail to bring comfort and escapism. With their message of hope, belonging and the enduring power of truth and love, the story of the Boy Who Lived continues to delight generations of new readers.",
+      "image": "http://books.google.com/books/content?id=wrOQLV6xB-wC&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+      "num_copies": 2,
+      "categories": [
+        "Juvenile Fiction"
+      ],
+      "ISBN": "9781781100486"
     }
   ],
   "history": [
@@ -2148,6 +2163,14 @@
       "action": "Deleted Book",
       "time": "29/05/2024, 09:24",
       "timeAdded": 1716963884400
+    },
+    {
+      "id": "wrOQLV6xB-wC",
+      "book_name": "Harry Potter and the Sorcerer's Stone",
+      "ISBN": "9781781100486",
+      "action": "Created Book",
+      "time": "29/05/2024, 10:00",
+      "timeAdded": 1716966011330
     }
   ],
   "favorites": [
@@ -2225,6 +2248,37 @@
         "Literary Criticism"
       ],
       "ISBN": "0826452329"
+    },
+    {
+      "id": "Fl7Ko2zrJ2AC",
+      "book_name": "Generation Hex",
+      "authors_name": [
+        "Dillon Burroughs",
+        "Marla Alupoaicei"
+      ],
+      "num_pages": 178,
+      "short_description": "Wicca is Americas fastest growing religion. By the year 2012, its projected to be the third largest religion in the United States. In Generation Hex, Marla Alupoaicei and Dillon Burroughs explore the history, culture, and practices of Wicca. As part of their research, they interviewed travelers to historic Salem, Massachusetts, consulted practitioners of leading neopagan conferences in the Pacific Northwest and Canada, and dialogued with several current and former adherents of Wicca and other forms of witchcraft to evaluate the past and present of this growing spiritual tradition. The result is a compelling account that will inform and equip Christians (especially parents) to understand Wiccan and New Age teachings. Readers will have confidence to explain this belief system to others and to communicate the gospel to those caught up in this practice. Generation Hex identifies with the spiritual hunger of a generation seeking truth, authenticity, and hope in a fragmented world. Its perfect for personal study or as a gift for anyone interested or involved in Wicca.",
+      "image": "http://books.google.com/books/content?id=Fl7Ko2zrJ2AC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "num_copies": 4,
+      "categories": [
+        "Religion"
+      ],
+      "ISBN": "9780736924016"
+    },
+    {
+      "id": "-pp2FCxssk0C",
+      "book_name": "Books in Motion",
+      "authors_name": [
+        "Mireia Aragay"
+      ],
+      "num_pages": 290,
+      "short_description": "Books in Motion addresses the hybrid, interstitial field of film adaptation. The introductory essay integrates a retrospective survey of the development of adaptation studies with a forceful argument about their centrality to any history of culture--any discussion, that is, of the transformation and transmission of texts and meanings in and across cultures. The thirteen especially composed essays that follow, organised into four sections headed 'Paradoxes of Fidelity', 'Authors, Auteurs, Adaptation', 'Contexts, Intertexts, Adaptation' and 'Beyond Adaptation', variously illustrate that claim by problematising the notion of fidelity, highlighting the role played by adaptation in relation to changing concepts of authorship and auteurism, exploring the extent to which the intelligibility of film adaptations is dependent on contextual and intertextual factors, and making a claim for the need to transcend any narrowly-defined concept of adaptation in the study of adaptation. Discussion ranges from adaptations of established classics like A Tale of Two Cities, Frankenstein, Henry V, Le temps retrouvé, Mansfield Park, Pride and Prejudice, 'The Dead' or Wuthering Heights, to contemporary (popular) texts/films like Bridget Jones's Diary, Fools, The Governess, High Fidelity, The Hours, The Orchid Thief/Adaptation, the work of Doris Dörrie, the first Harry Potter novel/film, or the adaptations made by Alfred Hitchcock, Stanley Kubrick and Walt Disney. This book will appeal to both a specialised readership and to those accessing the dynamic field of adaptation studies for the first time.",
+      "image": "http://books.google.com/books/content?id=-pp2FCxssk0C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "num_copies": 2,
+      "categories": [
+        "Literary Criticism"
+      ],
+      "ISBN": "9789042019577"
     }
   ]
 }

@@ -20,6 +20,8 @@
   --margin-large: 1.5em;
   --margin-xl: 1.75em;
   --margin-xxl: 2em;
+  --card-box-shadow: 4px 6px 27px 2px rgba(0,0,0,0.75);
+  --card-hover-box-shadow: 4px 6px 56px 10px rgb(0, 0, 0);
 }
 
 body {
@@ -162,10 +164,13 @@ main {
   border-radius: 0.5em;
   overflow: hidden; /* Ensure hidden overflow for all contents */
   transition: transform 0.3s ease;
+  box-shadow: var(--card-box-shadow);
 }
 
 .book:hover {
   transform: scale(1.15);
+  box-shadow: var(--card-hover-box-shadow);
+  z-index: 5;
 }
 
 .book * {
@@ -356,7 +361,7 @@ img {
 }
 
 .selected {
-  background-color: white;
+  background-color: lightseagreen;
   color: black;
 }
 
@@ -414,7 +419,7 @@ img {
   justify-content: space-between;
 }
 .newBook.selected:hover{
-  background-color: white;
+  background-color: lightseagreen;
 }
 .newBook:hover .book-author{
   color: black;
