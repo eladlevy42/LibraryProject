@@ -16,21 +16,6 @@
       "ISBN": "9781351978736"
     },
     {
-      "id": "ThAaBwAAQBAJ",
-      "book_name": "Harry Potter’s World Wide Influence",
-      "authors_name": [
-        "Diana Patterson"
-      ],
-      "num_pages": 337,
-      "short_description": "The Harry Potter series forms a single epic story that has been published in nearly 70 languages, and has been examined in a large number of disciplines. This collection of essays contributes to the scholarly discourse that forms Potter Studies. These essays take on the consideration of Rowling's work as being worthy of study as a phenomenon and influence, as well as a work of literary value. They add genuine statistical information about the reasons for the books' popularity, consider their effects on child readers, and examine some deep-rooted reasons for their having been manipulated in American publishing, in film adaptations, in musical complements, and in their thingification in popular culture around the world. Some of these essays take on the critics of the books' religion and considerations of psychological, as well as philosophical good and evil, and well as some stylistic anomalies. The fact that scholars from China, Germany, Poland, Romania, and Israel, in addition to English-speaking nations, have felt compelled to examine these books in detail testifies in part to Harry Potter's world-wide influence.",
-      "image": "http://books.google.com/books/content?id=ThAaBwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-      "num_copies": 7,
-      "categories": [
-        "Literary Criticism"
-      ],
-      "ISBN": "9781443816281"
-    },
-    {
       "id": "OGjYVAIXxyQC",
       "book_name": "The Complete Idiot's Guide to the World of Harry Potter",
       "authors_name": [
@@ -119,21 +104,6 @@
         "Literary Criticism"
       ],
       "ISBN": "0826452329"
-    },
-    {
-      "id": "-pp2FCxssk0C",
-      "book_name": "Books in Motion",
-      "authors_name": [
-        "Mireia Aragay"
-      ],
-      "num_pages": 290,
-      "short_description": "Books in Motion addresses the hybrid, interstitial field of film adaptation. The introductory essay integrates a retrospective survey of the development of adaptation studies with a forceful argument about their centrality to any history of culture--any discussion, that is, of the transformation and transmission of texts and meanings in and across cultures. The thirteen especially composed essays that follow, organised into four sections headed 'Paradoxes of Fidelity', 'Authors, Auteurs, Adaptation', 'Contexts, Intertexts, Adaptation' and 'Beyond Adaptation', variously illustrate that claim by problematising the notion of fidelity, highlighting the role played by adaptation in relation to changing concepts of authorship and auteurism, exploring the extent to which the intelligibility of film adaptations is dependent on contextual and intertextual factors, and making a claim for the need to transcend any narrowly-defined concept of adaptation in the study of adaptation. Discussion ranges from adaptations of established classics like A Tale of Two Cities, Frankenstein, Henry V, Le temps retrouvé, Mansfield Park, Pride and Prejudice, 'The Dead' or Wuthering Heights, to contemporary (popular) texts/films like Bridget Jones's Diary, Fools, The Governess, High Fidelity, The Hours, The Orchid Thief/Adaptation, the work of Doris Dörrie, the first Harry Potter novel/film, or the adaptations made by Alfred Hitchcock, Stanley Kubrick and Walt Disney. This book will appeal to both a specialised readership and to those accessing the dynamic field of adaptation studies for the first time.",
-      "image": "http://books.google.com/books/content?id=-pp2FCxssk0C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-      "num_copies": 2,
-      "categories": [
-        "Literary Criticism"
-      ],
-      "ISBN": "9789042019577"
     },
     {
       "id": "ld_YAgAAQBAJ",
@@ -2217,6 +2187,36 @@
       "action": "Removed from favorite",
       "time": "29/05/2024, 14:54",
       "timeAdded": 1716983679990
+    },
+    {
+      "id": "-pp2FCxssk0C",
+      "book_name": "Books in Motion",
+      "ISBN": "9789042019577",
+      "action": "Deleted Book",
+      "time": "29/05/2024, 15:19",
+      "timeAdded": 1716985141016
+    },
+    {
+      "id": "ThAaBwAAQBAJ",
+      "book_name": "Harry Potter’s World Wide Influence",
+      "ISBN": "9781443816281",
+      "action": "Deleted Book",
+      "time": "29/05/2024, 15:20",
+      "timeAdded": 1716985233845
+    },
+    {
+      "id": "c56f",
+      "book_name": "123",
+      "action": "Created Book",
+      "time": "29/05/2024, 15:20",
+      "timeAdded": 1716985252578
+    },
+    {
+      "id": "1f2d",
+      "book_name": "123",
+      "action": "Deleted Book",
+      "time": "29/05/2024, 15:21",
+      "timeAdded": 1716985262047
     }
   ],
   "favorites": [

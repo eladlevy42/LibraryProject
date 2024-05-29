@@ -243,6 +243,7 @@ async function switchPage(direction) {
 
 // Function to show the loading spinner
 function showSpinner() {
+  document.querySelector("#booksGrid").visibility = "visible";
   spinner.style.display = "block";
 }
 
@@ -257,9 +258,9 @@ function loadImage(url) {
 }
 
 async function removeCopy() {
-  let bookISBN = document.querySelector("#bookISBN").textContent;
-  bookISBN = bookISBN.substring(6);
-  let url = `${jsonServerUrl}/?ISBN=${bookISBN}`;
+  let bookName = document.querySelector("#bookTitle").textContent;
+
+  let url = `${jsonServerUrl}/?book_name=${bookName}`;
   try {
     let response = await axios.get(url);
     let bookDetail = response.data[0];
@@ -282,9 +283,9 @@ async function removeCopy() {
 }
 
 async function addCopy() {
-  let bookISBN = document.querySelector("#bookISBN").textContent;
-  bookISBN = bookISBN.substring(6);
-  let url = `${jsonServerUrl}/?ISBN=${bookISBN}`;
+  let bookName = document.querySelector("#bookTitle").textContent;
+
+  let url = `${jsonServerUrl}/?book_name=${bookName}`;
   try {
     let response = await axios.get(url);
     let bookDetail = response.data[0];
@@ -304,9 +305,9 @@ async function addCopy() {
 }
 
 async function deleteBook() {
-  let bookISBN = document.querySelector("#bookISBN").textContent;
-  bookISBN = bookISBN.substring(6);
-  let url = `${jsonServerUrl}/?ISBN=${bookISBN}`;
+  let bookName = document.querySelector("#bookTitle").textContent;
+
+  let url = `${jsonServerUrl}/?book_name=${bookName}`;
   try {
     let response = await axios.get(url);
     let bookDetail = response.data[0];
@@ -371,6 +372,7 @@ async function searchBook() {
   }
 }
 function buildSearchBookGrid(currentPageArr) {
+  document.querySelector("#booksGrid").visibility = "visible";
   document.querySelector("#booksGrid").innerHTML = "";
   currentPageArr.forEach((book) => {
     let bookElem = document.createElement("div");
