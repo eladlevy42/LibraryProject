@@ -61,18 +61,33 @@ ul {
 #Xside {
   position: absolute;
   left: 80%;
+  color: var(--clr-danger-primary);
+  font-size: 25px;
+  top: 20px;
+  cursor: pointer;
+  transition: transform .2s;
+}
+#Xside:hover{
+  transform: scale(1.2);
 }
 #burger {
   position: absolute;
   left: 100%;
   width: 25px;
-  aspect-ratio: 1/1;
+  top: 10px;
+  padding: var(--padding-medium);
+  padding-inline: var(--padding-large);
   margin-left: 10%;
   border-radius: 50%;
   background-color: var(--clr-accent-primary);
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
+  transition: transform .2s;
+}
+#burger:hover{
+  transform: scale(1.1);
 }
 #burger * {
   text-align: center;
@@ -205,14 +220,14 @@ main {
 
 #next{
   position: absolute;
-  top: 600px;
-  right: 130px;
+  top: 500px;
+  right: 250px;
 }
 
 #back{
   position: absolute;
-  top: 600px;
-  left: 130px;
+  top: 500px;
+  left: 250px;
 }
 #bookDescription {
   max-height: 200px;
@@ -683,6 +698,14 @@ img {
   font-size: 20px;
   color: yellow;
 }
+@media screen and (max-width: 1300px) {
+  #next{
+    right: 130px;
+  }
+  #back{
+    left: 130px;
+  }
+}
 @media screen and (max-width: 1100px) {
   .newBooksDetails {
     grid-template-columns: repeat(3, 1fr);
@@ -698,7 +721,13 @@ img {
     grid-template-columns: repeat(3, 1fr);
   }
 }
-@media screen and (max-width: 1006px) {
+@media screen and (max-width: 910px) {
+  #next{
+    right: 60px;
+  }
+  #back{
+    left: 60px;
+  }
 }
 @media screen and (max-height: 870px) {
   #detailBook {
@@ -734,7 +763,7 @@ img {
   }
 
   .margin-top-huge {
-    margin-top: 100px;
+    margin-top: 10px;
   }
   .sideBar ul {
     display: flex;
@@ -820,7 +849,7 @@ img {
     bottom: 53px;
   }
   #next{
-    left: 410px;
+    left: 480px;
   }
 }
 @media screen and (max-width: 470px) {
@@ -849,6 +878,11 @@ img {
   .mainPageHeader {
     font-size: 25px;
   }
+  #sortBar{
+    width: 250px;
+    flex-direction: column;
+    gap: 10px;
+  }
   #createBookByDetails h2 {
     font-size: 22px;
   }
@@ -870,5 +904,8 @@ img {
   }
   #searchBar {
     width: 160px;
+  }
+  #burger{
+    top: 10px;
   }
 }
