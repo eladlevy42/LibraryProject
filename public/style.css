@@ -61,18 +61,33 @@ ul {
 #Xside {
   position: absolute;
   left: 80%;
+  color: var(--clr-danger-primary);
+  font-size: 25px;
+  top: 20px;
+  cursor: pointer;
+  transition: transform .2s;
+}
+#Xside:hover{
+  transform: scale(1.2);
 }
 #burger {
   position: absolute;
   left: 100%;
   width: 25px;
-  aspect-ratio: 1/1;
+  top: 10px;
+  padding: var(--padding-medium);
+  padding-inline: var(--padding-large);
   margin-left: 10%;
   border-radius: 50%;
-  background-color: var(--clr-accent-primary);
+  background-color: hsl(11, 83%, 30%);
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
+  transition: transform .2s;
+}
+#burger:hover{
+  transform: scale(1.1);
 }
 #burger * {
   text-align: center;
@@ -102,16 +117,28 @@ ul {
   transform: translateX(15px);
 }
 #sortBar {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  align-items: center;
   padding: var(--padding-medium);
-  gap: 1em;
+  justify-content: space-between;
+  width: 500px;
 }
 #sort,
 #showFav,
 #reset {
   cursor: pointer;
+  font-size: 20px;
   color: var(--clr-accent-primary);
+  transition: transform 0.3s;
+}
+#showFav{
+  margin-left: var(--margin-medium);
+  display: inline-block;
+}
+#sort:hover,
+#showFav:hover,
+#reset:hover{
+  transform: scale(1.2);
 }
 .mainPageHeader {
   color: var(--clr-accent-primary);
@@ -185,11 +212,25 @@ main {
 
 #booksGrid {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  max-width: 1000px;
   padding: var(--padding-medium);
   gap: 1em;
 }
 
+#next{
+  position: absolute;
+  top: 500px;
+  right: 250px;
+  visibility: hidden;
+}
+
+#back{
+  position: absolute;
+  top: 500px;
+  left: 250px;
+  visibility: hidden;
+}
 #bookDescription {
   max-height: 200px;
   overflow-y: auto;
@@ -445,8 +486,8 @@ img {
   margin-top: -15px;
   margin-left: -15px;
   border-radius: 50%;
-  border: 1px solid #ccc;
-  border-top-color: #07d;
+  border: 3px solid #ccc;
+  border-top-color: var(--clr-accent-primary);
   animation: spinner 0.6s linear infinite;
   z-index: 1000;
 }
@@ -663,6 +704,14 @@ img {
   font-size: 20px;
   color: yellow;
 }
+@media screen and (max-width: 1300px) {
+  #next{
+    right: 130px;
+  }
+  #back{
+    left: 130px;
+  }
+}
 @media screen and (max-width: 1100px) {
   .newBooksDetails {
     grid-template-columns: repeat(3, 1fr);
@@ -674,8 +723,17 @@ img {
   .newBook {
     height: auto;
   }
+  #booksGrid{
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
-@media screen and (max-width: 1006px) {
+@media screen and (max-width: 910px) {
+  #next{
+    right: 60px;
+  }
+  #back{
+    left: 60px;
+  }
 }
 @media screen and (max-height: 870px) {
   #detailBook {
@@ -711,7 +769,7 @@ img {
   }
 
   .margin-top-huge {
-    margin-top: 100px;
+    margin-top: 10px;
   }
   .sideBar ul {
     display: flex;
@@ -721,6 +779,16 @@ img {
   .closeBookWrapper {
     left: 330px;
   }
+  #next{
+    right: 15px;
+  }
+  #back{
+    left: 15px;
+  }
+  .snackbar{
+    left: 50%;
+  }
+  
 }
 @media screen and (max-width: 700px) {
   .newBooksDetails {
@@ -747,6 +815,9 @@ img {
   #gridWrapper {
     position: relative;
   }
+  #sortBar{
+    width: 350px;
+  }
 }
 @media screen and (max-width: 600px) {
   .actionTable th,
@@ -770,6 +841,9 @@ img {
   #booksGrid {
     grid-template-columns: repeat(1, 1fr);
   }
+  #sortBar{
+    width: 300px;
+  }
   .newBooksDetails {
     width: 300px;
   }
@@ -779,10 +853,13 @@ img {
   #detailBook {
     width: 320px;
   }
-  /* .fa-x{
-    left: 140px;
-    top: -10px;
-  } */
+  #back, #next{
+    position: sticky;
+    bottom: 53px;
+  }
+  #next{
+    left: 480px;
+  }
 }
 @media screen and (max-width: 470px) {
   #createBookByDetails h2 {
@@ -810,6 +887,11 @@ img {
   .mainPageHeader {
     font-size: 25px;
   }
+  #sortBar{
+    width: 250px;
+    flex-direction: column;
+    gap: 10px;
+  }
   #createBookByDetails h2 {
     font-size: 22px;
   }
@@ -829,12 +911,10 @@ img {
     margin-left: 0px;
     margin-top: 0;
   }
-  .arrow {
-    position: sticky;
-    top: -150px;
-    left: -510px;
-  }
   #searchBar {
     width: 160px;
+  }
+  #burger{
+    top: 5px;
   }
 }
