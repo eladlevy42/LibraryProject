@@ -151,21 +151,6 @@
       "ISBN": "9781939529190"
     },
     {
-      "id": "mvmGPgAACAAJ",
-      "book_name": "Harry Potter and the Sorcerer's Stone",
-      "authors_name": [
-        "J. K. Rowling"
-      ],
-      "num_pages": 320,
-      "short_description": "Rescued from the outrageous neglect of his aunt and uncle, a young boy with a great destiny proves his worth while attending Hogwarts School for Wizards and Witches.",
-      "image": "http://books.google.com/books/content?id=mvmGPgAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
-      "num_copies": 2,
-      "categories": [
-        "Juvenile Fiction"
-      ],
-      "ISBN": "043920352X"
-    },
-    {
       "id": "BoX-6R21MgQC",
       "book_name": "The Psychology of Harry Potter",
       "authors_name": [
@@ -1379,6 +1364,140 @@
         "Juvenile Nonfiction"
       ],
       "ISBN": "9780547859125"
+    },
+    {
+      "id": "ZO_xY1V-2PgC",
+      "book_name": "Relief of New Milford Consolidated School District No. 123, of Illinois, Rock River Consolidated School District No. 125, of Illinois, Michael H. Lorden, Charles Samuelson, John August Johnson, Ross P. Beckstrom Co",
+      "authors_name": [
+        "United States. Congress. House. Committee on War Claims. Subcommittee No. 3"
+      ],
+      "num_pages": 84,
+      "short_description": "No Description",
+      "image": "http://books.google.com/books/content?id=ZO_xY1V-2PgC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "num_copies": 9,
+      "categories": [
+        "Eminent domain"
+      ]
+    },
+    {
+      "id": "QDCmAwAAQBAJ",
+      "book_name": "123 Bath & Shower Just 4 me.",
+      "authors_name": [
+        "Rain Fields"
+      ],
+      "num_pages": 25,
+      "short_description": "No Description",
+      "image": "http://books.google.com/books/content?id=QDCmAwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "num_copies": 7,
+      "categories": [
+        "Uncategorized"
+      ],
+      "ISBN": "9781105640247"
+    },
+    {
+      "id": "_r8VAgAAQBAJ",
+      "book_name": "Yale Law Journal: Volume 123, Number 2 - November 2013",
+      "authors_name": [
+        "Yale Law Journal"
+      ],
+      "num_pages": 287,
+      "short_description": "This November issue of The Yale Law Journal (the second of Volume 123, academic year 2013-2014) features new articles and essays on law and legal theory by internationally recognized scholars. Contents include: * Article, \"Leviathan and Interpretive Revolution: The Administrative State, the Judiciary, and the Rise of Legislative History, 1890-1950,\" by Nicholas R. Parrillo * Essay, \"Reconsidering Citizens United as a Press Clause Case,\" Michael W. McConnell * Note, \"The Mens Rea of Accomplice Liability: Supporting Intentions\" * Comment, \"A First Amendment Approach to Generic Drug Manufacturer Tort Liability\" * Comment, \"The EU General Data Protection Regulation: Toward a Property Regime for Protecting Data Privacy\" Quality ebook formatting includes fully linked footnotes, active Table of Contents (including linked Contents for individual articles), active URLs in notes, and properly presented tables and graphs throughout.",
+      "image": "http://books.google.com/books/content?id=_r8VAgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "num_copies": 3,
+      "categories": [
+        "Law"
+      ],
+      "ISBN": "9781610278898"
+    },
+    {
+      "id": "DQQhCwAAQBAJ",
+      "book_name": "Harry Potter and the Chamber of Secrets",
+      "authors_name": [
+        "J.K. Rowling"
+      ],
+      "num_pages": 325,
+      "short_description": "'There is a plot, Harry Potter. A plot to make most terrible things happen at Hogwarts School of Witchcraft and Wizardry this year.' Harry Potter's summer has included the worst birthday ever, doomy warnings from a house-elf called Dobby, and rescue from the Dursleys by his friend Ron Weasley in a magical flying car! Back at Hogwarts School of Witchcraft and Wizardry for his second year, Harry hears strange whispers echo through empty corridors - and then the attacks start. Students are found as though turned to stone... Dobby's sinister predictions seem to be coming true. Having become classics of our time, the Harry Potter eBooks never fail to bring comfort and escapism. With their message of hope, belonging and the enduring power of truth and love, the story of the Boy Who Lived continues to delight generations of new readers.",
+      "image": "http://books.google.com/books/content?id=DQQhCwAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+      "num_copies": 2,
+      "categories": [
+        "Fiction"
+      ],
+      "ISBN": "9781781100509"
+    },
+    {
+      "id": "Orq0EAAAQBAJ",
+      "book_name": "Prison 456",
+      "authors_name": [
+        "Samantha Nicklaus"
+      ],
+      "num_pages": 120,
+      "short_description": "Heather and her fellow inmates find themselves in a new prison, with new rules. Run by a warden Heather isn't sure she can trust, she finds herself longing for her home in Prison 917 and trying to stop a full-on escape orchestrated by those close to her. Can she learn to love her new home, and more importantly, can she get her friends too?",
+      "image": "http://books.google.com/books/content?id=Orq0EAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "num_copies": 8,
+      "categories": [
+        "Fiction"
+      ],
+      "ISBN": "9798986611310"
+    },
+    {
+      "id": "FkfrgTySNGQC",
+      "book_name": "The Health Detective’s 456 Most Powerful Healing Secrets (Volume 3 of 3) (EasyRead Super Large 20pt Edition)",
+      "authors_name": [
+        "Unknown Author"
+      ],
+      "num_pages": 450,
+      "short_description": "No Description",
+      "image": "http://books.google.com/books/content?id=FkfrgTySNGQC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "num_copies": 10,
+      "categories": [
+        "Uncategorized"
+      ],
+      "ISBN": "9781442978010"
+    },
+    {
+      "id": "TA_oj6tJ7AEC",
+      "book_name": "The Health Detective’s 456 Most Powerful Healing Secrets (Volume 2 of 2) (EasyRead Large Bold Edition)",
+      "authors_name": [
+        "Unknown Author"
+      ],
+      "num_pages": 454,
+      "short_description": "No Description",
+      "image": "http://books.google.com/books/content?id=TA_oj6tJ7AEC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "num_copies": 10,
+      "categories": [
+        "Uncategorized"
+      ],
+      "ISBN": "9781442976467"
+    },
+    {
+      "id": "c5NtSoYYaboC",
+      "book_name": "The Health Detective’s 456 Most Powerful Healing Secrets (Volume 2 of 3) (EasyRead Super Large 24pt Edition)",
+      "authors_name": [
+        "Unknown Author"
+      ],
+      "num_pages": 566,
+      "short_description": "No Description",
+      "image": "http://books.google.com/books/content?id=c5NtSoYYaboC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "num_copies": 9,
+      "categories": [
+        "Uncategorized"
+      ],
+      "ISBN": "9781442977891"
+    },
+    {
+      "id": "wrOQLV6xB-wC",
+      "book_name": "Harry Potter and the Sorcerer's Stone",
+      "authors_name": [
+        "J.K. Rowling"
+      ],
+      "num_pages": 311,
+      "short_description": "Turning the envelope over, his hand trembling, Harry saw a purple wax seal bearing a coat of arms; a lion, an eagle, a badger and a snake surrounding a large letter 'H'. Harry Potter has never even heard of Hogwarts when the letters start dropping on the doormat at number four, Privet Drive. Addressed in green ink on yellowish parchment with a purple seal, they are swiftly confiscated by his grisly aunt and uncle. Then, on Harry's eleventh birthday, a great beetle-eyed giant of a man called Rubeus Hagrid bursts in with some astonishing news: Harry Potter is a wizard, and he has a place at Hogwarts School of Witchcraft and Wizardry. An incredible adventure is about to begin! Having become classics of our time, the Harry Potter eBooks never fail to bring comfort and escapism. With their message of hope, belonging and the enduring power of truth and love, the story of the Boy Who Lived continues to delight generations of new readers.",
+      "image": "http://books.google.com/books/content?id=wrOQLV6xB-wC&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+      "num_copies": 2,
+      "categories": [
+        "Juvenile Fiction"
+      ],
+      "ISBN": "9781781100486"
     }
   ],
   "history": [
@@ -1957,6 +2076,101 @@
       "action": "Added to favorite",
       "time": "28/05/2024, 21:33",
       "timeAdded": 1716921189456
+    },
+    {
+      "id": "K5zOroHn_LYC",
+      "book_name": "The Harry Potter Companion",
+      "ISBN": "1589395824",
+      "action": "Added to favorite",
+      "time": "29/05/2024, 08:58",
+      "timeAdded": 1716962314878
+    },
+    {
+      "id": "29QuDwAAQBAJ",
+      "book_name": "Harry Potter: Houses of Hogwarts: A Cinematic Guide",
+      "ISBN": "9781407182025",
+      "action": "Removed from favorite",
+      "time": "29/05/2024, 08:59",
+      "timeAdded": 1716962365742
+    },
+    {
+      "id": "ZO_xY1V-2PgC",
+      "book_name": "Relief of New Milford Consolidated School District No. 123, of Illinois, Rock River Consolidated School District No. 125, of Illinois, Michael H. Lorden, Charles Samuelson, John August Johnson, Ross P. Beckstrom Co",
+      "action": "Created Book",
+      "time": "29/05/2024, 08:59",
+      "timeAdded": 1716962399271
+    },
+    {
+      "id": "QDCmAwAAQBAJ",
+      "book_name": "123 Bath & Shower Just 4 me.",
+      "ISBN": "9781105640247",
+      "action": "Created Book",
+      "time": "29/05/2024, 08:59",
+      "timeAdded": 1716962399325
+    },
+    {
+      "id": "_r8VAgAAQBAJ",
+      "book_name": "Yale Law Journal: Volume 123, Number 2 - November 2013",
+      "ISBN": "9781610278898",
+      "action": "Created Book",
+      "time": "29/05/2024, 08:59",
+      "timeAdded": 1716962399364
+    },
+    {
+      "id": "DQQhCwAAQBAJ",
+      "book_name": "Harry Potter and the Chamber of Secrets",
+      "ISBN": "9781781100509",
+      "action": "Created Book",
+      "time": "29/05/2024, 09:00",
+      "timeAdded": 1716962416521
+    },
+    {
+      "id": "Orq0EAAAQBAJ",
+      "book_name": "Prison 456",
+      "ISBN": "9798986611310",
+      "action": "Created Book",
+      "time": "29/05/2024, 09:00",
+      "timeAdded": 1716962437589
+    },
+    {
+      "id": "FkfrgTySNGQC",
+      "book_name": "The Health Detective’s 456 Most Powerful Healing Secrets (Volume 3 of 3) (EasyRead Super Large 20pt Edition)",
+      "ISBN": "9781442978010",
+      "action": "Created Book",
+      "time": "29/05/2024, 09:00",
+      "timeAdded": 1716962437652
+    },
+    {
+      "id": "TA_oj6tJ7AEC",
+      "book_name": "The Health Detective’s 456 Most Powerful Healing Secrets (Volume 2 of 2) (EasyRead Large Bold Edition)",
+      "ISBN": "9781442976467",
+      "action": "Created Book",
+      "time": "29/05/2024, 09:00",
+      "timeAdded": 1716962437680
+    },
+    {
+      "id": "c5NtSoYYaboC",
+      "book_name": "The Health Detective’s 456 Most Powerful Healing Secrets (Volume 2 of 3) (EasyRead Super Large 24pt Edition)",
+      "ISBN": "9781442977891",
+      "action": "Created Book",
+      "time": "29/05/2024, 09:00",
+      "timeAdded": 1716962437710
+    },
+    {
+      "id": "mvmGPgAACAAJ",
+      "book_name": "Harry Potter and the Sorcerer's Stone",
+      "ISBN": "043920352X",
+      "action": "Deleted Book",
+      "time": "29/05/2024, 09:24",
+      "timeAdded": 1716963884400
+    },
+    {
+      "id": "wrOQLV6xB-wC",
+      "book_name": "Harry Potter and the Sorcerer's Stone",
+      "ISBN": "9781781100486",
+      "action": "Created Book",
+      "time": "29/05/2024, 10:00",
+      "timeAdded": 1716966011330
     }
   ],
   "favorites": [
@@ -2034,6 +2248,37 @@
         "Literary Criticism"
       ],
       "ISBN": "0826452329"
+    },
+    {
+      "id": "Fl7Ko2zrJ2AC",
+      "book_name": "Generation Hex",
+      "authors_name": [
+        "Dillon Burroughs",
+        "Marla Alupoaicei"
+      ],
+      "num_pages": 178,
+      "short_description": "Wicca is Americas fastest growing religion. By the year 2012, its projected to be the third largest religion in the United States. In Generation Hex, Marla Alupoaicei and Dillon Burroughs explore the history, culture, and practices of Wicca. As part of their research, they interviewed travelers to historic Salem, Massachusetts, consulted practitioners of leading neopagan conferences in the Pacific Northwest and Canada, and dialogued with several current and former adherents of Wicca and other forms of witchcraft to evaluate the past and present of this growing spiritual tradition. The result is a compelling account that will inform and equip Christians (especially parents) to understand Wiccan and New Age teachings. Readers will have confidence to explain this belief system to others and to communicate the gospel to those caught up in this practice. Generation Hex identifies with the spiritual hunger of a generation seeking truth, authenticity, and hope in a fragmented world. Its perfect for personal study or as a gift for anyone interested or involved in Wicca.",
+      "image": "http://books.google.com/books/content?id=Fl7Ko2zrJ2AC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "num_copies": 4,
+      "categories": [
+        "Religion"
+      ],
+      "ISBN": "9780736924016"
+    },
+    {
+      "id": "-pp2FCxssk0C",
+      "book_name": "Books in Motion",
+      "authors_name": [
+        "Mireia Aragay"
+      ],
+      "num_pages": 290,
+      "short_description": "Books in Motion addresses the hybrid, interstitial field of film adaptation. The introductory essay integrates a retrospective survey of the development of adaptation studies with a forceful argument about their centrality to any history of culture--any discussion, that is, of the transformation and transmission of texts and meanings in and across cultures. The thirteen especially composed essays that follow, organised into four sections headed 'Paradoxes of Fidelity', 'Authors, Auteurs, Adaptation', 'Contexts, Intertexts, Adaptation' and 'Beyond Adaptation', variously illustrate that claim by problematising the notion of fidelity, highlighting the role played by adaptation in relation to changing concepts of authorship and auteurism, exploring the extent to which the intelligibility of film adaptations is dependent on contextual and intertextual factors, and making a claim for the need to transcend any narrowly-defined concept of adaptation in the study of adaptation. Discussion ranges from adaptations of established classics like A Tale of Two Cities, Frankenstein, Henry V, Le temps retrouvé, Mansfield Park, Pride and Prejudice, 'The Dead' or Wuthering Heights, to contemporary (popular) texts/films like Bridget Jones's Diary, Fools, The Governess, High Fidelity, The Hours, The Orchid Thief/Adaptation, the work of Doris Dörrie, the first Harry Potter novel/film, or the adaptations made by Alfred Hitchcock, Stanley Kubrick and Walt Disney. This book will appeal to both a specialised readership and to those accessing the dynamic field of adaptation studies for the first time.",
+      "image": "http://books.google.com/books/content?id=-pp2FCxssk0C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "num_copies": 2,
+      "categories": [
+        "Literary Criticism"
+      ],
+      "ISBN": "9789042019577"
     }
   ]
 }
