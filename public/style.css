@@ -70,6 +70,17 @@ ul {
   color: black;
   transform: scale(1.2) rotate(5deg);
 }
+#sortBar {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: var(--padding-medium);
+  gap: 1em;
+}
+#sort,
+#showFav {
+  cursor: pointer;
+  color: var(--clr-accent-primary);
+}
 .mainPageHeader {
   color: var(--clr-accent-primary);
   margin-bottom: var(--margin-medium);

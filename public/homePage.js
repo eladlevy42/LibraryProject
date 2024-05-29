@@ -87,7 +87,7 @@ async function removeFromFav() {
 async function showFavorite() {
   currentPage = 1;
   sorted = false;
-  searched = false;
+  resetSearched();
   showFav = !showFav;
   updateFavLable();
   await openPage();
@@ -103,12 +103,14 @@ async function sortAZ() {
   }
 }
 function updateUrl() {
+  url = `${jsonServerUrl}/?_page=${currentPage}&_per_page=9`;
   if (sorted) {
     url = `${url}&_sort=book_name`;
+    if (showFav) {
+      url = `${favURL}/?_page=${currentPage}&_per_page=9&_sort=book_name`;
+    }
   } else if (showFav) {
     url = `${favURL}/?_page=${currentPage}&_per_page=9`;
-  } else {
-    url = `${jsonServerUrl}/?_page=${currentPage}&_per_page=9`;
   }
 }
 async function initHomeBooks() {
@@ -219,8 +221,11 @@ async function switchPage(direction) {
     currentPage--;
   }
   showSpinner();
-
-  await openPage();
+  try {
+    await openPage();
+  } catch (error) {
+    console.log(error);
+  }
 }
 
 // Function to show the loading spinner
@@ -238,12 +243,10 @@ function loadImage(url) {
   });
 }
 
-// Function to remove a copy of a book
 async function removeCopy() {
   let bookISBN = document.querySelector("#bookISBN").textContent;
   bookISBN = bookISBN.substring(6);
   let url = `${jsonServerUrl}/?ISBN=${bookISBN}`;
-  //////////////
   try {
     let response = await axios.get(url);
     let bookDetail = response.data[0];
@@ -295,9 +298,7 @@ async function deleteBook() {
     let response = await axios.get(url);
     let bookDetail = response.data[0];
     url = `${jsonServerUrl}/${bookDetail.id}`;
-
     const historyObject = buildHistoryObject(bookDetail, "Deleted Book");
-
     await axios.delete(url);
     showSnackbar(deleteSuccessSnackbar);
     await axios.post(historyUrl, historyObject);
@@ -308,7 +309,16 @@ async function deleteBook() {
     showSnackbar(generalFailSnackbar);
   }
 }
-
+function resetSearched() {
+  searched = false;
+  currentPage = 1;
+  document.querySelector("#back").onclick = () => {
+    switchPage("back");
+  };
+  document.querySelector("#next").onclick = () => {
+    switchPage("next");
+  };
+}
 // Function to search for books by name
 async function searchBook() {
   showFav = false;
@@ -317,7 +327,7 @@ async function searchBook() {
   currentBooks = [];
   const bookName = document.querySelector("#searchInput").value.toUpperCase();
 
-  document.querySelector("#searchInput").value = "";
+  // document.querySelector("#searchInput").value = "";
   while (currentBooks.length < 9) {
     url = `${jsonServerUrl}/?_page=${currentPage}&_per_page=9`;
     let response = await axios.get(url);
