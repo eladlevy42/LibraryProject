@@ -9,6 +9,17 @@ let searched = false;
 let timer;
 initBookArr();
 initHomeBooks();
+
+async function resetAll() {
+  url = `${jsonServerUrl}/?_page=${currentPage}&_per_page=9`;
+  currentPage = 1;
+  showFav = false;
+  sorted = false;
+  searched = false;
+  updateFavLable();
+  resetSearched();
+  await openPage();
+}
 function updateFavLable() {
   if (showFav) {
     document.querySelector("#showFav").textContent = "Show All Books";
@@ -465,3 +476,4 @@ document.querySelector("#searchButton").addEventListener("click", (event) => {
 });
 document.querySelector("#showFav").addEventListener("click", showFavorite);
 document.querySelector("#searchInput").addEventListener("input", debounce);
+document.querySelector("#reset").addEventListener("click", resetAll);
