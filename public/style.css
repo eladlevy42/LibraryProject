@@ -196,7 +196,8 @@ main {
   outline: 1px solid white;
 }
 
-.book {
+.book,
+.emptyBook {
   cursor: pointer;
   width: 170px;
   display: flex;
@@ -210,6 +211,9 @@ main {
   overflow: hidden; /* Ensure hidden overflow for all contents */
   transition: transform 0.3s ease;
   box-shadow: var(--card-box-shadow);
+}
+.emptyBook {
+  cursor: default;
 }
 
 .book:hover {

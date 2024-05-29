@@ -197,7 +197,7 @@ async function buildBookGrid(booksArr) {
     //fill the empty grid items with empty book divs
     for (let i = 0; i < 15 - booksArr.length; i++) {
       let gridItem = document.createElement("div");
-      gridItem.classList.add("book");
+      gridItem.classList.add("emptyBook");
       bookGridElement.appendChild(gridItem);
     }
   }
@@ -397,7 +397,7 @@ function buildSearchBookGrid(currentPageArr) {
     //fill the empty grid items with empty book divs
     for (let i = 0; i < 15 - currentPageArr.length; i++) {
       let bookElem = document.createElement("div");
-      bookElem.classList.add("book");
+      bookElem.classList.add("emptyBook");
       document.querySelector("#booksGrid").appendChild(bookElem);
     }
   }
