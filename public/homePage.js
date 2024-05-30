@@ -260,7 +260,10 @@ function loadImage(url) {
     const img = new Image();
     img.src = url;
     img.onload = () => resolve(url);
-    img.onerror = () => resolve(`C:/coding stuff/Dev/IITC/Github/IITC-temp/ajax-mini-project/LibraryProject/public/placeholder.jpg`); // Replace with a placeholder image if the original fails
+    img.onerror = () =>
+      resolve(
+        `C:/coding stuff/Dev/IITC/Github/IITC-temp/ajax-mini-project/LibraryProject/public/placeholder.jpg`
+      ); // Replace with a placeholder image if the original fails
   });
 }
 
@@ -303,7 +306,7 @@ async function addCopy() {
     const historyObject = buildHistoryObject(bookDetail, "Added copy");
     await axios.patch(url, bookDetail);
     await axios.post(historyUrl, historyObject);
-    console.log('posted');
+    console.log("posted");
     document.querySelector("#bookNumCopies").textContent = `copies: ${copies}`;
   } catch (error) {
     console.error(error);
@@ -328,12 +331,26 @@ async function deleteBook() {
     showSnackbar(deleteSuccessSnackbar);
     await axios.post(historyUrl, historyObject);
     hideDetailWrapper();
-
-    await openPage();
+    if (searched) {
+      currentPage = 1;
+      deleteFromArr(bookDetail.id);
+      await printSearched();
+    } else {
+      await openPage();
+    }
   } catch (error) {
     console.error(error);
     showSnackbar(generalFailSnackbar);
   }
+}
+async function deleteFromArr(id) {
+  let currentPageArr = searchResultsPages[searchPageIndex];
+  currentPageArr.forEach((book) => {
+    if (book.id == id) {
+      let index = currentPageArr.indexOf(book);
+      currentPageArr.splice(index, 1);
+    }
+  });
 }
 function resetSearched() {
   searched = false;
