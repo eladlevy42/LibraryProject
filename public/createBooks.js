@@ -107,7 +107,7 @@ function processNewBooks(book) {
   bookDiv.classList.add("book");
   bookDiv.classList.add('newBook')
   let bookImg = document.createElement("img");
-  bookImg.src = book.image;
+  bookImg.src = book.image == "C:/coding stuff/Dev/IITC/Github/IITC-temp/ajax-mini-project/LibraryProject/public/placeholder.jpg" ? `C:/coding stuff/Dev/IITC/Github/IITC-temp/ajax-mini-project/LibraryProject/public/placeholder.jpg` : book.image ;
   bookImg.alt = book.book_name;
   bookImg.title = "Add to library";
   bookImg.classList.add("book-image");
@@ -204,7 +204,11 @@ function handleFormData(formData) {
   formData.forEach((value, key) => {
     if (key === "authors_name" || key === "categories") {
       formDataObj[key] = value.split(",").map((item) => item.trim());
-    } else {
+    }
+    else if(key === 'image' && value.trim() === ''){
+      formDataObj[key] = undefined
+    }
+    else {
       formDataObj[key] = value;
     }
   });

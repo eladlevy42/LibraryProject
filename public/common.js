@@ -25,7 +25,7 @@ function parseBookInfo(book) {
     authors_name: volumeInfo.authors || ["Unknown Author"],
     num_pages: volumeInfo.pageCount || 0,
     short_description: volumeInfo.description || "No Description",
-    image: volumeInfo.imageLinks ? volumeInfo.imageLinks.thumbnail : "No Image",
+    image: volumeInfo.imageLinks ? volumeInfo.imageLinks.thumbnail : `C:/coding stuff/Dev/IITC/Github/IITC-temp/ajax-mini-project/LibraryProject/public/placeholder.jpg`,
     num_copies: Math.floor(Math.random() * 10) + 1, // Random number of copies between 1 and 10
     categories: volumeInfo.categories || ["Uncategorized"],
     ISBN: volumeInfo.industryIdentifiers

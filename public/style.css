@@ -631,7 +631,7 @@ img {
   visibility: hidden;
   min-width: 250px;
   margin-left: -125px;
-  color: #000000;
+  color: white;
   text-align: center;
   border-radius: 4px;
   padding: 16px;
@@ -703,7 +703,29 @@ img {
 #fav {
   font-size: 20px;
   color: yellow;
+  cursor: pointer;
 }
+#fav:hover{
+  animation-name: grow-scale ;
+  animation-duration: 0.2s;
+  animation-iteration-count: 2;
+}
+
+@keyframes grow-scale {
+  0% {
+    transform: scale(1);
+  }
+  40% {
+    transform: scale(1.1) ;
+  }
+  60% {
+    transform: scale(1.2) ;
+  }
+  100% {
+    transform: scale(1.3);
+  }
+}
+
 @media screen and (max-width: 1300px) {
   #next{
     right: 130px;

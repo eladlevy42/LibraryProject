@@ -260,7 +260,7 @@ function loadImage(url) {
     const img = new Image();
     img.src = url;
     img.onload = () => resolve(url);
-    img.onerror = () => resolve(`public/placeholder.jpg`); // Replace with a placeholder image if the original fails
+    img.onerror = () => resolve(`C:/coding stuff/Dev/IITC/Github/IITC-temp/ajax-mini-project/LibraryProject/public/placeholder.jpg`); // Replace with a placeholder image if the original fails
   });
 }
 
